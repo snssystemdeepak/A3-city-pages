@@ -1,0 +1,967 @@
+<style id="di-page-composer-styles">
+    @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
+
+    * {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    :root {
+        --c-grey: #f9fafba
+    }
+
+    .main-div h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        font-family: "Arimo", sans-serif !important
+    }
+
+    .main-div img {
+        max-width: 100%;
+        width: 100%;
+        display: block
+    }
+
+    .bn {
+        position: relative
+    }
+
+    .bn_cont {
+        position: absolute;
+        top: 15%;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2
+    }
+
+    .bn_cont h2 {
+        font-size: 5vw !important;
+        background: linear-gradient(90deg, color-mix(in oklab, #fff 50%, #fff) 10%, color-mix(in oklab, #dbeafe 30%, #fff) 50%, color-mix(in oklab, #dbeafe 100%, #fff) 40%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        line-height: 1.3em;
+        font-weight: 700;
+        font-family: "Arimo", sans-serif !important
+    }
+
+    .bn_cont h2 span {
+        background: linear-gradient(90deg, color-mix(in oklab, #ff6467 100%, #e7000b) 10%, color-mix(in oklab, #fb2c36 60%, #e7000b) 40%, color-mix(in oklab, #e7000b 40%, #e7000b) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        color: transparent;
+        -webkit-text-fill-color: transparent
+    }
+
+    .brderline {
+        overflow: hidden
+    }
+
+    .brderline div {
+        animation: fades 3s infinite
+    }
+
+    .top-15 {
+        height: 0.3vw;
+        width: 100%;
+        background: linear-gradient(90deg, #000 0 0%, #fb2c36 80 50%, #000 0 100%);
+        position: absolute;
+        top: 20%
+    }
+
+    .top-25 {
+        height: 0.2vw;
+        width: 100%;
+        background: linear-gradient(90deg, #000 0 0%, #51a2ff 66 40%, #000 0 100%);
+        position: absolute;
+        top: 30%
+    }
+
+    .top-35 {
+        height: 0.15vw;
+        width: 100%;
+        background: linear-gradient(90deg, #000 0 0%, #fff 4D 30%, #000 0 100%);
+        position: absolute;
+        top: 40%
+    }
+
+    .ani-delay-3 {
+        animation-delay: 0.3s
+    }
+
+    .ani-delay-7 {
+        animation-delay: 0.7s
+    }
+
+    @keyframes fades {
+        0% {
+            opacity: 1
+        }
+
+        25% {
+            opacity: 0.8
+        }
+
+        50% {
+            opacity: 0.6
+        }
+
+        75% {
+            opacity: 0.4
+        }
+
+        100% {
+            opacity: 1
+        }
+    }
+
+    .bn-btn {
+        display: inline-block;
+        width: 12%;
+        background: linear-gradient(90deg, color-mix(in oklab, #ff6467 100%, #e7000b) 10%, color-mix(in oklab, #fb2c36 60%, #e7000b) 40%, color-mix(in oklab, #e7000b 40%, #e7000b) 100%);
+        color: #fff !important;
+        padding-block: 0.8%;
+        border-radius: 8px;
+        position: absolute;
+        bottom: 26%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+        overflow: hidden
+    }
+
+    .bn-btn-in {
+        font-size: 1.2vw !important;
+        font-weight: 500;
+        display: inline-block
+    }
+
+    .bn-btn-in span {
+        display: inline-block;
+        transition: transform 0.3s ease
+    }
+
+    .bn-btn:hover .bn-btn-in span {
+        transform: translateX(10px)
+    }
+
+    .bn-mu-img {
+        position: absolute;
+        bottom: 8%;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: bounce 3s ease-in-out infinite
+    }
+
+    .bn-mu-img img {
+        width: 100%;
+        max-width: 100%
+    }
+
+    @keyframes bounce {
+        0% {
+            transform: translateY(0)
+        }
+
+        25% {
+            transform: translateY(-15px)
+        }
+
+        50% {
+            transform: translateY(0px)
+        }
+
+        75% {
+            transform: translateY(-10px)
+        }
+
+        100% {
+            transform: translateY(0)
+        }
+    }
+
+    .feature-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2%;
+        padding: 5% 5%
+    }
+
+    .feature-box {
+        width: 28%;
+        background: #fff;
+        border: 2px solid #fee0e0;
+        border-radius: 1vw;
+        text-align: center;
+        margin-bottom: 2%;
+        padding: 4% 3% 3%;
+        box-shadow: 0 0.3vw 0.6vw rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        position: relative;
+        text-decoration: none
+    }
+
+    .abos {
+        background: #e7000b;
+        width: 2.5vw;
+        height: 2.5vw;
+        border-radius: 50%;
+        color: #fff;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: -5%;
+        left: -4%
+    }
+
+    .feature-box:hover {
+        transform: translateY(-1%);
+        box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.15)
+    }
+
+    .feature-box img {
+        width: 48%;
+        margin-bottom: 15%;
+        margin-inline: auto
+    }
+
+    .feature-box p {
+        font-size: 0.83vw !important;
+        font-weight: 700;
+        color: rgba(30, 41, 57, 1);
+        text-decoration: underline;
+        text-decoration-color: rgba(30, 41, 57, 1)
+    }
+
+    .abos p {
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 0;
+        font-size: 0.94vw
+    }
+
+    @media (max-width:992px) {
+        .feature-box {
+            width: 45%;
+            margin-bottom: 5%
+        }
+    }
+
+    @media (max-width:600px) {
+        .feature-box {
+            width: 90%;
+            padding: 8%
+        }
+
+        .feature-box img {}
+
+        .feature-box p {
+            font-size: 3.5vw !important
+        }
+    }
+
+    .audi-section {
+        width: 90%;
+        margin: 5% auto;
+        padding: 5%;
+        background: #fff;
+        border-radius: 2%;
+        box-shadow: 0 0 2% rgba(0, 0, 0, 0.1)
+    }
+
+    .audi-section h3 {
+        text-align: center;
+        font-size: 2.5vw !important;
+        margin-bottom: 3%;
+        color: #000
+    }
+
+    .main-card img {
+        width: 100%;
+        border-radius: 2%;
+        margin-bottom: 2%
+    }
+
+    .card {
+        background: #fff;
+        border-radius: 2%;
+        padding: 4%;
+        margin-top: 5%;
+        box-shadow: 0 0 1.5% rgba(0, 0, 0, 0.05)
+    }
+
+    .card h2 {
+        font-size: 1.8vw !important;
+        margin-bottom: 2%;
+        color: #000
+    }
+
+    .card p {
+        font-size: 1.1vw !important;
+        line-height: 1.6;
+        color: #444
+    }
+
+    .side-img {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 4%
+    }
+
+    .side-img img {
+        width: 40%;
+        border-radius: 2%
+    }
+
+    .side-img .card-text {
+        width: 55%
+    }
+
+    @media (max-width:768px) {
+        .card h2 {
+            font-size: 3vw !important
+        }
+
+        .card p {
+            font-size: 2vw !important
+        }
+
+        .audi-section h3 {
+            font-size: 4vw !important
+        }
+
+        .side-img {
+            flex-direction: column
+        }
+
+        .side-img img,
+        .side-img .card-text {
+            width: 100%
+        }
+    }
+
+    .sing-head {
+        padding-block: 3%;
+        margin-inline: 10%
+    }
+
+    .sing-head h2 {
+        font: 700 2.5vw/1.3em "Arimo", sans-serif !important;
+        text-align: center;
+        color: rgba(16, 24, 40, 1)
+    }
+
+    .sing-img {
+        margin-inline: auto;
+        margin-block: 3%;
+        box-shadow: 0 15px 31px -10px #888
+    }
+
+    .sing-head-2 {
+        margin-block: 5%;
+        box-shadow: 0 16px 33px -14px #cdcdcd;
+        padding-inline: 3%;
+        padding-block: 3% 1.5%;
+        border-radius: 15px
+    }
+
+    .sing-head-2 h3 {
+        font: 700 1.56vw/1.3em "Arimo", sans-serif !important;
+        margin-bottom: 3%;
+        color: #101828
+    }
+
+    .sing-head-2 p {
+        font: 400 0.83vw/1.3em "Arimo", sans-serif !important;
+        margin-bottom: 2%;
+        color: #364153
+    }
+
+    .s-1x1 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3%;
+        box-shadow: 0 16px 25px -14px #cdcdcd;
+        padding: 2% 2% 2% 2%;
+        margin-block: 5%;
+        align-items: center;
+        border-radius: 15px
+    }
+
+    .s-cont-1x1 {
+        width: 55%
+    }
+
+    .s-cont-1x1 h3 {
+        font: 700 1.56vw/1.3em "Arimo", sans-serif !important;
+        margin-bottom: 3%;
+        color: #101828
+    }
+
+    .s-cont-1x1 p {
+        font: 400 0.83vw/1.3em "Arimo", sans-serif !important;
+        margin-bottom: 2%;
+        color: #364153
+    }
+
+    .s-img-1x1 img {
+        box-shadow: 0 16px 25px -14px #cdcdcd
+    }
+
+    .s-1x1:nth-child(even) {
+        flex-direction: row-reverse
+    }
+
+    .ftr-sec {
+        background-color: #101828;
+        padding-block: 3%
+    }
+
+    .ftr-sec-head h3 {
+        font: 700 1.88vw/1.3em "Arimo", sans-serif !important;
+        text-align: center;
+        color: #fff
+    }
+
+    .ftr-outer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5%;
+        padding-top: 5%;
+        align-items: center
+    }
+
+    .ftr-outer-sale {
+        width: calc(75%/2);
+        text-align: center;
+    }
+
+    .ftr-outer-map {
+        width: 37%
+    }
+
+    .call_us {
+        background-color: #271929;
+        border: 1px solid rgba(251, 44, 54, 0.2);
+        border-radius: 15px;
+        padding-block: 6%;
+        width: 100%;
+        margin-bottom: 3%;
+    }
+
+    .call_us h4 {
+        font: 700 1.56vw/1.3em "Arimo", sans-serif !important;
+        color: rgba(251, 44, 54, 1)
+    }
+
+    .call_us a {
+        font: 700 2.5vw/1.3em "Arimo", sans-serif !important;
+        color: #fff
+    }
+
+    .ftr-sale {
+        background-color: #282f3e;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 15px;
+        padding-block: 3%;
+        padding-inline: 5% 3%
+    }
+
+    .s-img-1x1 {
+        width: 42%
+    }
+
+    .ftr-sale-in {
+        display: flex;
+        gap: 3%
+    }
+
+    .ftr-sale-in-innn {
+        width: 4%
+    }
+
+    .ftr-sale-in-innn-sec {
+        width: 90%;
+        text-align: left
+    }
+
+    .ftr-sale-in-innn-sec h5 {
+        font: 700 0.94vw/1.3em "Arimo", sans-serif !important;
+        color: #fff;
+        margin-bottom: 3%
+    }
+
+    .sle-tm {
+        display: flex;
+        justify-content: space-between
+    }
+
+    .sle-tm p {
+        font: 400 0.83vw/1.3em "Arimo", sans-serif !important;
+        color: #fff;
+        margin-bottom: 3%
+    }
+
+    .frsthead {
+        padding-block: 0.5%
+    }
+
+    .frsthead h1 {
+        color: rgba(16, 24, 40, 1);
+        font: 700 1.88vw/1.3em "Arimo", sans-serif !important;
+        text-align: center
+    }
+
+    .ftr-sale-in-innn img {
+        padding-top: 45%
+    }
+
+    @media screen and (max-width:890px) {
+        .bn-mu-img {
+            left: 48%
+        }
+
+        .bn-btn {
+            width: 15%;
+            left: 49%
+        }
+
+        .ftr-sale-in-innn img {
+            padding-top: 0%
+        }
+
+        .bn-btn-in {
+            font-size: 1.5vw !important
+        }
+
+        .bn-mu-img img {
+            width: 2vw
+        }
+
+        .frsthead h1 {
+            font-size: 24px !important;
+            padding-inline: 9vw
+        }
+
+        .feature-section {
+            padding: 5% 3%;
+            gap: 3%
+        }
+
+        .feature-box p {
+            font-size: 16px !important;
+            padding-top: 5%
+        }
+
+        .abos {
+            background: #e7000b;
+            width: 4vw;
+            height: 4vw;
+            border-radius: 50%;
+            color: #fff;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -8%;
+            left: -3%
+        }
+
+        .sing-head h2 {
+            font-size: 24px !important;
+            padding-inline: 5vw
+        }
+
+        .sing-head {
+            margin-inline: 5%
+        }
+
+        .sing-head-2 h3 {
+            font-size: 18px !important;
+            padding-right: 1%
+        }
+
+        .sing-head-2 p {
+            font-size: 14px !important
+        }
+
+        .s-1x1 {
+            flex-wrap: wrap-reverse
+        }
+
+        .s-img-1x1 {
+            width: 95%
+        }
+
+        .s-cont-1x1 {
+            width: 95%;
+            padding-top: 3%
+        }
+
+        .s-cont-1x1 h3 {
+            font-size: 18px !important
+        }
+
+        .s-cont-1x1 p {
+            font-size: 14px !important
+        }
+
+        .ftr-outer-sale {
+            width: 85%;
+            text-align: center;
+            margin-bottom: 5%
+        }
+
+        .ftr-outer-map {
+            width: 85%;
+            margin-inline: auto;
+            overflow: hidden
+        }
+
+        .ftr-sale-in-innn-sec h5 {
+            font-size: 16px !important
+        }
+
+        .sle-tm p {
+            font-size: 14px !important
+        }
+
+        .call_us {
+            margin-bottom: 5%
+        }
+
+        .call_us h4 {
+            font-size: 16px !important
+        }
+
+        .call_us p {
+            font-size: 20px !important
+        }
+
+        .ftr-sec-head h3 {
+            font-size: 24px !important
+        }
+    }
+
+    @media screen and (max-width:640px) {
+        .bn_cont {
+            top: 2%
+        }
+
+        .ftr-sale-in-innn img {
+            padding-top: 2vw
+        }
+
+        .bn-btn-in {
+            font-size: 10px !important
+        }
+
+        .bn-btn {
+            width: 27%;
+            padding-block: 0
+        }
+
+        .feature-section {
+            padding: 10% 0%;
+            gap: 3%
+        }
+
+        .feature-box {
+            width: 90%;
+            padding: 14%;
+            margin-bottom: 8%
+        }
+
+        .abos {
+            width: 7vw;
+            height: 7vw;
+            top: -7%;
+            left: -3%
+        }
+
+        .sing-head-2 {
+            margin-block: 10%
+        }
+    }
+
+    .mt-3 {
+        margin-top: 3% !important
+    }
+</style>
+
+
+
+
+<div class="main-div" bis_skin_checked="1">
+    <div class="frsthead" bis_skin_checked="1">
+        <h1 style="font-family: Arimo,sans-serif !important;">Toyota of Fort Walton Beach Serving <span
+                style="white-space: nowrap;">Niceville, FL
+            </span></h1>
+    </div>
+    <section class="bn">
+        <div class="bn_img" bis_skin_checked="1">
+            <img src="https://di-uploads-pod29.dealerinspire.com/toyotaoffortwaltonbeach/uploads/2026/02/HERO1.webp"
+                alt="Banner" style="max-width: 100%; width: 100%;" class="lazyload-loading">
+        </div>
+        <div class="bn_cont" bis_skin_checked="1">
+            <h2 style="font-family: Arimo,sans-serif !important;">Why We Choose <br /> <span>Toyota of Fort Walton
+                    Beach</span></h2>
+        </div>
+        <!-- <div class="brderline">
+            <div class="top-15"></div>
+            <div class="top-25 ani-delay-3"></div>
+            <div class="top-35 ani-delay-7"></div>
+        </div> -->
+
+        <a class="bn-btn" href="https://www.toyotafwb.com/">
+            <div class="bn-btn-in" bis_skin_checked="1">CLICK HERE <span>→</span></div>
+        </a>
+        <!-- <div class="bn-mu-img">
+       
+        </div> -->
+    </section>
+
+    <div class="" style="background-color: var(--c-grey);" bis_skin_checked="1">
+        <section class="feature-section">
+            <a class="feature-box" href="https://www.toyotafwb.com/new-vehicles/">
+                <img src="https://di-uploads-pod29.dealerinspire.com/toyotaoffortwaltonbeach/uploads/2026/02/view_new_models-1.webp"
+                    alt="VIEW NEW MODELS" class="lazyload-loading">
+                <div class="abos" bis_skin_checked="1">
+                    <p>1</p>
+                </div>
+                <p>VIEW NEW MODELS</p>
+            </a>
+
+            <a class="feature-box" href="https://www.toyotafwb.com/used-vehicles/">
+                <img src="https://di-uploads-pod29.dealerinspire.com/toyotaoffortwaltonbeach/uploads/2026/02/view_used_models-1.webp"
+                    alt="VIEW USED MODELS" class="lazyload-loading">
+                <div class="abos" bis_skin_checked="1">
+                    <p>2</p>
+                </div>
+                <p>VIEW USED MODELS</p>
+            </a>
+
+
+
+            <a class="feature-box" href="https://www.toyotafwb.com/get-pre-qualified-with-capital-one/">
+                <img src="https://di-uploads-pod29.dealerinspire.com/toyotaoffortwaltonbeach/uploads/2026/02/get_a_pre-approved-1.webp"
+                    alt="Get Pre Approved">
+                <div class="abos" bis_skin_checked="1">
+                    <p>3</p>
+                </div>
+                <p>GET PRE APPROVED</p>
+            </a>
+
+            <a class="feature-box" href="https://www.toyotafwb.com/contact-us/">
+                <img src="https://di-uploads-pod29.dealerinspire.com/toyotaoffortwaltonbeach/uploads/2026/02/request_a_quote-1.webp"
+                    alt="Request a Quote">
+                <div class="abos" bis_skin_checked="1">
+                    <p>4</p>
+                </div>
+                <p>REQUEST A QUOTE</p>
+            </a>
+
+            <a class="feature-box"
+                href="https://www.toyotafwb.com/best-new-toyota-specials-and-lease-deals-in-pensacola-florida/">
+                <img src="https://di-uploads-pod29.dealerinspire.com/toyotaoffortwaltonbeach/uploads/2026/02/special_offers-1.webp"
+                    alt="Special Offers" class="lazyload-loading">
+                <div class="abos" bis_skin_checked="1">
+                    <p>5</p>
+                </div>
+                <p>SPECIAL OFFERS</p>
+            </a>
+
+
+        </section>
+    </div>
+
+    <div class="sing-head" bis_skin_checked="1">
+        <h2>Your Local Toyota Dealership Serving <span style="white-space: nowrap;">Niceville, FL
+            </span>
+        </h2>
+
+        <div class="sing-img" bis_skin_checked="1">
+            <img src="https://di-uploads-pod29.dealerinspire.com/toyotaoffortwaltonbeach/uploads/2026/02/Image-1-green-mounatin.webp"
+                alt="Image-1">
+        </div>
+
+        <div class="sing-head-2" bis_skin_checked="1">
+            <h3>Shop New & Pre-Owned Toyota Cars Near Niceville, FL
+
+            </h3>
+            <p><i style="color: #767676;">The Amazing Toyota Dealership in Florida</i></p>
+            <p>Niceville, FL is a hidden gem along Florida’s Emerald Coast, blending natural beauty with fun activities that make it a must-visit destination. Outdoor lovers will enjoy Emerald Coast Hydrobikes, where riding across the sparkling waters offers a one-of-a-kind experience. Turkey Creek Park provides a peaceful boardwalk where you can walk, fish, or simply take in the scenery of the winding creek. For those who enjoy paddling adventures, Homes Creek Canoe Livery is the perfect spot to launch into a relaxing trip surrounded by lush greenery and calm waters. With so many ways to enjoy the outdoors, Niceville is the kind of place that leaves lasting memories for families, couples, and solo travelers alike.
+            </p>
+
+            <p>While visiting the area, it’s also worth stopping at Toyota of Fort Walton Beach. Our dealership is known for its welcoming atmosphere and dedication to making the car buying and servicing process smooth and stress-free. Our team takes the time to understand your needs, whether you are searching for a new Toyota or maintaining your current vehicle. Pairing the charm of Niceville’s attractions with a trusted dealership nearby gives you the best of both worlds during your trip!
+            </p>
+
+
+            <!-- <p>Have you decided to check Davidsonville off your travel bucket list? Now, that's quite a fantastic idea. While this exurb might not ring a bell in the minds of most people, it boasts many treasures. For instance, you can visit the Davidsonville Historic District, heralded by many as one of the last remaining crossroad communities, where the folks live in great harmony with each other.</p>
+
+    <p>Have you decided to check Davidsonville off your travel bucket list? Now, that's quite a fantastic idea. While this exurb might not ring a bell in the minds of most people, it boasts many treasures. For instance, you can visit the Davidsonville Historic District, heralded by many as one of the last remaining crossroad communities, where the folks live in great harmony with each other.</p> -->
+        </div>
+
+        <div class="sing-head-2" bis_skin_checked="1">
+            <h3>Toyota Service and Parts near  <span style="white-space: nowrap;">Niceville, FL</span>
+            </h3>
+            <p>At Toyota of Fort Walton Beach near Niceville, FL, we make it simple to take care of your Toyota service and parts needs. From routine maintenance like oil changes, brake inspections, and tire rotations to more complex repairs, our certified technicians use the latest tools and genuine Toyota parts to ensure your vehicle runs at its best. We understand how important it is to keep your Toyota dependable, and that is why we work efficiently while maintaining the highest quality standards.
+            </p>
+
+            <p>Our parts department is fully stocked with components designed specifically for your Toyota, giving you peace of mind knowing your vehicle is receiving the right fit every time. If you enjoy working on your own vehicle, you can also order parts directly from us with confidence in their authenticity. With convenient scheduling, expert care, and access to genuine parts, our dealership is here to keep you driving with confidence around Niceville and beyond.
+            </p>
+
+
+        </div>
+
+
+        <div class="s-1x1" bis_skin_checked="1">
+            <div class="s-cont-1x1" bis_skin_checked="1">
+                <h3>Toyota Leasing and Financing Offers near <span style="white-space: nowrap;">Niceville, FL</span>
+                </h3>
+                <p>We make it easy for Niceville residents to get behind the wheel of a Toyota they love. Our leasing and financing options are designed to fit a wide range of budgets and lifestyles, giving you the flexibility to choose what works best for you. Leasing is a great way to enjoy the latest Toyota models with lower monthly payments, while financing allows you to build ownership over time with competitive rates.
+                </p>
+                <p>Our team at Toyota of Fort Walton Beach near Niceville, FL works closely with each customer to explain the details clearly and create a plan that feels comfortable and manageable. We partner with trusted lenders and provide special incentives that can help lower costs or add extra value to your purchase. From the first conversation to the moment you drive off in your Toyota, our dealership focuses on creating a smooth and stress-free experience tailored to your needs.
+                </p>
+            </div>
+            <div class="s-img-1x1" bis_skin_checked="1">
+                <img src="https://di-uploads-pod29.dealerinspire.com/toyotaoffortwaltonbeach/uploads/2026/02/small-img-right.webp"
+                    alt="Toyota Leasing and Financing Offers near Santa Rosa Beach, FL">
+            </div>
+        </div>
+
+
+        <div class="s-1x1" bis_skin_checked="1">
+            <div class="s-cont-1x1" bis_skin_checked="1">
+                <h3>Toyota Dealership Serving <span style="white-space: nowrap;">Niceville, FL</span>
+                </h3>
+                <p>At Toyota of Fort Walton Beach serving Niceville, FL, we are excited to showcase an impressive lineup of brand new and pre-owned Toyota vehicles. From stylish sedans and efficient hybrids to versatile SUVs and rugged trucks, there is something here for every driver’s lifestyle and budget. Each pre-owned Toyota is carefully inspected for quality, giving you confidence in your purchase, while our newest models feature the latest technology, safety, and performance that make every drive enjoyable.
+                </p>
+                <p>We enjoy helping customers explore their options and find the Toyota that feels like the perfect match. Our knowledgeable staff is ready to guide you through the features, answer your questions, and provide the support you need at every step. If you are in Niceville or nearby, make the short trip to see our selection for yourself.
+
+
+                </p>
+
+                <!-- <p>Don't wait to experience the difference that personalized service makes. Visit our dealership today!
+</p> -->
+            </div>
+            <div class="s-img-1x1" bis_skin_checked="1">
+                <img src="https://di-uploads-pod29.dealerinspire.com/toyotaoffortwaltonbeach/uploads/2026/02/left-image.webp"
+                    alt="Toyota Dealership Serving Santa Rosa Beach, FL">
+            </div>
+        </div>
+
+
+        <div class="sing-img" bis_skin_checked="1">
+            <img src="https://di-uploads-pod29.dealerinspire.com/toyotaoffortwaltonbeach/uploads/2026/02/Image-2-green-mountain.webp"
+                alt="Image-2">
+        </div>
+    </div>
+
+
+    <div class="ftr-sec" bis_skin_checked="1">
+        <div class="ftr-sec-head" bis_skin_checked="1">
+            <h3>Get In Touch</h3>
+        </div>
+
+
+        <div class="ftr-outer" bis_skin_checked="1">
+            <div class="ftr-outer-sale" bis_skin_checked="1">
+                <div class="call_us" bis_skin_checked="1">
+                    <h4>CALL US TODAY AT:</h4>
+                    <a href="tel:+850-863-8344">
+                        <p>850-863-8344</p>
+                    </a>
+
+                </div>
+
+
+
+                <div class="ftr-sale" bis_skin_checked="1">
+                    <div class="ftr-sale-in" bis_skin_checked="1">
+                        <div class="ftr-sale-in-innn" bis_skin_checked="1">
+                            <img src="https://di-uploads-pod29.dealerinspire.com/toyotaoffortwaltonbeach/uploads/2026/02/Sales-Hours-red.webp"
+                                alt="Clock Icon" style="">
+                        </div>
+
+                        <div class="ftr-sale-in-innn-sec" bis_skin_checked="1">
+                            <h5>Sales Hours</h5>
+
+                            <div class="sle-tm" bis_skin_checked="1">
+                                <p>Monday - Friday</p>
+                                <p>8:30 AM - 7:00 PM</p>
+                            </div>
+                            <div class="sle-tm" bis_skin_checked="1">
+                                <p>Saturday</p>
+                                <p>9:00 AM - 6:00 PM</p>
+                            </div>
+
+
+
+                            <div class="sle-tm" bis_skin_checked="1">
+                                <p>Sunday</p>
+                                <p style="color: rgba(255, 100, 103, 1);">Closed - Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ftr-sale mt-3" bis_skin_checked="1">
+                    <div class="ftr-sale-in" bis_skin_checked="1">
+                        <div class="ftr-sale-in-innn" bis_skin_checked="1">
+                            <img src="https://di-uploads-pod29.dealerinspire.com/toyotaoffortwaltonbeach/uploads/2026/02/Sales-Hours-red.webp"
+                                alt="Clock Icon" style="">
+                        </div>
+
+                        <div class="ftr-sale-in-innn-sec" bis_skin_checked="1">
+                            <h5>Service Hours</h5>
+
+                            <div class="sle-tm" bis_skin_checked="1">
+                                <p>Monday - Friday</p>
+                                <p>7:00 AM - 6:00 PM</p>
+                            </div>
+
+                            <div class="sle-tm" bis_skin_checked="1">
+                                <p>Saturday</p>
+                                <p>8:00 AM - 3:00 PM</p>
+                            </div>
+                            <div class="sle-tm" bis_skin_checked="1">
+                                <p>Sunday</p>
+                                <p style="color: rgba(255, 100, 103, 1);">Closed - Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="ftr-outer-sale" bis_skin_checked="1">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3439.7109842499513!2d-86.64042962459315!3d30.444293974724726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88913e5e82d9d4f1%3A0x56bd83a0a3896eee!2s777%20Beal%20Pkwy%2C%20Fort%20Walton%20Beach%2C%20FL%2032547%2C%20USA!5e0!3m2!1sen!2sph!4v1757573352519!5m2!1sen!2sph"
+                    width="100%" height="800" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="Google Maps iframe"></iframe>
+            </div>
+
+        </div>
+    </div>
+
+</div>
