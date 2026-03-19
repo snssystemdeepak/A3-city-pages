@@ -719,6 +719,122 @@
     .mt-3 {
         margin-top: 3% !important
     }
+
+    /* 2x2 Section Styles */
+    .two-by-two-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2%;
+        padding: 5% 5%;
+        background-color: #fff;
+    }
+
+    .two-by-two-box {
+        width: 45%;
+        background: #fff;
+        border: 3px solid #E5E7EB;
+        border-radius: 1vw;
+        text-align: center;
+        margin-bottom: 2%;
+        padding: 3% 2%;
+        box-shadow: 0 0.3vw 0.6vw rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .two-by-two-box:hover {
+        transform: translateY(-1%);
+        box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.15);
+        border-color: #0C4A6E;
+    }
+
+    .two-by-two-box img {
+        width: 35%;
+        margin-bottom: 10%;
+        margin-inline: auto;
+    }
+
+    .two-by-two-box h3 {
+        font-size: 1.4vw !important;
+        font-weight: 700;
+        color: #0C4A6E;
+        margin-bottom: 8px;
+    }
+
+    .two-by-two-box p {
+        font-size: 0.9vw !important;
+        color: #444;
+        line-height: 1.5;
+    }
+
+    .two-by-two-box .box-number {
+        background: #0C4A6E;
+        width: 2vw;
+        height: 2vw;
+        border-radius: 50%;
+        color: #fff;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: -5%;
+        left: -4%;
+        box-shadow: 0 15px 31px -10px #888;
+        font-weight: 700;
+    }
+
+    @media (max-width:992px) {
+        .two-by-two-box {
+            width: 45%;
+            margin-bottom: 5%;
+        }
+        
+        .two-by-two-box h3 {
+            font-size: 2vw !important;
+        }
+        
+        .two-by-two-box p {
+            font-size: 1.2vw !important;
+        }
+        
+        .two-by-two-box .box-number {
+            width: 3.5vw;
+            height: 3.5vw;
+        }
+    }
+
+    @media (max-width:600px) {
+        .two-by-two-section {
+            padding: 10% 5%;
+        }
+        
+        .two-by-two-box {
+            width: 90%;
+            padding: 8% 5%;
+        }
+        
+        .two-by-two-box h3 {
+            font-size: 4vw !important;
+        }
+        
+        .two-by-two-box p {
+            font-size: 3vw !important;
+        }
+        
+        .two-by-two-box .box-number {
+            width: 7vw;
+            height: 7vw;
+            top: -6%;
+            left: -3%;
+        }
+        
+        .two-by-two-box img {
+            width: 50%;
+            margin-bottom: 8%;
+        }
+    }
 </style>
 
 

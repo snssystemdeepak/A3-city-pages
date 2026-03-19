@@ -1,0 +1,2161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+    body {
+      margin: 0;
+    }
+
+    .main-div h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a {
+      margin: 0;
+      font-family: "Roboto" !important;
+    }
+
+    .main-div {
+      width: 100%;
+      background-color: #fff;
+    }
+
+    #di-page-composer h2 {
+      margin-bottom: 0px !important;
+    }
+
+    .main-div img {
+      max-width: 100%;
+      width: 100%;
+      /* display: block; */
+    }
+
+    .sns-desk-none {
+      display: none;
+    }
+
+    .sns-mob-none {
+      display: block;
+    }
+
+    @media screen and (max-width: 480px) {
+      .sns-desk-none {
+        display: block;
+      }
+
+      .sns-pi {
+        padding-inline: 1% !important;
+      }
+
+      .sns-mob-none {
+        display: none;
+      }
+    }
+
+    .sns_banner {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .sns_banner_text {
+      position: absolute;
+      left: 5%;
+      bottom: 8%;
+      color: #fff;
+    }
+
+    /* Title */
+    .sns_banner_title {
+      font-size: 4.167vw;
+      margin: 0 0 1% 0;
+      line-height: 1.1;
+      font-weight: 600;
+    }
+
+    /* Location */
+    .sns_banner_location {
+      font-size: 1.4vw;
+      margin: 0;
+      font-family: "Roboto" !important;
+    }
+
+    .sns-pt-1 {
+      padding-top: 1%;
+    }
+
+    .sns-pt-11 {
+      padding-top: 1.5%;
+    }
+
+    .sns-pt-2 {
+      padding-top: 2%;
+    }
+
+    .sns-pt-3 {
+      padding-top: 3%;
+    }
+
+    .sns-pt-4 {
+      padding-top: 4%;
+    }
+
+    .sns-pt-5 {
+      padding-top: 5%;
+    }
+
+    .sns-pt-6 {
+      padding-top: 6%;
+    }
+
+    .sns-pt-7 {
+      padding-top: 7%;
+    }
+
+    .sns-pt-8 {
+      padding-top: 8%;
+    }
+
+    .sns-pt-9 {
+      padding-top: 9%;
+    }
+
+    .sns-mt-1 {
+      margin-top: 1%;
+    }
+
+    .sns-mt-2 {
+      margin-top: 2%;
+    }
+
+    .sns-mt-3 {
+      margin-top: 3%;
+    }
+
+    .sns-mt-4 {
+      margin-top: 4%;
+    }
+
+    .sns-mt-5 {
+      margin-top: 5%;
+    }
+
+    .sns-mt-6 {
+      margin-top: 6%;
+    }
+
+    .sns-mt-7 {
+      margin-top: 7%;
+    }
+
+    .sns-mt-8 {
+      margin-top: 8%;
+    }
+
+    .sns-mt-9 {
+      margin-top: 9%;
+    }
+
+    .sns-mt-10 {
+      margin-top: 10%;
+    }
+
+    .sns-mb-1 {
+      margin-bottom: 1%;
+    }
+
+    .sns-mb-2 {
+      margin-bottom: 2%;
+    }
+
+    .sns-mb-3 {
+      margin-bottom: 3%;
+    }
+
+    .sns-mb-4 {
+      margin-bottom: 4%;
+    }
+
+    .sns-mb-5 {
+      margin-bottom: 5%;
+    }
+
+    .sns-mb-6 {
+      margin-bottom: 6%;
+    }
+
+    .sns-mb-7 {
+      margin-bottom: 7%;
+    }
+
+    .sns-mb-8 {
+      margin-bottom: 8%;
+    }
+
+    .sns-mb-9 {
+      margin-bottom: 9%;
+    }
+
+    @media (max-width:890px) {
+      .sns_banner_text {
+        left: 6%;
+        bottom: 6%;
+      }
+
+      .sns_banner_title {
+        font-size: 6.5vw;
+      }
+
+      .sns_banner_location {
+        font-size: 3vw;
+      }
+    }
+
+    .sns-button>.sns-BN {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1.5% 0;
+      background: rgba(211, 211, 211, 1);
+      justify-content: center;
+      gap: 1.2%;
+      padding-inline: 3%;
+    }
+
+    .sns-button1 {
+      margin-top: 5%;
+    }
+
+    .sns-BN>a {
+      color: #fff;
+      text-decoration: none !important;
+      padding: 2%;
+    }
+
+    .sns-BN>.sns-btn {
+      width: calc(85%/4);
+      padding: 0.8% 0;
+      box-sizing: border-box;
+    }
+
+    .sns-BN .sns-butn {
+      background: #D7181F;
+      color: #fff;
+      text-align: center;
+      transition: 0.5s;
+      text-transform: capitalize;
+      border-radius: 20px;
+      /* border: 2px solid rgba(255, 255, 255, 1); */
+      font-size: 1.354vw !important;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .sns-BN .sns-butn:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    .sns_head {
+      text-align: center;
+      padding-top: 1.3%;
+    }
+
+    .sns_brderbtm {
+      border-bottom: 2px solid #760E0D;
+      display: inline-block;
+    }
+
+    /*typo Graphy*/
+    .sns_f-60 {
+      color: #fff;
+      font-size: 3.13vw;
+      font-weight: 500;
+      line-height: 1.3em;
+    }
+
+    .sns_f-60-B {
+      color: #000;
+      font-size: 3.13vw;
+      font-weight: 700;
+      line-height: 1.3em;
+    }
+
+    .sns_f-40 {
+      font-size: 2.04vw !important;
+      font-weight: 500;
+      text-transform: capitalize;
+      line-height: 1.2em;
+      color: #000000 !important;
+    }
+
+    .sns_f-402 {
+      font-size: 2.04vw !important;
+      font-weight: 500;
+      text-transform: capitalize;
+      line-height: 1.2em;
+      color: #fff !important;
+    }
+
+    .sns_f-35 {
+      font-size: 1.82vw !important;
+      font-weight: 500;
+      text-transform: capitalize;
+      line-height: 1.2em;
+      color: #000000;
+    }
+
+    .sns_f-28 {
+      font-size: 1.46vw;
+      color: #000;
+      font-weight: 400;
+      line-height: 1.3em;
+    }
+
+    .sns_f-28white {
+      font-size: 1.46vw;
+      color: #fff;
+      font-weight: 400;
+      line-height: 1.3em;
+    }
+
+    .sns_f-25 {
+      font-size: 1.3vw !important;
+      font-weight: 500;
+      text-transform: capitalize;
+      line-height: 1.2em;
+      color: #fff;
+    }
+
+    .sns_f-25-B {
+      font-size: 1.3vw !important;
+      font-weight: 500;
+      text-transform: capitalize;
+      line-height: 1.2em;
+      color: #000;
+    }
+
+    .sns_f-16 {
+      font-size: 0.83vw !important;
+      font-weight: 400;
+      text-transform: none;
+      line-height: 1.3em;
+      color: #000000 !important;
+    }
+
+    .sns_f-16-2 {
+      font-size: 0.83vw !important;
+      font-weight: 400;
+      text-transform: none;
+      line-height: 1.3em;
+      color: #fff !important;
+    }
+
+    .sns_f-15 {
+      font-size: 1.04vw !important;
+      font-weight: 400;
+      text-transform: capitalize;
+      line-height: 1.3em;
+      color: #FFF;
+    }
+
+    .sns_f-14 {
+      font-size: 0.73vw !important;
+      font-weight: 400;
+      text-transform: capitalize;
+      line-height: 1.3em;
+      color: #FFF;
+    }
+
+    .sns_3x3 {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5%;
+      margin-top: 2%;
+    }
+
+    .sns_3x3-inner {
+      width: calc(75%/3);
+      margin-bottom: 3%;
+    }
+
+    .sns_3x3-inner-padd {
+      padding-block: 2%;
+    }
+
+    .sns_3x3-inner-padd p {
+      padding-top: 1.5%;
+    }
+
+    .sns-mrin5 {
+      margin-inline: 5%;
+    }
+
+    .sns_graysec {
+      background-color: red;
+      padding: 3%;
+      border-radius: 20px;
+    }
+
+    .sns_2x2 {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1%;
+    }
+
+    .sns_W-60 {
+      width: 56%;
+    }
+
+    .sns_W-40 {
+      width: 43%;
+    }
+
+    .sns_4x4 {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.2%;
+    }
+
+    .sns_4x4-inner {
+      background-color: #000;
+      width: calc(92%/4);
+      margin-bottom: 1.5%;
+      padding: 0.4% 0.2%;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .sns_4x4-inner-padd {
+      padding: 5% 1.5% 5%;
+    }
+
+    .sns_4x41 {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.2%;
+    }
+
+    .sns_4x41-inner {
+
+      width: calc(92%/4);
+      margin-bottom: 1.5%;
+      padding: 0.4% 0.2%;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .sns_4x41-inner-padd {
+      padding: 5% 1.5% 5%;
+    }
+
+    .sns_singleimg {
+      position: relative;
+      margin-inline: 7%;
+      margin-bottom: 2%;
+    }
+
+    /* Image */
+    .sns_singleimg_img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Badge */
+    .sns_singleimg_badge {
+      position: absolute;
+      top: 6%;
+      left: 4%;
+      background: #fff;
+      padding: 0.8% 2%;
+      font-size: 1.1vw;
+      border-radius: 2vw;
+      font-weight: 600;
+      box-shadow: 0 0.3vw 0.6vw rgba(0, 0, 0, 0.25);
+    }
+
+    /* Content */
+    .sns_singleimg_content {
+      position: absolute;
+      left: 4%;
+      bottom: 12%;
+      width: 32%;
+      color: #fff;
+    }
+
+    /* Title */
+    .sns_singleimg_title {
+      font-size: 2.7vw;
+      margin: 0 0 3% 0;
+      line-height: 1.1;
+    }
+
+    /* Text */
+    .sns_singleimg_text {
+      font-size: 1vw;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* ======================= Responsive @ 890px ======================= */
+    @media (max-width:890px) {
+      .sns_singleimg {
+        width: 96%;
+        border-radius: 4vw;
+      }
+
+      .sns_singleimg_badge {
+        font-size: 2.8vw;
+        padding: 1.5% 3%;
+        border-radius: 4vw;
+      }
+
+      .sns_singleimg_content {
+        width: 70%;
+        bottom: 6%;
+      }
+
+      .sns_singleimg_title {
+        font-size: 5.8vw;
+      }
+
+      .sns_singleimg_text {
+        font-size: 2.7vw;
+      }
+    }
+
+    .sns_text_over_img {
+      position: absolute;
+      left: 33%;
+      /* z-index: 5; */
+      bottom: 50%;
+    }
+
+    .s_single_Sec_img {
+      width: 75%;
+      margin-inline: auto;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .sns_f-60 {
+      font-size: 3.125vw;
+      color: #fff;
+    }
+
+    .sns_f-80 {
+      font-size: 4.167vw;
+      color: #fff;
+    }
+
+    .sns_f-42 {
+      color: #fff !important;
+      font-size: 2.083vw;
+    }
+
+    .sns_f-166 {
+      font-size: 0.833vw;
+      color: #fff;
+      line-height: 1.4em;
+    }
+
+    .sns_f-28 {
+      font-size: 1.458vw;
+      color: #000;
+    }
+
+    .sns_f-60-b {
+      font-size: 3.125vw;
+      color: #000;
+    }
+
+    .sns-side-space {
+      margin-inline: 8%;
+      text-align: center;
+    }
+
+    .sns-willy-main {
+      position: relative;
+      padding-block: 4%;
+      margin-inline: 8%;
+      border-radius: 30px;
+    }
+
+    .sns-willy-img {
+      border-radius: 30px;
+    }
+
+    .sns-willy-inner {
+      position: absolute;
+      bottom: 18%;
+      text-align: center;
+      width: 100%;
+    }
+
+    .sns-willy-inner-para {
+      padding-right: 10%;
+    }
+
+    .sns-willy-para {
+      padding-inline: 31%;
+    }
+
+    .sns-reign-main {
+      position: relative;
+    }
+
+    .sns-reign-inner {
+      position: absolute;
+      top: 10%;
+      right: 2%;
+      width: 35%;
+    }
+
+    .sns-beam-inner {
+      position: absolute;
+      bottom: 10%;
+      left: 70%;
+    }
+
+    .sns-reign-inner-para {
+      padding-right: 10%;
+    }
+
+    .sns-beam-inner1 {
+      text-align: left;
+      padding-right: 10%;
+    }
+
+    .sns-exterior {
+      display: flex;
+      justify-content: space-between;
+      padding: 3%;
+      gap: 2%;
+    }
+
+    .sns-exterior-content {
+      width: 40%;
+      padding-left: 5%;
+    }
+
+    /* HERO IMAGE */
+    .sns-exterior-image {
+      position: relative;
+      padding: 40px;
+      border-radius: 30px;
+      width: 60%;
+    }
+
+    .s-back-1 {
+      background: linear-gradient(to bottom, rgba(63, 89, 91, 1), rgba(50, 77, 94, 1));
+    }
+
+    .s-3x3-card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2%;
+      border-radius: 0.7vw;
+    }
+
+    .s-3x3-card .s-inner-div {
+      width: calc(70%/3);
+      margin-bottom: 0%;
+      border-radius: 16px;
+      text-align: center;
+      padding-bottom: 1%;
+    }
+
+    .sns-desk-none {
+      display: none;
+    }
+
+    .sns-mob-none {
+      display: block;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .sns-mt-neg {
+      margin-top: -4%;
+    }
+
+    @media screen and (max-width: 480px) {
+      .sns-desk-none {
+        display: block;
+      }
+
+      .sns-mob-none {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 640px) {
+      .snsmob-mt-2 {
+        margin-top: 2% !important;
+      }
+
+      .snsmob-mt-3 {
+        margin-top: 3% !important;
+      }
+
+      .snsmob-mt-33 {
+        margin-top: 5% !important;
+      }
+
+      .snsmob-mt-4 {
+        margin-top: 4% !important;
+      }
+
+      .snsmob-mt-5 {
+        margin-top: 5% !important;
+      }
+
+      .snsmob-mt-55 {
+        margin-top: 4.5% !important;
+      }
+
+      .snsmob-mt-6 {
+        margin-top: 6% !important;
+      }
+
+      .snsmob-mt-10 {
+        margin-top: 10% !important;
+      }
+
+      .snsmob-mt-15 {
+        margin-top: 16% !important;
+      }
+
+      .snsmob-mt-24 {
+        margin-top: 22% !important;
+      }
+
+      .snsmob-pt-2 {
+        padding-top: 2% !important;
+      }
+
+      .snsmob-pt-3 {
+        padding-top: 3% !important;
+      }
+
+      .snsmob-pt-4 {
+        padding-top: 4% !important;
+      }
+
+      .snsmob-pt-5 {
+        padding-top: 5% !important;
+      }
+
+      .snsmob-pt-10 {
+        padding-top: 11% !important;
+      }
+
+      .snsmob-pb-2 {
+        padding-bottom: 2% !important;
+      }
+
+      .snsmob-pb-3 {
+        padding-bottom: 3% !important;
+      }
+
+      .snsmob-pb-4 {
+        padding-bottom: 4% !important;
+      }
+
+      .snsmob-pb-5 {
+        padding-bottom: 5% !important;
+      }
+
+      .snsmob-pb-6 {
+        padding-bottom: 6% !important;
+      }
+    }
+
+    :root {
+      --sns-cap-bg: linear-gradient(180deg, #9CB4B6 0%, #324D5E 100%);
+      --sns-white: #ffffff;
+      --sns-muted: #e8ecee;
+      --sns-black: #000000;
+      --sns-gray: #555555;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #ffffff;
+    }
+
+
+    .sns-cap-container {
+
+      width: calc(100% - 4vw);
+      max-width: 1400px;
+      margin: 2vw auto;
+      background: var(--sns-cap-bg);
+      padding: 4vw;
+      border-radius: 0.5vw;
+      color: var(--sns-white);
+    }
+
+    .sns-cap-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      row-gap: 3vw;
+    }
+
+
+    .sns-cap-large {
+      width: calc(60% - 1.5vw);
+    }
+
+    .sns-cap-large2 {
+      width: calc(40% - 1.5vw);
+    }
+
+
+    .sns-cap-small {
+      width: calc(33.33% - 2vw);
+    }
+
+    .sns-cap-img-box {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+    }
+
+    .sns-cap-img-box img {
+      width: 100%;
+      height:30vw;
+      object-fit: cover;
+      display: block;
+    }
+
+    .sns-cap-overlay {
+      position: absolute;
+      top: 1.5vw;
+      left: 1.5vw;
+      font-size: 2.2vw;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .sns-cap-title {
+      font-size: 2.5vw;
+      margin: 1.5vw 0 0.8vw;
+      font-weight: 500;
+    }
+
+    .sns-cap-desc {
+      font-size: 1.2vw;
+      line-height: 1.4;
+      color: var(--sns-muted);
+    }
+
+
+    .sns-eng-container {
+      width: calc(100% - 10vw);
+      max-width: 1200px;
+      margin: 5vw auto;
+    }
+
+    .sns-eng-badge {
+      background: var(--sns-black);
+      color: white;
+      width: fit-content;
+      margin: 0 auto 4vw;
+      padding: 1vw 5vw;
+      border-radius: 50px;
+      font-size: 1.5vw;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .sns-eng-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8vw;
+      /* Gap between image and text using calc */
+      gap: calc(100% - 94%);
+    }
+
+    .sns-eng-row.sns-reverse {
+      flex-direction: row-reverse;
+    }
+
+    .sns-eng-img {
+      width: calc(50% - 3vw);
+    }
+
+    .sns-eng-img img {
+      width: 100%;
+      height: auto;
+    }
+
+    .sns-eng-content {
+      width: calc(50% - 3vw);
+    }
+
+    .sns-eng-title {
+      font-size: 3vw;
+      margin-bottom: 1.5vw;
+      color: var(--sns-black);
+    }
+
+    .sns-eng-desc {
+      font-size: 1.3vw;
+      line-height: 1.6;
+      color: var(--sns-gray);
+      margin-bottom: 2.5vw;
+    }
+
+    .sns-eng-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2vw;
+    }
+
+    .sns-stat-box {
+      width: calc(50% - 1vw);
+      text-align: center;
+      margin-bottom: 2vw;
+    }
+
+    .sns-stat-label {
+      font-size: 0.8vw;
+      text-transform: uppercase;
+      color: var(--sns-gray);
+      font-weight: bold;
+    }
+
+    .sns-stat-val {
+      font-size: 4vw;
+      font-weight: bold;
+      color: var(--sns-black);
+    }
+
+
+    @media (max-width: 768px) {
+
+      .sns-cap-large,
+      .sns-cap-small,
+      .sns-eng-img,
+      .sns-eng-content {
+        width: 100%;
+      }
+
+      .sns-eng-row,
+      .sns-eng-row.sns-reverse {
+        flex-direction: column;
+      }
+
+      .sns-cap-overlay {
+        font-size: 6vw;
+      }
+
+      .sns-cap-title,
+      .sns-eng-title {
+        font-size: 7vw;
+      }
+
+      .sns-cap-desc,
+      .sns-eng-desc {
+        font-size: 3.5vw;
+      }
+
+      .sns-stat-val {
+        font-size: 10vw;
+      }
+
+      .sns-stat-label {
+        font-size: 3vw;
+      }
+    }
+    .safety-section {
+    padding: 5vw 10vw;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 6vw;
+}
+
+.section-header h2 {
+    font-size: 3.5vw;
+    margin-bottom: 1vw;
+    font-weight: bold;
+}
+
+.section-header p {
+    font-size: 1.5vw;
+    opacity: 0.9;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+}
+
+/* Row Layout */
+.feature-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vw;
+}
+
+/* Image Box Styling */
+.image-box {
+    flex: 1;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Text Box Styling */
+.text-box {
+    flex: 1;
+}
+
+.text-box h3 {
+    font-size: 2.2vw;
+    line-height: 1.2;
+    margin-bottom: 1.5vw;
+}
+
+.text-box p {
+    font-size: 1.1vw;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+/* Reversing the second row */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .section-header h2 { font-size: 6vw; }
+    .section-header p { font-size: 3vw; }
+    
+    .feature-row, .reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .text-box h3 { font-size: 5vw; margin-top: 2vw; }
+    .text-box p { font-size: 3.5vw; }
+}
+
+.sns-model-section {
+            padding: 5vw 0;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        /* Header Styling */
+        .sns-header-top {
+            font-size: 2.8vw;
+            font-weight: 400;
+            margin-bottom: 0.2vw;
+            color: #333;
+        }
+
+        .sns-header-main {
+            font-size: 4.2vw;
+            font-weight: 800;
+            margin-bottom: 5vw;
+            color: #000;
+        }
+
+        /* Grid Layout */
+        .sns-model-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5vw;
+            padding: 0 6vw;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Card Container */
+        .sns-model-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Image Overlap Effect */
+        .sns-car-image {
+            width: 92%;
+            height: auto;
+            z-index: 2;
+            margin-bottom: -4.5vw; /* Car niche wale box ke upar dikhega */
+            transition: transform 0.3s ease;
+        }
+
+        .sns-model-card:hover .sns-car-image {
+            transform: scale(1.05);
+        }
+
+        /* Dark Info Box */
+        .sns-info-box {
+            background-color: #0c121c; /* Deep black-blue shade */
+            color: #ffffff;
+            width: 100%;
+            padding: 6vw 1vw 2.5vw 1vw; /* Top padding car overlap ke liye */
+            border-radius: 1.8vw;
+            z-index: 1;
+        }
+
+        .sns-car-name {
+            font-size: 1.7vw;
+            font-weight: 700;
+            margin-bottom: 0.8vw;
+        }
+
+        .sns-car-price {
+            font-size: 1vw;
+            text-transform: uppercase;
+            letter-spacing: 0.1vw;
+            color: #d1d1d1;
+        }
+
+        /* Mobile View (Responsive) */
+        @media (max-width: 768px) {
+            .sns-model-grid {
+                grid-template-columns: 1fr; /* Mobile par single column */
+                gap: 10vw;
+            }
+            .sns-header-top { font-size: 6vw; }
+            .sns-header-main { font-size: 9vw; }
+            .sns-car-name { font-size: 5.5vw; }
+            .sns-car-price { font-size: 3.5vw; }
+            .sns-info-box { border-radius: 5vw; padding-top: 15vw; }
+            .sns-car-image { margin-bottom: -12vw; }
+        }
+
+         .gall_sec {
+          padding-inline: 8%;
+    padding-block: 3%;
+    }
+    .gall_sec img {
+      max-width: 100%;
+      width: 100%;
+    }
+    .gall_sec_main {
+        display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2%;
+    margin-bottom: 1%;
+    }
+    .gall_sec_main_in_60 {
+          width: 56.8%;
+    }
+    .gall_sec_main_in_40 {
+          width: 32%;
+    }
+    .gall_sec_main_in_60_flex {
+      display: flex;
+      gap: 2%;
+    }
+    .gall_sec_main_in_60_flex_in {
+      width: calc(100%/3);
+    }
+
+    @media screen and (max-width:640px) {
+      .gall_sec_main_in_60_flex {
+      flex-wrap: wrap;
+    }
+      .gall_sec_main_in_60 {
+          width: 100%;
+    }
+    .gall_sec_main_in_40 {
+          width: 100%;
+    }
+    .gall_sec_main_in_60_flex_in {
+      width: calc(100%/1);
+    }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-div">
+    <section class="sns_banner"> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/banner-2026-Jeep-Wrangler-deshktop.jpg"
+        alt="Banner Image" class="sns_banner_img">
+      <div class="sns_banner_text">
+        <h1 class="sns_banner_title"> The 2026 Jeep® Wrangler</h1>
+        <p class="sns_banner_location"> Florence, AL</p>
+      </div>
+    </section>
+    <section class="sns-button" style="margin-top: -1px;">
+      <div class="sns-BN justify-content-evenly "> <a class="sns-btn sns-butn sns-f-b"
+          href="https://www.singingrivercdjr.com/used-vehicles/">
+          <div>View Inventory</div>
+        </a> <a class="sns-btn sns-butn sns-f-b " href="https://www.singingrivercdjr.com/contact-us/">
+          <div>get a quote</div>
+        </a> <a class="sns-btn sns-butn sns-f-b-r" href="https://www.singingrivercdjr.com/value-your-trade/">
+          <div>value your trade</div>
+        </a> <a class="sns-btn sns-butn "
+          href="https://www.singingrivercdjr.com/get-pre-qualified-with-capital-one-no-impact-to-your-credit-score/">
+          <div>get pre-approved</div>
+        </a> </div>
+    </section>
+    <div class="sns_head">
+      <h2 class="sns_f-40 sns_brderbtm">performance</h2>
+      <p class="sns_f-16 sns-pt-11 sns-mar-in-25">Embrace the spirit of freedom with the off-road performance of the 2026 Jeep® Wrangler. No matter what adventure lies ahead, conquer the toughest terrain with a vehicle as capable as you are.</p>
+    </div>
+    <div class="sns_3x3">
+      <div class="sns_3x3-inner"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none">
+        <div class="sns_3x3-inner-padd">
+          <h3 class="sns_f-35">Meet Challenges
+Head-On</h3>
+          <p class="sns_f-16">With an available steel front bumper, standard tow hooks and an available factory-installed WARNⓇ winch with an 8,000-pound capacity*, you can be the savior of your next off-road adventure. With a Best in-class available approach angle on 4-door models of 47.4 inches* combined with solid front and rear axles, you can climb over steep inclines and tough terrain to get where you need to be. </p>
+        </div>
+      </div>
+      <div class="sns_3x3-inner"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none">
+        <div class="sns_3x3-inner-padd">
+          <h3 class="sns_f-35">The Brains Behind
+the Brawn</h3>
+          <p class="sns_f-16">Keep off-roading fun with both a powerful available steel bumper and available Adaptive Cruise Control*h. Unlike some competitors who keep their sensors in their bumpers, we've put our front radar sensors over the rearview mirror-because why make sacrifices when you can have the full off-road experience instead?</p>
+        </div>
+      </div>
+      <div class="sns_3x3-inner"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none">
+        <div class="sns_3x3-inner-padd">
+          <h3 class="sns_f-35">Trail RatedⓇ
+Adventure</h3>
+          <p class="sns_f-16">The Trail RatedⓇ Badge is earned, never given. Proudly worn by every Wrangler, it symbolizes legendary capability, earned only after passing a series of grueling off road tests and hard won with steel skid plates, tow hooks and solid front and rear axles. Go from water fording creeks to keeping your cool (and your balance!) on tough trails, in a beast that's built to conquer. </p>
+        </div>
+      </div>
+    </div>
+    <div class="sns-cap-container">
+      <div class="sns-cap-grid">
+        <div class="sns-cap-card sns-cap-large">
+          <div class="sns-cap-img-box"> <img
+              src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Rectangle-1-5-.png"
+              alt="Water Fording">
+            <div class="sns-cap-overlay">water fording*div>
+          </div>
+          <div class="sns-cap-title">Make a Splash</div>
+          <p class="sns-cap-desc">With a high air intake, sealed electrical connections and moisture-resistant body openings, the water fording depth of the Wrangler means you can traverse up to 34 inches to cross creeks, streams and puddles with ease.</p>
+        </div>
+        <div class="sns-cap-card sns-cap-large2">
+          <div class="sns-cap-img-box"> <img
+              src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Image-63-.png"
+              alt="Traction">
+            <div class="sns-cap-overlay">Traction*</div>
+          </div>
+          <div class="sns-cap-title">A Tight Grip</div>
+          <p class="sns-cap-desc">Traction is all about transferring engine power to the ground. Once in 4x4 High, the transfer case delivers a 50/50 split of torque to the front and rear axles, delivering that extraordinary traction that has made Jeep® Wrangler a legendary 4x4 machine.</p>
+        </div>
+        <div class="sns-cap-card sns-cap-small">
+          <div class="sns-cap-img-box"> <img
+              src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=500"
+              alt="Maneuverability">
+            <div class="sns-cap-overlay">maneuverability*</div>
+          </div>
+          <div class="sns-cap-title">Smooth Maneuvers</div>
+          <p class="sns-cap-desc">Easily maneuver tight, treacherous trails or navigate around rocks or fallen logs with the help of precision steering systems and high-performance wheelbases.</p>
+        </div>
+        <div class="sns-cap-card sns-cap-small">
+          <div class="sns-cap-img-box"> <img
+              src="https://images.unsplash.com/photo-1609529662227-0445a4972e27?auto=format&fit=crop&w=500"
+              alt="Articulation">
+            <div class="sns-cap-overlay">articulation*</div>
+          </div>
+          <div class="sns-cap-title">Built For Balance</div>
+          <p class="sns-cap-desc">Good suspension and axle articulation help keep your wheels on the ground, allowing for maximum traction while going over obstacles.</p>
+        </div>
+        <div class="sns-cap-card sns-cap-small">
+          <div class="sns-cap-img-box"> <img
+              src="https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?auto=format&fit=crop&w=500"
+              alt="Ground Clearance">
+            <div class="sns-cap-overlay">Ground Clearance*</div>
+          </div>
+          <div class="sns-cap-title">No Obstacles</div>
+          <p class="sns-cap-desc">Drive over logs, rocks or just about anything else on the trail, thanks to exceptional ground clearance and protective underbody skid plates.</p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="sns_graysec"> <div class="sns_2x2"> <div class="sns_W-60"> <div class="sns_headoverimge"> <h3 class="sns_f-30 snstextuppercase">water fording*</h3> </div> <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png" alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png" alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none"> <div class="sns_2x2-padd"> <h4 class="sns_f-30">Make a Splash</h4> <p class="sns_f-14">With a high air intake, sealed electrical connections and moisture-resistant body openings, the water fording depth of the Wrangler means you can traverse up to 34 inches to cross creeks, streams and puddles with ease.</p> </div> </div> <div class="sns_W-40"> <div class="sns_headoverimge"> <h3 class="sns_f-30 snstextuppercase">water fording*</h3> </div> <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png" alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png" alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none"> <div class="sns_2x2-padd"> <h4 class="sns_f-30">Make a Splash</h4> <p class="sns_f-14">With a high air intake, sealed electrical connections and moisture-resistant body openings, the water fording depth of the Wrangler means you can traverse up to 34 inches to cross creeks, streams and puddles with ease.</p> </div> </div> </div> </div> -->
+    <section class="sns-button" style="margin-top: -1px;">
+      <div class="sns-BN justify-content-evenly "> <a class="sns-btn sns-butn sns-f-b"
+          href="https://www.singingrivercdjr.com/used-vehicles/">
+          <div>View Inventory</div>
+        </a> </div>
+    </section>
+    <section class="sns_banner"> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/2026-Hero-Ram-1500-Desk.png"
+        alt="Banner Image" class="sns_banner_img"> </section>
+    <div class="sns_4x4">
+      <div class="sns_4x4-inner"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none">
+        <div class="sns_4x4-inner-padd">
+          <h2 class="sns_f-25">Off-Roading Angles</h2>
+          <p class="sns_f-14">With available massive 35-inch tires, the 2026 Jeep® Wrangler delivers a breakover angle* of up to 32.4 degrees on 2-door models and a Best-in-Class available approach angle of 47.4 degrees on 4-door models.</p>
+        </div>
+      </div>
+      <div class="sns_4x4-inner"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none">
+        <div class="sns_4x4-inner-padd">
+          <h2 class="sns_f-25">Electronic Sway Bar Disconnect and Rock Rails</h2>
+          <p class="sns_f-14">The Electronic Sway Bar Disconnect on Rubicon models remotely disconnects your sway bar so the front wheels can drop and compress, further improving suspension articulation on tough terrain. Rock rails and available winch-capable steel bumpers offer protection on rocky ground./p>
+        </div>
+      </div>
+      <div class="sns_4x4-inner"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none">
+        <div class="sns_4x4-inner-padd">
+          <h2 class="sns_f-25">Rock-Trac® 4x4 System and 4:1 Low Gear Ratio</h2>
+          <p class="sns_f-14">With a 4:1 low gear ratio, the Rock-Trac® 4x4 System on the Rubicon can deliver an available and outstanding 100:1 crawl ratio when equipped with the manual transmission and an available 4.88:1 axle ratio. Jeep® Wrangler shown with aluminum hood. Actual hood may vary.</p>
+        </div>
+      </div>
+      <div class="sns_4x4-inner"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none">
+        <div class="sns_4x4-inner-padd">
+          <h2 class="sns_f-25">Tru-Lok® Electronic Locking Differentials</h2>
+          <p class="sns_f-14">Available front and rear Tru-Lok® electronic locking differentials lock and evenly distribute power for impressive traction, so that the right wheel spins when you need it to,</p>
+        </div>
+      </div>
+    </div>
+    <!-- <section class="singleimg"> <div class="single_badge"> <h2 class="sns_f-25-B">Command-Trac® 4x4 System</h2> </div> <div class="singleimg_img"> <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Part-Time-4x4-Power-2026-Jeep-Wrangler-deshktop.png" alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Part-Time-4x4-Power-2026-Jeep-Wrangler-deshktop.png" alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none"> </div> <div class="single_pfrmance"> <h3 class="sns_f-40" style="color: #fff;">Part-Time 4x4 Power</h3> <p class="sns_f-15">Take on any type of off-road adventure thanks to our Command-Trac® Part-Time 4x4 System, delivering torque to all four wheels and boasting a 2.72:1 low range for rock crawling and neutral for available flat-towing.</p> </div> </section> -->
+    <section class="sns_singleimg">
+      <div class="sns_singleimg_badge">
+        <h2>Command-Trac® 4x4 System</h2>
+      </div> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Part-Time-4x4-Power-2026-Jeep-Wrangler-deshktop.png"
+        alt="4x4 Power" class="sns_singleimg_img"> <!-- Content -->
+      <div class="sns_singleimg_content">
+        <h2 class="sns_singleimg_title"> Part-Time <br> 4x4 Power </h2>
+        <p class="sns_singleimg_text"> Take on any type of off-road adventure thanks to our Command-Trac® Part-Time 4x4
+          System, delivering torque to all four wheels and boasting a 2.72:1 low range for rock crawling and neutral for
+          available flat-towing. </p>
+      </div>
+    </section>
+    <section class="sns_singleimg">
+      <div class="sns_singleimg_badge">
+        <h2>Rock-Trac® 4x4 System</h2>
+      </div> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Part-Time-4x4-Power-2026-Jeep-Wrangler-deshktop.png"
+        alt="4x4 Power" class="sns_singleimg_img"> <!-- Content -->
+      <div class="sns_singleimg_content">
+        <h2 class="sns_singleimg_title"> 4x4 Doing Overtime</h2>
+        <p class="sns_singleimg_text"> While the Wrangler Rubicon comes standard with a part-time Rock-Trac® System, the available full-time Rock-Trac 4x4 System offers incredible control and torque along with a 4:1 low gear ratio that delivers a Best-in-Class 100:1 crawl ratio.*</p>
+      </div>
+    </section>
+    <section class="sns_singleimg">
+      <div class="sns_singleimg_badge">
+        <h2>Heavy-Duty Full-Float Rear Axle/h2>
+      </div> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Part-Time-4x4-Power-2026-Jeep-Wrangler-deshktop.png"
+        alt="4x4 Power" class="sns_singleimg_img"> <!-- Content -->
+      <div class="sns_singleimg_content">
+        <h2 class="sns_singleimg_title"> Resilience Off-Road</h2>
+        <p class="sns_singleimg_text"> The heavy-duty full-float rear axle transfers the weight of the vehicle from its axle shaft to a spindle mounted to a wheel hub and rides on tapered roller bearings—all of which means maximum strength, durability and performance.</p>
+      </div>
+    </section>
+    <section class="sns_banner"> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/2026-Hero-Ram-1500-Desk.png"
+        alt="Banner Image" class="sns_banner_img">
+      <div class="sns_text_over_img">
+        <h2 class="sns_f-60"> Often Imitated, Never Duplicated</h2>
+      </div>
+    </section>
+    <div class="sns_head">
+      <h2 class="sns_f-40 sns_brderbtm">Engine</h2>
+      <h3 class="sns_f-60-B">POWERFUL OPTIONS</h3>
+      <p class="sns_f-16">Jeep® Wrangler delivers performance and efficiency thanks to a choice of two available engines. Choose the heart of your next adventure.</p>
+    </div>
+    <div class="sns-eng-container">
+      <div class="sns-eng-badge">3.6L PENTASTAR® V6 ENGINE</div>
+      <div class="sns-eng-row">
+        <div class="sns-eng-img"><img
+            src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Efficiently-Exceptional-2026-Jeep-Wrangler-deshktop.png"
+            alt="V6">
+        </div>
+        <div class="sns-eng-content">
+          <h2 class="sns-eng-title">Efficiently Exceptional</h2>
+          <p class="sns-eng-desc">Pair our celebrated 3.6L Pentastar® V6 engine with Engine Stop/Start technology with a standard manual or available automatic transmission on Sport, Sport S, Willys, Rubicon or Rubicon X trims, and you’ve got a one-two punch of impressive efficiency and no-nonsense power. p>
+          <div class="sns-eng-stats">
+            <div class="sns-stat-box"><span class="sns-stat-label">MAXIMUM HORSEPOWER</span>
+              <div class="sns-stat-val">285</div>
+            </div>
+            <div class="sns-stat-box"><span class="sns-stat-label">UP TO LB-FT OF MAXIMUM TORQUE</span>
+              <div class="sns-stat-val">260</div>
+            </div>
+            <div class="sns-stat-box"><span class="sns-stat-label">MANUAL TRANSMISSION WITH ENGINE STOP/START UP TO MANUFACTURER ESTIMATED HWY MPG*</span>
+              <div class="sns-stat-val">23</div>
+            </div>
+            <div class="sns-stat-box"><span class="sns-stat-label">BEST-IN-CLASS AVAILABLE TOWING CAPACITY (LB) ON 4-DOOR RUBICON MODELS*</span>
+              <div class="sns-stat-val">5,000</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sns-eng-badge">2.0L TURBO ENGINE</div>
+      <div class="sns-eng-row sns-reverse">
+        <div class="sns-eng-img"><img
+            src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Always-Off-Road-Ready-2026-Jeep-Wrangler-deshktop.png"
+            alt="Turbo"></div>
+        <div class="sns-eng-content">
+          <h2 class="sns-eng-title">Always Off-Road Ready</h2>
+          <p class="sns-eng-desc">Drivers get a maximum 295 pound-feet of torque and dependable off-road capability with the 2.0L Turbo engine with an automatic transmission, available on all trims.</p>
+          <div class="sns-eng-stats">
+            <div class="sns-stat-box"><span class="sns-stat-label">UP TO MAXIMUM HORSEPOWER</span>
+              <div class="sns-stat-val">270</div>
+            </div>
+            <div class="sns-stat-box"><span class="sns-stat-label">UP TO LB-FT OF MAXIMUM TORQUE</span>
+              <div class="sns-stat-val">295</div>
+            </div>
+            <div class="sns-stat-box"><span class="sns-stat-label">UP TO MANUFACTURER’S ESTIMTED HWY MPG*</span>
+              <div class="sns-stat-val">23</div>
+            </div>
+            <div class="sns-stat-box"><span class="sns-stat-label">BEST-IN-CLASS AVAILABLE MAXIMUM TOWING CAPACITY (LB) ON 4-DOOR RUBICON MODELS*</span>
+              <div class="sns-stat-val">5,000</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="sns-button" style="margin-top: -1px;">
+      <div class="sns-BN justify-content-evenly "> <a class="sns-btn sns-butn sns-f-b "
+          href="https://www.singingrivercdjr.com/contact-us/">
+          <div>get a quote</div>
+        </a> </div>
+    </section>
+    <section class="sns_banner"> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/2026-Hero-Ram-1500-Desk.png"
+        alt="Banner Image" class="sns_banner_img"> </section>
+    <div class="s-back-1">
+      <section class="sns-exterior">
+        <div class="sns-exterior-content">
+          <h2 class="sns_f-40">Exterior</h2>
+          <h3 class="sns_f-80">Adventure In<br>Every Detail</h1>
+            <p class="sns_f-16"> New available colors, new vision. With available customization accessories and new quick-release door hinges on the 2026 Jeep® Wrangler, experience open-air freedom in your personal preference and style. </p>
+        </div>
+        <div class="sns-exterior-image"> <img
+            src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Adventure-in-Every-Detail-2026-Jeep-Wrangler-deshktop.png"
+            alt="Jeep Rubicon"> </div>
+      </section>
+      <div class="s-3x3-card sns-pb-5">
+        <div class="s-inner-div">
+          <div class="s-padding"> <img
+              src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/FORWARD-COLLISION-WARNING-2025-Jeep-Wrangler.png"
+              alt="FORWARD COLLISION WARNING" class="sns-mob-none"> <img
+              src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/FORWARD-COLLISION-WARNING-2025-Jeep-Wrangler-1.png"
+              alt="FORWARD COLLISION WARNING" class="sns-desk-none"> </div>
+        </div>
+        <div class="s-inner-div">
+          <div class="s-padding"> <img class="sns-mt-neg"
+              src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/ADAPTIVE-CRUISE-CONTROL-2025-Jeep-Wrangler.png"
+              alt="ADAPTIVE CRUISE CONTROL" class="sns-mob-none"> <img
+              src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/ADAPTIVE-CRUISE-CONTROL-2025-Jeep-Wrangler-1.png"
+              alt="ADAPTIVE CRUISE CONTROL" class="sns-desk-none"> </div>
+        </div>
+        <div class="s-inner-div">
+          <div class="s-padding"> <img
+              src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/BLIND-SPOT-MONITORING-AND-REAR-CROSS-PATH-DETECTION-2025-Jeep-Wrangler.png"
+              alt="BLIND SPOT MONITORING AND REAR CROSS PATH DETECTION" class="sns-mob-none"> <img
+              src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/BLIND-SPOT-MONITORING-AND-REAR-CROSS-PATH-DETECTION-2025-Jeep-Wrangler-1.png"
+              alt="BLIND SPOT MONITORING AND REAR CROSS PATH DETECTION" class="sns-desk-none"> </div>
+        </div>
+      </div>
+
+      <div class="sns_head">
+        <h2 class="sns_f-60">Grip the Dirt, Pound the Pavement</h2>
+        <p class="sns_f-28white"> Available wheel options for wherever your journey.p>
+      </div>
+
+      <div class="sns_4x41">
+        <div class="sns_4x41-inner"> <img
+            src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png"
+            alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+            src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png"
+            alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none">
+          <div class="sns_4x4-inner-padd">
+            <h2 class="sns_f-25">17-Inch Black Steel 
+Styled Wheels</h2>
+            <p class="sns_f-14">Standard on Sport</p>
+          </div>
+        </div>
+        <div class="sns_4x41-inner"> <img
+            src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png"
+            alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+            src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png"
+            alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none">
+          <div class="sns_4x4-inner-padd">
+            <h2 class="sns_f-25">17-Inch Mineral
+Gray Wheels</h2>
+            <p class="sns_f-14">Standard on Sport S</p>
+          </div>
+        </div>
+        <div class="sns_4x41-inner"> <img
+            src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png"
+            alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+            src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png"
+            alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none">
+          <div class="sns_4x4-inner-padd">
+            <h2 class="sns_f-25">17-Inch Machined Wheels with Black Pockets
+              Styled Wheels</h2>
+            <p class="sns_f-14">Available on Sport S</p>
+          </div>
+        </div>
+        <div class="sns_4x41-inner"> <img
+            src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png"
+            alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+            src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png"
+            alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none">
+          <div class="sns_4x4-inner-padd">
+            <h2 class="sns_f-25">17-Inch Painted
+Black Wheels</h2>
+            <p class="sns_f-14">Standard on Willys</p>
+          </div>
+        </div>
+
+        <div class="sns_4x41-inner"> <img
+            src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png"
+            alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+            src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png"
+            alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none">
+          <div class="sns_4x4-inner-padd">
+            <h2 class="sns_f-25">18-Inch Machined Painted Baltic Gray Wheels</h2>
+            <p class="sns_f-14">Standard on Sahara</p>
+          </div>
+        </div>
+        <div class="sns_4x41-inner"> <img
+            src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png"
+            alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+            src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png"
+            alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none">
+          <div class="sns_4x4-inner-padd">
+            <h2 class="sns_f-25">18-Inch Machined Painted Gray Wheels</h2>
+            <p class="sns_f-14">Available on Sahara</p>
+          </div>
+        </div>
+        <div class="sns_4x41-inner"> <img
+            src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png"
+            alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+            src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png"
+            alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none">
+          <div class="sns_4x4-inner-padd">
+            <h2 class="sns_f-25">17-Inch Machined Painted Black Wheels</h2>
+            <p class="sns_f-14">Standard on Rubicon and Rubicon X</p>
+          </div>
+        </div>
+        <div class="sns_4x41-inner"> <img
+            src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png"
+            alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+            src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png"
+            alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none">
+          <div class="sns_4x4-inner-padd">
+            <h2 class="sns_f-25">17-Inch Machined Wheels with Black Painted Pockets</h2>
+            <p class="sns_f-14">Available on Rubicon and Rubicon Xv</p>
+          </div>
+        </div>
+      </div>
+      <div class="gall_sec">
+    <div class="gall_sec_main">
+      <div class="gall_sec_main_in_60">
+        <img src="https://i.ibb.co/cKyn6Gz8/g-1-2026-Jeep-Wrangler-deshktop.png" alt="">
+      </div>
+       <div class="gall_sec_main_in_40">
+        <img src="https://i.ibb.co/Z1k4nmqF/g-2-2026-Jeep-Wrangler-deshktop.png" alt="">
+      </div>
+    </div>
+
+
+
+    <div class="gall_sec_main">
+      <div class="gall_sec_main_in_60">
+        <div class="gall_sec_main_in_60_flex">
+          <div class="gall_sec_main_in_60_flex_in">
+            <img src="https://i.ibb.co/RGQmCczT/g-3-2026-Jeep-Wrangler-deshktop.png" alt="">
+          </div>
+          <div class="gall_sec_main_in_60_flex_in">
+            <img src="https://i.ibb.co/5x2hdcrc/g-4-2026-Jeep-Wrangler-deshktop.png" alt="">
+          </div>
+          <div class="gall_sec_main_in_60_flex_in">
+            <img src="https://i.ibb.co/35LVm7kF/g-5-2026-Jeep-Wrangler-deshktop.png" alt="">
+          </div>
+        </div>
+      </div>
+       <div class="gall_sec_main_in_40">
+        <img src="https://i.ibb.co/FbbgWvy9/g-6-2026-Jeep-Wrangler-deshktop.png" alt="">
+      </div>
+    </div>
+  </div>
+    </div>
+    <section class="sns-button" style="margin-top: -1px;">
+      <div class="sns-BN justify-content-evenly "> <a class="sns-btn sns-butn sns-f-b "
+          href="https://www.singingrivercdjr.com/contact-us/">
+          <div>value your trade</div>
+        </a> </div>
+    </section>
+    <div class="sns_head">
+      <h2 class="sns_f-60-B">Tops Optional</h2>
+      <p class="sns_f-28"> Open-air freedom has never been easier. Explore how our removeable hardtops and soft tops
+        offer easy access to the beauty of nature. </p>
+    </div>
+    <div class="s_single_Sec">
+      <div class="s_single_Sec_img"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Tops-Optional-01-2026-Jeep-Wrangler-deshktop.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Tops-Optional-01-2026-Jeep-Wrangler-deshktop.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none"> </div>
+      <div class="s_single_Sec_img"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Tops-Optional-01-2026-Jeep-Wrangler-deshktop.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Tops-Optional-01-2026-Jeep-Wrangler-deshktop.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none"> </div>
+      <div class="s_single_Sec_img"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Tops-Optional-01-2026-Jeep-Wrangler-deshktop.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Tops-Optional-01-2026-Jeep-Wrangler-deshktop.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none"> </div>
+    </div>
+    <div class="sns_head">
+      <h2 class="sns_f-60-B">Open Air, No Tools Necessary</h2>
+      <p class="sns_f-28"> Our new quick-release door hinge system allows you to pop off the doors without the help of any tools. Let freedom come easy. </p>
+    </div>
+    <section class="sns_banner"> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/2026-Hero-Ram-1500-Desk.png"
+        alt="Banner Image" class="sns_banner_img">
+      <div class="sns_text_over_img">
+        <h2 class="sns_f-60">Get the Inside Scoop </h2>
+      </div>
+    </section>
+    <section class="sns-button" style="margin-top: -1px;">
+      <div class="sns-BN justify-content-evenly "> <a class="sns-btn sns-butn sns-f-b "
+          href="https://www.singingrivercdjr.com/contact-us/">
+          <div>get pre-approved</div>
+        </a> </div>
+    </section>
+
+    <div class="s-back-1">
+      <section class="sns-exterior">
+        <div class="sns-exterior-content">
+          <h2 class="sns_f-40">Interior</h2>
+
+        </div>
+
+      </section>
+
+      <div class="sns-side-space">
+
+        <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/Banner-2025-Jeep-Wrangler.png"
+          alt="">
+        <h2 class="sns_f-60">See It on the Big Screen</h2>
+        <p class="sns_f-28white">Explore on- and off-road navigation options on our available Uconnect® 5 NAV system via the touchscreen with a 12.3-inch center display.</p>
+
+
+        <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/Banner-2025-Jeep-Wrangler.png"
+          alt="">
+        <h2 class="sns_f-60">Tough Terrain, Rugged Comfort</h2>
+        <p class="sns_f-28white">Available on the 2026 Jeep Wrangler are heated 12-way power front
+seats optimized for incredible comfort on the trail. Best-in-class rear-
+seat headroom and legroom on four-door models* offer second-row
+passengers room to relax even when they're off-road.</p>
+
+      </div>
+    </div>
+
+
+
+  </div>
+  <section class="sns-button" style="margin-top: -1px;">
+    <div class="sns-BN justify-content-evenly "> <a class="sns-btn sns-butn sns-f-b "
+        href="https://www.singingrivercdjr.com/contact-us/">
+        <div>get pre-approved</div>
+      </a> </div>
+  </section>
+
+  <div class="s-back-1">
+    <section class="sns-exterior">
+      <div class="sns-exterior-content">
+        <h2 class="sns_f-40">Technology</h2>
+
+
+      </div>
+      <div class="sns-exterior-image">
+        <p class="sns_f-16"> Wherever your path takes you, drive confidently with a tech-forward Wrangler. As an intuitively built SUV, you can access information, navigation and entertainment with ease. And with modern safety and security technology at your fingertips, enjoy the feeling of peace of mind—especially when you’re off-road, or off the grid. </p>
+      </div>
+    </section>
+  </div>
+
+  
+
+
+  <div class="sns-side-space">
+    <h2 class="sns_f-60-b">Tech that Moves Mountains</h2>
+    <div class="sns-reign-main"> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/Banner-2025-Jeep-Wrangler.png"
+        alt="">
+      <div class="sns-beam-inner sns-beam-inner1">
+        <h2 class="sns_f-402">Pick Your Playground</h2>
+        <p class="sns_f-16-2">Bring adventuring to new heights with the available Off-Road Pages* Package. Through your Uconnect touchscreen, use the Adventures Guide to choose your next trail easily-from casual drives to intense rock crawling, from over 200 available guides.
+
+Plus, you can track, pin and record your adventures with GPS Trail Logs. Upgrade to the annual Off-Road Pages All-Access Membership and unlock the full catalog of 3,000 trail guides. </p>
+      </div>
+    </div>
+    <div>
+      <h2 class="sns_f-60-b">Connected Off The Grid</h2>
+      <p class="sns_f-28">Hit the trails with peace of mind knowing you can still connect to the outside world, even when you’re off the beaten path.</p>
+    </div>
+    <div>
+       <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/Banner-2025-Jeep-Wrangler.png"
+        alt="">
+      
+    </div>
+    <div class="sns_4x4">
+      <div class="sns_4x4-inner"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none">
+        <div class="sns_4x4-inner-padd">
+          <h2 class="sns_f-25">In The Loop</h2>
+          <p class="sns_f-14">Our available 7-inch Digital Cluster Display can be customized to help you track stats like speed control and direction or get safety and security alerts.</p>
+        </div>
+      </div>
+      <div class="sns_4x4-inner"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none">
+        <div class="sns_4x4-inner-padd">
+          <h2 class="sns_f-25">Online On The Road</h2>
+          <p class="sns_f-14">During your drive, up to eight devices within a 50-foot radius may connect to the web with the available 4G LTE Wi-Fi® Hotspot*.</p>
+        </div>
+      </div>
+      <div class="sns_4x4-inner"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+          src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png"
+          alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none">
+        <div class="sns_4x4-inner-padd">
+          <h2 class="sns_f-25">Power Your Way</h2>
+          <p class="sns_f-14">The available auxiliary switches used to power various electrical devices, can be powered by either your ignition or your battery and can remember their pattern state between power cycles.</p>
+        </div>
+      </div>
+      
+    </div>
+    <div>
+      <h2 class="sns_f-60-b">Take Confidence on Every Journey</h2>
+      
+    </div>
+    <div> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/Banner-2025-Jeep-Wrangler.png"
+        alt="">
+    
+    </div>
+  </div>
+
+  <section style="background:linear-gradient(to bottom, rgba(63, 89, 91, 1), rgba(50, 77, 94, 1)); ;" class="safety-section">
+        <header class="section-header">
+            <h2>Safety And Security Stays Top Of Mind</h2>
+            <p>The 2026 Jeep® Wrangler is packed with cutting-edge features designed to give you peace of mind.</p>
+        </header>
+
+        <div class="container">
+            <div class="feature-row">
+                <div class="image-box">
+                    <img src="forward-collision.jpg" alt="Forward Collision Warning">
+                </div>
+                <div class="text-box">
+                    <h3>Full-Speed Forward Collision Warning With Active Braking</h3>
+                    <p>Available Forward Collision Warning with Active Braking* alerts you when it senses a potential frontal impact and can automatically engage the brakes if you don't respond.</p>
+                </div>
+            </div>
+
+            <div class="feature-row reverse">
+                <div class="image-box">
+                    <img src="blind-spot.jpg" alt="Blind Spot Monitoring">
+                </div>
+                <div class="text-box">
+                    <h3>Blind Spot Monitoring And Rear Cross Path Detection</h3>
+                    <p>Available Blind Spot Monitoring* and Rear Cross Path Detection* use radar-based sensors to detect other vehicles in your blind spot zones or crossing behind you.</p>
+                </div>
+            </div>
+
+            <div class="feature-row">
+                <div class="image-box">
+                    <img src="adaptive-cruise.jpg" alt="Adaptive Cruise Control">
+                </div>
+                <div class="text-box">
+                    <h3>Adaptive Cruise Control With Stop And Go</h3>
+                    <p>Available Adaptive Cruise Control with Stop and Go* provides driver assistance and can automatically adjust your driving speed to maintain a preselected distance from the vehicle ahead.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <div class="sns-side-space">
+    <div class="sns-reign-main"> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/Banner-2025-Jeep-Wrangler.png"
+        alt="">
+      <div class="sns-beam-inner sns-beam-inner1">
+        <h2 class="sns_f-402">Automatic High-Beam Headlamps</h2>
+        <p class="sns_f-16-2">These available headlamps can sense when high beams are needed and when they're not by
+          detecting light from oncoming vehicles.</p>
+      </div>
+    </div>
+    <div>
+      <h2 class="sns_f-60-b">Off-Road Guardian</h2>
+      <p class="sns_f-28">The high-strength steel frame of the 2026 Jeep® Wrangler creates a rigid chassis and solid
+        foundation, offering protection on a core structural level.</p>
+    </div>
+    <div> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/Banner-2025-Jeep-Wrangler.png"
+        alt="">
+      <h2 class="sns_f-60-b">ParkSense® Rear Park Assist System</h2>
+      <p class="sns_f-28">The available ParkSense® Rear Park Assist System* uses sensors to
+alert you if you're too close to an obstacle while backing up.</p>
+    </div>
+    <div> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/Banner-2025-Jeep-Wrangler.png"
+        alt=""> </div>
+        <div> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/Banner-2025-Jeep-Wrangler.png"
+        alt="">
+      <h2 class="sns_f-60-b">Limited Edition</h2>
+<h2 class="sns_f-60-b">a once-In-A-Lifetime Adventure</h2>
+      <p class="sns_f-28">Welcome to the wide-open world of limited-edition Wrangler SUVs, each pumping with their own unique flavor and style. Pick your partner for the adventure ahead.p>
+    </div>
+    <div> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/Banner-2025-Jeep-Wrangler.png"
+        alt=""> </div>
+  </div>
+  <div class="sns-willy-main">
+    <div class="sns-willy-img"> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/Banner-2025-Jeep-Wrangler.png"
+        alt=""> </div>
+    <div class="sns-willy-inner">
+      <h2 class="sns_f-60">2026 Jeep® Wrangler</h2>
+      <p class="sns_f-166 sns-willy-para">Hop into a powerful SUV ready to tackle any adventure. Styled as a throwback to our birth on the battlefields of WWII, the 2026 Jeep® Wrangler Willys ‘41 is for those who chart their own course. Limited quantities available*.</p>
+      <p class="sns_f-166">• Military-Inspired ‘41 Exterior Paint• Exclusive ‘41-Painted 17-Inch Wheels• 33-Inch Tires• Unique Drab Blue Exterior Decals• Unique Tan Interior• ‘41 Shifter Medallion• Tan Soft Top (Limited Availability)• Available Body-Color Hardtop• Rear Axle Locker• Front and Rear Steel Bumpers</p>
+    </div>
+  </div>
+  <div class="sns-reign-main"> <img
+      src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/Banner-2025-Jeep-Wrangler.png"
+      alt="">
+    <div class="sns-reign-inner">
+      <h2 class="sns_f-42">2026 Jeep® Wrangler in Reign</h2>
+      <h3 class="sns_f-60">THE REIGN CONTINUES</h3>
+      <p class="sns_f-166 sns-reign-inner-para">Back by popular demand and ready to add a vibrant splash of color to
+the ultimate adventure machine, Reign is once again available on the
+2026 Jeep Wrangler.</p>
+    </div>
+  </div>
+  </div>
+
+  <!-- <div class="sns_4x4">
+    <div class="sns_4x4-inner"> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png"
+        alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png"
+        alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none">
+
+    </div>
+    <div class="sns_4x4-inner"> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png"
+        alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png"
+        alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none">
+
+    </div>
+    <div class="sns_4x4-inner"> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png"
+        alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png"
+        alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none">
+
+    </div>
+    <div class="sns_4x4-inner"> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-desktop-cpo-cdjr.png"
+        alt="PACIFICA PLUG-IN HYBRID" class="sns-mob-none"> <img
+        src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2025/11/PACIFICA-PLUG-IN-HYBRID-cdjr-cpo-mob.png"
+        alt="PACIFICA PLUG-IN HYBRID" class="sns-desk-none">
+
+    </div>
+  </div> -->
+  <section class="sns-model-section">
+        <h1 class="sns-header-top">2026 Jeep<sub>®</sub> Wrangler</h1>
+        <h2 class="sns-header-main">Build & Price</h2>
+
+        <div class="sns-model-grid">
+            <div class="sns-model-card">
+                <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Sport-4-Door-2026-Jeep-Wrangler-deshktop.png" alt="Sport 2-Door" class="sns-car-image">
+                <div class="sns-info-box">
+                    <h3 class="sns-car-name">Sport 2-Door</h3>
+                    <p class="sns-car-price">MSRP* Starting At $35,595</p>
+                </div>
+            </div>
+
+            <div class="sns-model-card">
+                <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Sport-4-Door-2026-Jeep-Wrangler-deshktop.png" alt="Sport 4-Door" class="sns-car-image">
+                <div class="sns-info-box">
+                    <h3 class="sns-car-name">Sport 4-Door</h3>
+                    <p class="sns-car-price">MSRP* Starting At $38,600</p>
+                </div>
+            </div>
+
+            <div class="sns-model-card">
+                <img src="https://via.placeholder.com/600x350/transparent/000?text=Rubicon" alt="Rubicon" class="sns-car-image">
+                <div class="sns-info-box">
+                    <h3 class="sns-car-name">Sport S 2-Door</h3>
+                    <p class="sns-car-price">MSRP* starting at $39,940</p>
+                </div>
+            </div>
+            <div class="sns-model-card">
+                <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Sport-4-Door-2026-Jeep-Wrangler-deshktop.png" alt="Rubicon" class="sns-car-image">
+                <div class="sns-info-box">
+                    <h3 class="sns-car-name">Willys 2-Door</h3>
+                    <p class="sns-car-price">MSRP* starting at $43,415</p>
+                </div>
+            </div>
+            <div class="sns-model-card">
+                <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Sport-4-Door-2026-Jeep-Wrangler-deshktop.png" alt="Rubicon" class="sns-car-image">
+                <div class="sns-info-box">
+                    <h3 class="sns-car-name">Willys 4-Door</h3>
+                    <p class="sns-car-price">MSRP* starting at $44,500</p>
+                </div>
+            </div>
+            <div class="sns-model-card">
+                <img src="https://via.placeholder.com/600x350/transparent/000?text=Rubicon" alt="Rubicon" class="sns-car-image">
+                <div class="sns-info-box">
+                    <h3 class="sns-car-name">Willys '41</h3>
+                    <p class="sns-car-price">MSRP* starting at $49,090</p>
+                </div>
+            </div>
+            <div class="sns-model-card">
+                <img src="https://via.placeholder.com/600x350/transparent/000?text=Rubicon" alt="Rubicon" class="sns-car-image">
+                <div class="sns-info-box">
+                    <h3 class="sns-car-name">Sahara</h3>
+                    <p class="sns-car-price">MSRP* starting at $49,365</p>
+                </div>
+            </div>
+            <div class="sns-model-card">
+                <img src="https://via.placeholder.com/600x350/transparent/000?text=Rubicon" alt="Rubicon" class="sns-car-image">
+                <div class="sns-info-box">
+                    <h3 class="sns-car-name">Rubicon 2-Door</h3>
+                    <p class="sns-car-price">MSRP* starting at $45,970</p>
+                </div>
+            </div>
+            <div class="sns-model-card">
+                <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Sport-4-Door-2026-Jeep-Wrangler-deshktop.png" alt="Rubicon" class="sns-car-image">
+                <div class="sns-info-box">
+                    <h3 class="sns-car-name">Rubicon 4-Door</h3>
+                    <p class="sns-car-price">MSRP* starting at $49,895</p>
+                </div>
+            </div>
+            <div class="sns-model-card">
+                <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Sport-4-Door-2026-Jeep-Wrangler-deshktop.png" alt="Rubicon" class="sns-car-image">
+                <div class="sns-info-box">
+                    <h3 class="sns-car-name">Rubicon 2-Door</h3>
+                    <p class="sns-car-price">MSRP* starting at $57,320</p>
+                </div>
+            </div>
+              <div class="sns-model-card">
+                <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Sport-4-Door-2026-Jeep-Wrangler-deshktop.png" alt="Rubicon" class="sns-car-image">
+                <div class="sns-info-box">
+                    <h3 class="sns-car-name">Moab 392</h3>
+                    <p class="sns-car-price">MSRP* starting at $80,590</p>
+                </div>
+            </div>
+             <div class="sns-model-card">
+                <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Sport-4-Door-2026-Jeep-Wrangler-deshktop.png" alt="Rubicon" class="sns-car-image">
+                <div class="sns-info-box">
+                    <h3 class="sns-car-name">Rubicon X 4-Door</h3>
+                    <p class="sns-car-price">MSRP* starting at $61,990</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="sns-button" style="margin-top: -1px;">
+      <div class="sns-BN justify-content-evenly "> <a class="sns-btn sns-butn sns-f-b"
+          href="https://www.singingrivercdjr.com/used-vehicles/">
+          <div>View Inventory</div>
+        </a> <a class="sns-btn sns-butn sns-f-b " href="https://www.singingrivercdjr.com/contact-us/">
+          <div>get a quote</div>
+        </a> <a class="sns-btn sns-butn sns-f-b-r" href="https://www.singingrivercdjr.com/value-your-trade/">
+          <div>value your trade</div>
+        </a> <a class="sns-btn sns-butn "
+          href="https://www.singingrivercdjr.com/get-pre-qualified-with-capital-one-no-impact-to-your-credit-score/">
+          <div>get pre-approved</div>
+        </a> </div>
+    </section>
+
+    <div class="seo">
+    <div class="seo-per">
+
+      <p><b>Introducing the 2026 Land Rover Range Rover Velar in Cerritos, CA</b></p>
+      <p>The 2026 Land Rover Range Rover Velar in Cerritos, CA is finally here! This latest model combines refined
+        luxury with dynamic performance, creating an SUV that turns heads on every drive. You'll find advanced
+        technology features paired with the signature Range Rover elegance that sets this vehicle apart. The Velar
+        delivers a driving experience that balances comfort and capability, making it perfect when you need versatility
+        without compromise.</p>
+
+      <p><b>Where to Buy a 2026 Land Rover Range Rover Velar for Sale in Cerritos, CA?</b></p>
+
+      <p>You can buy a 2026 Land Rover Range Rover Velar for sale in Cerritos, CA at Land Rover Cerritos dealership!</p>
+
+      <p>The 2026 Land Rover Range Rover Velar in Cerritos, CA marries luxury with dynamic performance capabilities.
+        This vehicle utilizes a 3.0L 6-cylinder engine that delivers responsive acceleration for a truly dynamic drive.
+        You can experience maximum power up to 395 HP, enabling the vehicle to accelerate from 0 to 60 MPH in just 5.2
+        seconds. The top speed reaches 155 MPH, unless the vehicle is equipped with coil suspension, in which case the
+        top speed is 130 MPH. Your driving comfort is maintained by Adaptive Dynamics technology, which monitors the
+        vehicle body and steering movements up to 500 times a second to ensure optimum control and a smooth ride.
+        Configurable Dynamics lets you select specific chassis and powertrain settings tailored to your driving
+        preferences.</p>
+
+      <p>The 2026 Land Rover Range Rover Velar in Cerritos, CA embodies sophisticated elegance, reflecting a modernist
+        reductive design philosophy that is captivating in its simplicity. The exterior design utilizes sleek lines,
+        bold contours, and refined finishes. Precision details include a grille design available in various technical
+        finishes to optimize the vehicle's proportions. The rear design follows the reductive theme with hidden
+        tailpipes and taillights that have a stealth look, featuring a lasered pattern and ‘super red’ LEDs. Inside, the
+        cabin provides a calm sanctuary of Range Rover refinement.
+      </p>
+
+
+
+      <p>Advanced technologies are integrated throughout the 2026 Land Rover Range Rover Velar in Cerritos, CA to
+        enhance every drive. The award-winning Pivi Pro infotainment system is central to the cabin, utilizing an 11.4"
+        curved glass Touchscreen that creates an elegant fascia while intuitively managing volume, climate, and seat
+        adjustments. Working in harmony with Pivi Pro, the 12.3" Interactive Driver Display allows you to customize the
+        presentation of information.Key vehicle and journey data are projected onto the windshield within your eyeline
+        the Head-up Display. Maneuvering in tight spots is made easier by the 3D Surround Camera, which provides a 360°
+        view of your surroundings.</p>
+
+      <p><b>Where to Test Drive a 2026 Land Rover Range Rover Velar in Cerritos, CA?
+        </b></p>
+
+      <p>You can test drive a 2026 Land Rover Range Rover Velar in Cerritos, CA at Land Rover Cerritos! You'll feel the
+        difference as you navigate through city streets and open roads, discovering how the Velar responds to your every
+        command. Our team at Land Rover Cerritos is here to answer your questions and help you explore all the features
+        that make this vehicle special.
+
+      </p>
+
+    </div>
+
+
+    <div class="disc">
+
+
+     <p>*+ destination and handling fee</p>
+     <p>k*Jeep Wrangler shown with aluminum hood. Actual hood may vary.</p>
+     <p>*Do not attemp water fording unless depth is known and consistent with the vehicle's water fording rating in the Owner's Manual. Traversing water can cause damage that may not be covered by the new vehicle warranty. Always off road resposibly in approved areas. Jeep® Wrangler shown with aluminum hood. Actual hood may vary.</p>
+     <p>*When properly equipped. Contact dealer for details
+</p>
+<p>*Class based on Ward's Small Sport/Utility vehicle segmentation. Based on the latest available current competitive information.
+</p>
+<p>*This system is a driver's convenience system, not a substitute for active driver involvement. The driver must remain aware of traffic conditions and be prepared to use the brakes to avoid collisions.
+</p>
+<p>*Do not attempt water fording unless depth is known and consistent with the vehicle'swater fording rating in the Owner's Manual. Traversing water can cause damage that may not be covered by the new vehicle warranty. Always off road responsibly in approved areas. Jeep Wrangler shown with aluminum hood. Actual hood may vary.
+</p>
+<p>*Always off-road responsibly in approved areas. Jeep® Wrangler shown with aluminum hood. Actual hood may vary.
+</p>
+<p>*Always off-road responsibly in approved areas.
+</p>
+<p>*There’s no adventure vehicle as legendary as the Wrangler Rubicon, engineered with off-road features that make mud and mountains manageable. Jeep® Wrangler shown with aluminum hood. Actual hood may vary.
+</p>
+<p>*Class based on Ward's Small Sport/Utility vehicle segmentation. Based on the latest available current competitive information.
+</p>
+<p>*Manufacturer's estimates with 3.6L engine with eTorque and eight-speed automatic transmission-17 city/25 hwy with two-door models and 17 city/23 hwy with four-door models. Actual mileage may vary.
+</p>
+<p>*Class based on Ward's Small Sport/Utility vehicle segmentation. Based on the latest available current competitive information. When properly equipped. Additional options, equipment, passengers, and cargo weight may affect payload/towing weights. Contact dealer for details.
+</p>
+<p>*Manufacturers estimated mpg with the 2.0L Turbo engine and eight-speed automatic transmission 20 city/23 highway with two-door models and 20 city/22 highway with four- door models. Actual mileage may vary.
+</p>
+<p>*Class based on Ward's Small Sport/Utility vehicle segmentation. Based on the latest available current competitive information. Rubicon model with Manual Transmission and Available 4.88/1 Axle Ratio.
+</p>
+<p>*Class based on Ward's Small Sport/Utility vehicle segmentation. Based on the latest available current competitive information.
+</p>
+<p>*Vehicle must be enrolled with Jeep, Connect to receive Jeep Off-Road Pages+2-year trial. To continue services after trial expiration, continued enrollment in Jeep Connect and subscription purchase of Off-Road Pages+: All-Access required. Off-Road Pages+ trail guides, accessed via Adventure Guides application, available primarily in the United Stateswith limited coverage in Canada. Off-Road Pages+ trail database provided by TrailsOffroad, LLC. Review the applicable Terms of Service for complete terms and conditions,including service limitations.
+</p>
+<p>*Jeep, Wi-Fi® (AT&T Provided Wi-Fi) Varies by vehicle: (i) 3-mo/1GB trial: 3-month period begins at the time of trial activation, and wireless data services expires when 1GB of data is used or when 3-month period ends, whichever comes first. Data not used in period is forfeited. Trial does not renew. (ii) 3-month period begins at time of trial activation, and wireless data service expires when 3GB of data is used or when period ends, whichever comes first. Data not used in period is forfeited. Trial does not renew. Trial included with the purchase or lease of a new vehicle. Upon earlier of expiration of the trial period or usage of included 1GB, trial ends. Purchase of a subscription is required to continue service. Wi-Fi® Hotspot available through third-party provider subscription and subject to provider terms and conditions. Requires eligible vehicle with Internet-enable mobile device (Contact dealer for details). Wi-Fi hotspot functionality available in U.S. & Canada only. Coverage and service not availabe everywhere. This is not intended for use by the driver while the vehicle is in motion. Always drive carefully.</p>
+<p>Jeep, Wi-Fi Hotspot Service (Stellantis Provided Wi-Fi) Wi-Fi Hotspot Service: Requires eligible and properly equipped vehicle. Intended for U.S. only. Data: Unlimited. Pricing: Price per vehicle is $12.99 per month or $142.89 per year. Pricing subject to change. Monthly plans renew monthly and annual plans renew annually at then current rates until cancelled. Payments will be charged to your payment method on file. Cancel at any time. Taxes and additional charges may apply. Limits: Up to 10 vehicles per account and 8 connected devices per hotspot. Performance varies based on number of devices connected and other factors. Geographic restrictions: Use outside of U.S., if available, may result in additional charges. Applicable Terms: Service is subject to the FCA Connected Services Agreement available at https://connect.jeep.com/us/en/terms-and-conditions/latest. Offers, trials, promotions, terms, and ricing subject to modification and termination at any time without notice. Service is not intended for use by driver while operating vehicle. Coverage and service not available everywhere. Always pay careful attention to the road.
+</p>
+<p>*This system is an alert system for the front of the vehicle. It is not a substitute for active driver involvement. The driver must remain aware of traffic conditions and be prepared to use brakes to avoid collisions.
+</p>
+<p>*Always check visually for vehicles prior to changing lanes.
+</p>
+<p>*Always check entire surroundings visually before proceeding,
+</p>
+<p>*This system is a driver's convenience system, not a substitute for active driver involvement. The driver must remain aware of traffic conditions and be prepared to use the brakes to avoid collisions.
+</p>
+<p>*Always look before proceeding. An electronic drive aid is not a substitute for conscientious driving. Always be aware of your surroundings.</p>
+
+
+
+
+
+    </div>
+  </div>
+</div>
+</body>
+
+
+</html>

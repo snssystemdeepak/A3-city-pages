@@ -1,0 +1,3707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<style>
+    /***************** Main CSS ********************************************************/
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+    body {
+        margin: 0;
+    }
+
+
+    :root {
+        --sns-cap-bg: linear-gradient(180deg, #9CB4B6 0%, #324D5E 100%);
+        --sns-white: #ffffff;
+        --sns-muted: #e8ecee;
+        --sns-black: #000000;
+        --sns-gray: #555555;
+    }
+
+    .main-div h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a {
+        margin: 0;
+        font-family: "Lato", sans-serif !important;
+    }
+
+    .main-div {
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .main-div .s-font {
+        font-family: 'Nissan Brand' !important;
+    }
+
+
+    .main-div img {
+        max-width: 100%;
+        width: 100%;
+        /* display: block; */
+    }
+
+    .main-div sup {
+        line-height: 0.3em;
+        font-size: inherit;
+        top: -.2em;
+    }
+
+    .main-div sub {
+        font-size: inherit;
+        top: .3em;
+
+    }
+
+    /* =======================
+   TYPOGRAPHY STYLES (1920 Viewport)
+======================= */
+
+    /* 60px → 32px | Bold | White */
+    .s-f-56-30 {
+        font-size: 3.13vw !important;
+        font-weight: 500;
+        letter-spacing: 0px;
+
+        color: #fff;
+        line-height: 1.3em;
+    }
+
+    .s-f-60-32 {
+        font-size: 3.33vw !important;
+        font-weight: 900;
+        letter-spacing: 7px;
+        font-family: "Helvetica Neue", sans-serif;
+        color: #fff;
+        line-height: 1.3em;
+    }
+
+    /* 48px → 36px | Bold | Black */
+    .s-f-50-30 {
+        font-size: 3.13vw !important;
+        /* 1920px → 48px */
+        font-weight: 700;
+
+        color: rgba(0, 0, 0, 1);
+        line-height: 1.3em;
+        text-transform: capitalize;
+        letter-spacing: 0px;
+    }
+
+    .s-f-48-36 {
+        font-size: 2.5vw !important;
+        /* 1920px → 48px */
+        font-weight: 900;
+        font-family: "Helvetica Neue", sans-serif;
+        color: #000;
+        line-height: 1.3em;
+        text-transform: unset !important;
+        letter-spacing: 0px;
+    }
+
+    /* 48px → 30px | Bold | Black */
+    .s-f-48-30 {
+        font-size: 1.67vw !important;
+        /* 1920px → 48px */
+        font-weight: 900;
+        font-family: "Helvetica Neue", sans-serif;
+        color: #000;
+        line-height: 1.3em;
+        letter-spacing: 4px;
+
+    }
+
+    /* 36px → 30px | Bold | Black */
+    .s-f-38-26 {
+        font-size: 1.979vw !important;
+
+        font-weight: 400;
+
+        color: #fff;
+        line-height: 1.3em;
+        letter-spacing: 0;
+
+    }
+
+    .s-f-36-30 {
+        font-size: 1.67vw !important;
+        /* 1920px → 36px */
+        font-weight: 900;
+        font-family: "Helvetica Neue", sans-serif;
+        color: #000;
+        line-height: 1.3em;
+        letter-spacing: 3px;
+
+    }
+
+    .s-f-32-24 {
+        font-size: 1.67vw !important;
+        /* 1920px → 36px */
+        font-weight: 700;
+        color: #000;
+        line-height: 1.3em;
+        letter-spacing: 0px;
+
+    }
+
+    /* 32px → 30px | Bold | Black */
+    .s-f-32-30 {
+        font-size: 1.67vw !important;
+        /* 1920px → 32px */
+        font-weight: 600;
+        font-family: "Helvetica Neue", sans-serif;
+        color: #000;
+        line-height: 1.3em;
+        letter-spacing: 4px;
+    }
+
+    /* 30px → 24px | Regular | Black */
+    .s-f-30 {
+        font-size: 30px !important;
+        /* 1920px → 30px */
+        font-weight: 700;
+
+        color: rgba(17, 17, 17, 0.8);
+        line-height: 1.5em;
+    }
+
+    .s-f-14 {
+        font-size: 14px !important;
+        /* 1920px → 30px */
+        font-weight: 400;
+
+        color: rgba(17, 17, 17, 0.8);
+        line-height: 1.3em;
+        text-transform: uppercase;
+    }
+
+    .s-f-30-24 {
+        font-size: 1.56vw !important;
+        /* 1920px → 30px */
+        font-weight: 500;
+        font-family: "Helvetica Neue", sans-serif;
+        color: #fff;
+        line-height: 1.5em;
+    }
+
+    /* 28px → 16px | Regular | Black */
+    .s-f-28-16 {
+        font-size: 1.46vw !important;
+        /* 1920px → 28px */
+        font-weight: 400;
+        font-family: "Helvetica Neue", sans-serif;
+        color: #000;
+        line-height: 1.5em;
+    }
+
+    /* 20px → 18px | Regular | Black */
+    .s-f-22-18 {
+        font-size: 0.83vw !important;
+        /* 1920px → 20px */
+        font-weight: 400;
+
+        color: #000;
+        line-height: 1.5em;
+        letter-spacing: 0px;
+    }
+
+    .s-f-22-16 {
+        font-size: 0.83vw !important;
+        /* 1920px → 20px */
+        font-weight: 400;
+
+        color: #000;
+        line-height: 1.5em;
+        letter-spacing: 0px;
+    }
+
+    .s-f-20-18 {
+        font-size: 0.83vw !important;
+        /* 1920px → 20px */
+        font-weight: 400;
+
+        color: #000;
+        line-height: 1.4em;
+        letter-spacing: 0px;
+    }
+
+    /* 20px → 14px | Regular | White */
+    .s-f-24-18 {
+        font-size: 2.08vw !important;
+        font-weight: 500;
+        line-height: 1.5em;
+        letter-spacing: 0px;
+        color: rgba(0, 0, 0, 1);
+        text-transform: capitalize !important;
+        border-bottom: 2px solid rgba(118, 14, 13, 1);
+        display: inline-block;
+    }
+
+    /* 16px → 14px | Regular | Black */
+    .s-f-16 {
+        font-size: 16px !important;
+        /* 1920px → 16px */
+        font-weight: 400;
+
+        color: rgba(17, 17, 17, 0.8);
+        line-height: 1.5em;
+        text-transform: uppercase;
+    }
+
+    .s-f-16-14 {
+        font-size: 0.83vw !important;
+        /* 1920px → 16px */
+        font-weight: 400;
+        color: rgba(17, 17, 17, 0.8);
+
+        line-height: 1.5em;
+        text-transform: uppercase;
+    }
+
+    .s-heading .s-f-20-18 {
+        font-size: 1.042vw !important;
+    }
+
+    .s-heading1 {
+        text-align: center;
+        padding-inline: 15%;
+        padding-top: 6%;
+    }
+
+    .s-heading1 h2 {
+        letter-spacing: 0px;
+        margin-bottom: 0 !important;
+    }
+
+    .s-heading1 p {
+        padding-top: 1%;
+    }
+
+    /* =======================
+   RESPONSIVE ADJUSTMENTS
+======================= */
+
+    @media screen and (max-width: 890px) {
+        .s-heading .s-f-20-18 {
+            font-size: clamp(18px, 1.04vw, 20px) !important;
+        }
+
+        .model .s-f-22-18 {
+            padding-top: 0%;
+        }
+
+        .s-heading1 {
+
+            padding-inline: 0%;
+            text-align: center;
+            padding-bottom: 6%;
+
+        }
+
+        .s-f-60-32 {
+            font-size: clamp(36px, 3.125vw, 60px) !important;
+        }
+
+        .s-f-50-30 {
+            font-size: clamp(36px, 2.604vw, 50px) !important;
+            line-height: 1.3em;
+            letter-spacing: 0;
+        }
+
+
+
+        .s-f-38-26 {
+            font-size: clamp(26px, 1.979vw, 38px) !important;
+            line-height: 1.3em;
+        }
+
+        .s-f-48-36 {
+            font-size: clamp(36px, 2.5vw, 48px) !important;
+            line-height: 1.3em;
+        }
+
+        .s-f-48-30 {
+            font-size: clamp(22px, 2.5vw, 48px) !important;
+        }
+
+        .s-f-36-30 {
+            font-size: clamp(22px, 1.875vw, 36px) !important;
+        }
+
+        .s-f-32-30 {
+            font-size: clamp(22px, 1.67vw, 32px) !important;
+        }
+
+        .s-f-32-24 {
+            font-size: clamp(30px, 1.67vw, 32px) !important;
+            line-height: 130%;
+        }
+
+
+
+        .s-f-24-18 {
+            font-size: clamp(24px, 1.25vw, 24px) !important;
+        }
+
+        .s-f-28-16 {
+            font-size: clamp(16px, 1.46vw, 28px) !important;
+        }
+
+        .s-f-22-16 {
+            font-size: clamp(16px, 1.04vw, 22px) !important;
+            letter-spacing: 0.5px;
+            line-height: 1.4em;
+        }
+
+        .s-f-22-18 {
+            font-size: clamp(16px, 1.04vw, 22px) !important;
+            letter-spacing: 0px;
+            line-height: 1.4em;
+        }
+
+        .s-f-20-18 {
+            font-size: clamp(16px, 1.04vw, 20px) !important;
+            letter-spacing: 0px;
+            line-height: 1.4em;
+        }
+
+        .s-f-20-14 {
+            font-size: clamp(16px, 1.04vw, 20px) !important;
+        }
+
+
+
+        .s-f-16-14 {
+            font-size: clamp(14px, 0.83vw, 16px) !important;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+
+        .s-f-56-30 {
+            font-size: clamp(30px, 2.919vw, 56px) !important;
+            line-height: 1.3em;
+            letter-spacing: 0;
+            color: #fff;
+        }
+
+        .s-f-30-24 {
+            font-size: clamp(26px, 1.56vw, 30px) !important;
+            color: #fff;
+            line-height: 1.3em;
+        }
+
+        .s-heading1 p {
+            padding-top: 5%;
+        }
+
+        .s-heading1 h3 {
+            padding-right: 2%;
+        }
+    }
+
+
+
+    /* start */
+    .sns-desk-none {
+        display: none;
+    }
+
+    .sns-mob-none {
+        display: block;
+    }
+
+    @media screen and (max-width: 480px) {
+        .sns-desk-none {
+            display: block;
+        }
+
+        .sns-mob-none {
+            display: none;
+        }
+    }
+
+    .s-row-reverse {
+        display: flex;
+        flex-direction: row-reverse !important;
+    }
+
+    .s-back-1 {
+        background: #fff;
+        /* margin-inline: 3%; */
+        padding-inline: 3%;
+    }
+
+    .s-white {
+        /* color: #fff !important; */
+    }
+
+    .s-pi-10 {
+        padding-inline: 10vw;
+    }
+
+    .s-pi-19 {
+        padding-inline: 19vw;
+    }
+
+    @media screen and (max-width: 890px) {
+        .s-pi-10 {
+            padding-inline: 0vw;
+        }
+
+        .s-pi-19 {
+            padding-inline: 0vw;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .s-mob-pt-0 {
+            padding-top: 0 !important;
+        }
+
+        .s-mob-pb-8 {
+            padding-bottom: 8% !important;
+        }
+
+        .s-mob-pb-10 {
+            padding-bottom: 10% !important;
+        }
+    }
+
+
+
+    /************ Components CSS Codes *************************************************/
+
+
+    /************ Extra CSS Codes ******************************************************/
+    /********* Section 1 CSS Code ***********/
+    .s-banner {
+        position: relative;
+    }
+
+    .s-banner-txt-1 {
+        position: absolute;
+        bottom: 7%;
+        left: 3%;
+    }
+
+    .s-banner-txt-1 h1 {
+        color: #fff;
+        text-transform: uppercase;
+
+    }
+
+    .s-banner-txt-1 p {
+        color: #fff;
+        padding-bottom: 3%;
+    }
+
+    .s-banner-txt-2 {
+        position: absolute;
+        bottom: 6%;
+        left: 3%;
+    }
+
+    .s-banner-txt-2 h2 {
+        color: #fff;
+    }
+
+    .s-banner-txt-2 p {
+        color: #fff;
+        padding-bottom: 1%;
+        font-size: 1.042vw !important;
+    }
+
+
+
+    @media screen and (max-width: 890px) {
+        /* .s-banner-txt-1 p {
+
+                color: rgba(17, 17, 17, 1);
+            }
+
+            .s-banner-txt-1 h1 {
+                color: rgba(17, 17, 17, 1);
+                width: 100%;
+                line-height: 150%;
+
+            } */
+
+
+        .s-banner {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .s-banner-txt-1 {
+            background: #fff;
+            text-align: center;
+            position: initial;
+            padding-block: 5% 5%;
+        }
+
+        .s-banner-txt-2 {
+            background: #000;
+            text-align: center;
+            position: initial;
+            padding-block: 5%;
+        }
+
+        .s-banner-txt-2 p {
+            padding-bottom: 2%;
+        }
+
+        .s-banner-txt-1 p {
+            padding-bottom: 2%;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .s-banner-txt-1 {
+            background: rgba(17, 17, 17, 1);
+            text-align: center;
+            position: initial;
+            padding-block: 7% 7%;
+        }
+
+        .s-banner-txt-1 p {
+            padding-bottom: 3%;
+        }
+    }
+
+
+    /********* Section 2 CSS Code ***********/
+    .sns-button>.sns-BN {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1.8% 0;
+        background: rgba(211, 211, 211, 1);
+        justify-content: center;
+        gap: 1.2%;
+        padding-inline: 3%;
+    }
+
+    .sns-button1 {
+        margin-top: 8%;
+    }
+
+    .sns-BN>a {
+        color: #fff;
+        text-decoration: none !important;
+        padding: 2%;
+    }
+
+    .sns-BN>.sns-btn {
+        width: calc(88%/4);
+        padding: 0.8% 0;
+        box-sizing: border-box;
+
+    }
+
+    .sns-BN .sns-butn {
+        background: rgba(215, 24, 31, 1);
+        color: #fff;
+        text-align: center;
+        transition: 0.5s;
+        text-transform: capitalize;
+        border-radius: 30px;
+        /* border: 2px solid rgba(255, 255, 255, 1); */
+        font-size: 1.15vw !important;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        letter-spacing: 0;
+
+    }
+
+    .sns-BN .sns-butn:hover {
+        background: #fff;
+        color: #000;
+    }
+
+
+    .sns-stats-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .sns-stats-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border: 1px solid transparent;
+        position: relative;
+        width: 100%;
+        max-width: 60%;
+        margin: 0 auto;
+        margin-top: 4%;
+    }
+
+    .sns-stats-box1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border: 1px solid transparent;
+        position: relative;
+        width: 100%;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-top: 0%;
+    }
+
+    .sns-stat {
+        text-align: left;
+        padding: 5px 10px;
+        position: relative;
+    }
+
+    .sns-stat2 {
+        text-align: center;
+        padding: 19px 10px 0px;
+        position: relative;
+    }
+
+    .sns-stat2 h2 {
+
+        margin: 10px 0 0 !important;
+    }
+
+    .sns-stat h2 {
+
+        margin: 0px 0 0 !important;
+    }
+
+    .sns-stat .sns-label {
+        /* font-size: 0.85rem;
+            color: #555; */
+        text-transform: uppercase;
+        line-height: 1.3;
+    }
+
+    /* Red Divider Lines */
+    .sns-stats-box::before,
+    .sns-stats-box::after {
+        content: "";
+        position: absolute;
+        /* background-color: #D7181F; */
+    }
+
+    .sns-stats-box::before {
+        height: 1px;
+        width: 100%;
+        top: 50%;
+        left: 0;
+    }
+
+    .sns-stats-box::after {
+        width: 1.6px;
+        height: 100%;
+        left: 50%;
+        top: 0;
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-stats-section {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sns-stats-box1 {
+            display: block;
+            max-width: 100%;
+        }
+
+        .sns-stat {
+            text-align: center;
+        }
+
+        .sns-stats-box {
+            max-width: 100%;
+            margin-top: 0;
+        }
+
+        .sns-stats-box {
+            display: block;
+        }
+
+        .sns-stat2 {
+            text-align: left;
+            padding: 0;
+            padding-top: 5px;
+        }
+
+        .sns-stat2 h2 {
+            margin-top: 0 !important;
+        }
+
+        .sns-stats-box::before,
+        .sns-stats-box::after {
+            display: none;
+        }
+    }
+
+
+
+
+    @media screen and (max-width: 480px) {
+        .sns-button1 {
+            margin-top: 15%;
+        }
+
+    }
+
+    @media screen and (max-width: 890px) {
+        .sns-button>.sns-BN {
+            padding: 3% 0;
+        }
+
+        .sns-BN>.sns-btn {
+            width: calc(87%/2);
+            padding-block: 2%;
+        }
+
+        .sns-BN .sns-butn {
+            font-size: clamp(20px, 1.46vw, 28px) !important;
+            border-radius: 12px;
+        }
+
+        .sns-f-b {
+            margin-bottom: 3%;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .sns-BN>.sns-btn {
+            width: calc(78%/1);
+            margin: 2.5%;
+            padding-block: 3%;
+            border-radius: 16px;
+        }
+
+        .sns-button>.sns-BN {
+            padding: 5.5% 0;
+        }
+
+    }
+
+    /********* Section 3 CSS Code ***********/
+    .s-heading {
+        text-align: center;
+        padding-top: 8%;
+        padding-bottom: 3.2%;
+        padding-inline: 11%;
+    }
+
+    .s-heading-digital {
+
+        padding-top: 4%;
+
+    }
+
+    .s-heading2 {
+        text-align: center;
+        padding-top: 1% !important;
+        padding-bottom: 1.5%;
+        padding-inline: 16%;
+    }
+
+
+
+    .s-heading h2 {
+        margin-bottom: 0 !important;
+        padding-top: 1%;
+        letter-spacing: 0px;
+        line-height: 130%;
+    }
+
+    .s-heading h3 {
+        padding-top: 1%;
+    }
+
+    .s-heading p {
+        padding-top: 1.2%;
+    }
+
+    @media screen and (max-width: 890px) {
+        .s-heading {
+            padding-inline: 0;
+            text-align: center;
+        }
+
+        .s-heading-digital {
+            padding-inline: 0;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .s-heading {
+            padding-inline: 0%;
+            padding-top: 18%;
+            padding-bottom: 7%;
+            text-align: left;
+        }
+
+        .s-heading-digital1 {
+            padding-inline: 0%;
+            padding-top: 14% !important;
+            padding-bottom: 4% !important;
+            text-align: left;
+        }
+
+
+        .s-heading-mob {
+            padding-bottom: 3%;
+            padding-top: 10%;
+        }
+
+        .s-heading h3 {}
+
+        .s-heading p {
+            padding-top: 0%;
+        }
+
+        .s-heading h2 {
+            margin-bottom: 0 !important;
+            padding-top: 5%;
+            padding-bottom: 4%;
+            line-height: 150%;
+        }
+    }
+
+    /* =======================
+   IMAGE CONTENT SECTION
+======================= */
+
+    .s-content-img-section {
+        /* Optional spacing */
+        /* padding-inline: 8%; */
+
+
+        /* border-radius: 10px; */
+    }
+
+
+    .s-content-img-section img {
+        border-radius: 16px;
+    }
+
+    .s-content-img-section .s-inner-card {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0%;
+        align-items: center;
+        border-radius: 16px;
+        /* background: rgba(242, 242, 242, 1); */
+        /* border: 1px solid rgba(255, 255, 255, 1); */
+        padding: 1%;
+        /* border: 1px solid #CBCBCB; */
+        margin-bottom: 2%;
+        /* box-shadow:
+                9px 11px 15.9px 0px rgba(0, 0, 0, 0.04),
+                0px -10px 15px 0px rgba(0, 0, 0, 0.03); */
+
+        /* border: 1px solid rgba(52, 52, 52, 1) */
+    }
+
+    .s-content-img-section .s-inner-card:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    /* .s-content-img-section:nth-child(even) .s-inner-div-2 .s-padding-2 {
+        padding: 3% 5% 3% 1%;
+} */
+    /* .s-content-img-section .s-inner-card .s-padding-2:nth-child(even) {
+        padding: 3% 5% 3% 1%;
+ } */
+
+    /* Image Column */
+    .s-content-img-section .s-inner-div-1 {
+        width: 43%;
+        /* 2 columns with 3% gap */
+    }
+
+    .s-content-img-section .s-inner-div-1 .s-padding-1 {
+        padding: 0;
+    }
+
+    /* Content Column */
+    .s-content-img-section .s-inner-div-2 {
+        width: 52.5%;
+    }
+
+    .s-content-img-section .s-inner-div-2 .s-padding-2 {
+        padding: 3% 7% 3% 10%;
+        text-align: center;
+    }
+
+    .s-content-img-section .s-inner-div-2 .s-padding-2 .s-box {
+        display: flex;
+        gap: 8%;
+        flex-wrap: wrap;
+    }
+
+    .s-content-img-section .s-inner-div-2 .s-padding-2 h3 {
+        padding: 0 6%;
+        margin: 0;
+    }
+
+    .s-content-img-section .s-inner-div-2 .s-padding-2 h4 {
+        padding-top: 1%;
+        margin: 0;
+    }
+
+    .s-content-img-section .s-inner-div-2 .s-padding-2 p {
+        padding: 1.3% 0 0 0;
+        margin: 0;
+    }
+
+    /* Reverse Layout */
+    .s-content-img-section .s-reverse {
+        flex-direction: row-reverse !important;
+    }
+
+    /* =======================
+   RESPONSIVE DESIGN
+======================= */
+    @media screen and (max-width: 890px) {
+        .s-content-img-section .s-inner-div-2 .s-padding-2 .s-box {
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .s-content-img-section .s-inner-div-2 .s-padding-2 h3 {
+            padding: 0;
+            line-height: 130%;
+            padding-right: 1%;
+        }
+
+
+
+        .s-content-img-section .s-inner-div-2 .s-padding-2 .s-box-1 {
+            margin-bottom: 3%;
+        }
+
+        .s-content-img-section .s-inner-card {
+            flex-direction: column;
+            gap: 0;
+            padding: 3%;
+            margin-bottom: 3%;
+            text-align: center;
+        }
+
+        .s-content-img-section .s-inner-div-1,
+        .s-content-img-section .s-inner-div-2 {
+            width: 100%;
+        }
+
+        .s-content-img-section .s-inner-div-2 .s-padding-2 {
+            padding: 5% 0% !important;
+            text-align: center;
+        }
+
+        .s-content-img-section .s-inner-div-2 .s-padding-2 p {
+            padding-top: 3.5%;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .s-content-img-section {
+            /* Optional spacing */
+            padding-inline: 0%;
+            padding-bottom: 5%;
+        }
+
+        .sns-border-line {
+            display: none;
+        }
+
+        .s-content-img-section .s-inner-card {
+            margin-bottom: 7%;
+        }
+
+        .s-content-img-section .s-inner-div-2 .s-padding-2 {
+            padding: 5% 0;
+            text-align: left;
+        }
+
+        .s-content-img-section .s-inner-div-2 .s-padding-2 h4 {
+            padding-top: 3%;
+            /* margin: 0; */
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .s-content-img-section .s-inner-div-2 .s-padding-2 {
+            padding: 8% 0 6% !important;
+        }
+    }
+
+    /********* Section 4 CSS Code ***********/
+    .s-2x2-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2%;
+        /* padding-inline: 8%; */
+        background: #fff;
+        padding-top: 1%;
+        border-radius: 0.6vw;
+        /* box-shadow: rgba(0, 0, 0, 0.2) -1px 4px 28px; */
+    }
+
+    .s-2x2-card .s-inner-div {
+        width: calc(98% / 2);
+        margin-bottom: 2%;
+        /* border: 1px solid rgba(0, 0, 0, 1); */
+        border-radius: 16px;
+        text-align: center;
+        /* padding-bottom: 1.5%; */
+
+    }
+
+    .s-2x2-card-stats .s-inner-div {
+        width: calc(98% / 2);
+        margin-bottom: 2%;
+        /* border: 1px solid rgba(0, 0, 0, 1); */
+        border-radius: 16px;
+        text-align: center;
+        /* padding-bottom: 1.5%; */
+
+    }
+
+    .s-2x2-card .s-inner-div .s-padding {
+        /* border: 1px solid red; */
+        /* box-shadow: 4px 4px 16px 0px #00000014; */
+        /* padding: 3%; */
+        /* border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 16px; */
+
+    }
+
+    .s-2x2-card .s-inner-div .s-padding img {
+        border-radius: 16px;
+    }
+
+    .s-2x2-card .s-inner-div .s-padding-2 {
+        /* padding: 3%; */
+    }
+
+    .s-2x2-card .s-inner-div .s-padding h3 {
+        padding-top: 4%;
+        padding-bottom: .5%;
+        padding-inline: 8%;
+        text-transform: capitalize;
+    }
+
+    .s-2x2-card .s-inner-div .s-padding p {
+
+        padding-top: 1.5%;
+    }
+
+
+
+
+
+
+
+    .s-2x2-card-wheel {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2%;
+        /* padding-inline: 8%; */
+        background: #fff;
+        padding-top: 2%;
+        border-radius: 0.6vw;
+        padding-bottom: 5%;
+        /* box-shadow: rgba(0, 0, 0, 0.2) -1px 4px 28px; */
+    }
+
+    .s-2x2-card-wheel .s-inner-div {
+        width: calc(94% / 4);
+        margin-bottom: 2%;
+        /* border: 1px solid rgba(0, 0, 0, 1); */
+        border-radius: 16px;
+        text-align: left;
+        /* padding-bottom: 1.5%; */
+
+    }
+
+
+    .s-2x2-card-wheel .s-inner-div .s-padding {
+        /* border: 1px solid red; */
+        /* box-shadow: 4px 4px 16px 0px #00000014; */
+        /* padding: 3%; */
+        /* border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 16px; */
+
+    }
+
+    .s-2x2-card-wheel .s-inner-div .s-padding img {
+        border-radius: 16px;
+    }
+
+    .s-2x2-card-wheel .s-inner-div .s-padding-2 {
+        /* padding: 3%; */
+    }
+
+    .s-2x2-card-wheel .s-inner-div .s-padding h3 {
+        padding-top: 8%;
+        padding-bottom: 1%;
+        padding-inline: 0%;
+        text-transform: initial;
+        padding-right: 7vw;
+    }
+
+    .s-2x2-card-wheel .s-inner-div .s-padding p {
+
+        padding-top: 3%;
+    }
+
+    @media screen and (max-width: 890px) {
+        .s-2x2-card .s-inner-div {
+            width: calc(97% / 2);
+
+            margin-bottom: 3%;
+            padding: 0%;
+            /* 2 cards per row on tablet */
+        }
+
+        .s-2x2-card-stats .s-inner-div {
+            width: calc(97% / 1);
+            text-align: left;
+            margin-bottom: 3%;
+            padding: 0%;
+            /* 2 cards per row on tablet */
+        }
+
+        .s-2x2-card .s-inner-div .s-padding h3 {
+            padding-inline: 0;
+        }
+
+
+        .s-2x2-card-wheel .s-inner-div {
+            width: calc(97% / 2);
+
+            margin-bottom: 3%;
+            padding: 0%;
+            /* 2 cards per row on tablet */
+        }
+
+
+        .s-2x2-card-wheel .s-inner-div .s-padding h3 {
+            padding-inline: 0;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .s-2x2-card {
+
+            padding-inline: 0%;
+            border-radius: 14px;
+        }
+
+        .s-2x2-card .s-inner-div .s-padding h3 {
+            padding-inline: 0%;
+            padding-right: 2%;
+        }
+
+        .s-2x2-card .s-inner-div {
+            width: 100%;
+            margin-bottom: 6%;
+            padding: 0;
+            text-align: center;
+            /* 1 card per row on mobile */
+        }
+
+        .s-2x2-card-stats .s-inner-div {
+            width: 100%;
+            margin-bottom: 6%;
+            padding: 0;
+            /* 1 card per row on mobile */
+        }
+
+        .s-2x2-card .s-inner-div .s-padding-2 {
+            padding: 3% 0%;
+        }
+
+        .s-2x2-card .s-inner-div .s-padding h3 {
+            /* padding: 0; */
+            padding-top: 3%;
+        }
+
+        .s-2x2-card .s-inner-div .s-padding p {
+            padding-top: 3%;
+        }
+
+
+
+
+
+        .s-2x2-card-wheel {
+            padding-top: 2%;
+            padding-inline: 0%;
+            border-radius: 14px;
+            padding-bottom: 18%;
+        }
+
+        .s-2x2-card-wheel .s-inner-div .s-padding h3 {
+            padding-inline: 0%;
+            padding-right: 3%;
+        }
+
+        .s-2x2-card-wheel .s-inner-div {
+            width: 100%;
+            margin-bottom: 7%;
+            padding: 0;
+            text-align: left;
+            /* 1 card per row on mobile */
+        }
+
+
+        .s-2x2-card-wheel .s-inner-div .s-padding-2 {
+            padding: 3% 0%;
+        }
+
+        .s-2x2-card-wheel .s-inner-div .s-padding h3 {
+            /* padding: 0; */
+            padding-top: 3%;
+        }
+
+        .s-2x2-card-wheel .s-inner-div .s-padding p {
+            padding-top: 3%;
+        }
+    }
+
+    /********* Section 5 CSS Code ***********/
+    .position {
+        position: relative;
+    }
+
+    .singlebutton {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* background: linear-gradient(0deg, rgba(74, 74, 74, 1) 60%, rgba(255, 255, 255, 1) 60%); */
+        background: linear-gradient(0deg, #4A4A4A 60%, #fff 60%);
+        padding-inline: 8%;
+    }
+
+    .singlebuttonimg {
+        width: 60%;
+    }
+
+    .singlebuttonimg img {
+        /* width: 67%;
+    padding: 0 0% 2% 15%; */
+    }
+
+
+
+
+    .singlebuttonchild {
+        width: 40%;
+        color: #fff;
+        position: relative;
+        text-align: center;
+        transition: 0.5s;
+        text-transform: capitalize;
+        border-radius: 8px;
+        align-self: center;
+        font-weight: 400;
+        font-family: "Helvetica Neue", sans-serif;
+    }
+
+    .singlebuttonchild a {
+        position: absolute;
+        font-size: 1.46vw !important;
+        border: 2px solid rgba(255, 255, 255, 1);
+        width: 60%;
+        color: #fff;
+        right: 0%;
+        margin-top: 12%;
+        text-decoration: none;
+        padding-block: 3%;
+        border-radius: 8px;
+        transition: 0.5s;
+    }
+
+    .singlebuttonchild a:hover {
+        background: #fff;
+        color: #000;
+    }
+
+    .s-view-none {
+        display: none;
+    }
+
+    @media (max-width: 890px) {
+        .singlebutton {
+            background: #343434;
+        }
+
+        .singlebuttonimg {
+            width: 100%;
+        }
+
+        .singlebuttonimg img {
+            width: 100%;
+            padding-left: 0%;
+        }
+
+        .singlebuttonchild a {
+            width: 90%;
+            font-size: 16px !important;
+            left: 5%;
+        }
+
+        .singlebuttonchild {
+            width: 100%;
+            margin-bottom: 10%;
+            display: none;
+        }
+
+        .s-btn-back {
+            background: #343434 !important;
+        }
+
+        .s-view-none {
+            display: block;
+        }
+
+    }
+
+    @media (max-width: 640px) {
+        .s-btn-back {
+            background: linear-gradient(to bottom, #343434 0%, #4A4A4A 100%) !important;
+        }
+
+        .singlebutton {
+            padding-inline: 5%;
+            padding-top: 5%;
+        }
+    }
+
+    /********* Section 6 CSS Code ***********/
+    /* This Secton was duplicated from Section 3. */
+    .s-3x3-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2%;
+        /* padding-inline: 8%; */
+        border-radius: 0.7vw;
+        background: #fff;
+
+        /* box-shadow: rgba(0, 0, 0, 0.2) -1px 4px 28px; */
+    }
+
+    .s-3x3-card .s-inner-div {
+        width: calc(96%/3);
+        margin-bottom: 0%;
+        background: #fff;
+        border-radius: 16px;
+        /* border: 1px solid rgba(255, 255, 255, 1); */
+        text-align: center;
+        padding-bottom: 1%;
+
+    }
+
+    .s-3x3-card .s-inner-div .s-padding {
+        /* padding: 3%; */
+        /* border: 1px solid red; */
+        /* box-shadow: 4px 4px 16px 0px #00000014; */
+
+        padding: 0%;
+
+
+    }
+
+    .s-3x3-card .s-inner-div .s-padding-2 {
+        padding: 2% 2% 3%;
+        /* border: 1px solid red; */
+        /* box-shadow: 4px 4px 16px 0px #00000014; */
+
+    }
+
+    .s-3x3-card .s-inner-div .s-padding h3 {
+        padding-inline: 3%;
+        padding-top: 4%;
+        padding-bottom: 1%;
+        /* text-transform: uppercase; */
+    }
+
+    .s-3x3-card .s-inner-div .s-padding-2 h4 {
+        font-size: 1.042vw !important;
+        font-weight: 900;
+        color: #000;
+        line-height: 1.3em;
+        font-family: sans-serif;
+        padding-top: 2%;
+        letter-spacing: 3px;
+
+    }
+
+    .s-3x3-card .s-inner-div .s-padding p {
+        padding-top: 2%;
+    }
+
+    .snspb1 {
+        padding-bottom: 1%;
+    }
+
+    .sns-pb3 {
+        padding-bottom: 3%;
+    }
+
+    @media screen and (max-width: 890px) {
+        .s-3x3-card .s-inner-div {
+            width: calc(97%/2);
+
+        }
+
+        .s-3x3-card .s-inner-div .s-padding h3 {
+            padding-inline: 0;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .s-3x3-card {
+
+            padding-inline: 5%;
+        }
+
+        .s-3x3-card .s-inner-div {
+            width: calc(100%/1);
+            margin-bottom: 5%;
+            text-align: left;
+        }
+
+        .s-3x3-card .s-inner-div .s-padding h3 {
+            padding-right: 2%;
+        }
+    }
+
+    /********* Section 7 CSS Code ***********/
+    .s-6x6-content {
+        padding-inline: 8%;
+    }
+
+    .s-6x6-content .s-inner-card {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3%;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 1);
+        margin-bottom: 0%;
+        border-radius: 16px;
+        padding: 1.5%;
+    }
+
+    .s-6x6-content .s-inner-div {
+        width: calc(97% / 2);
+        /* 2 columns with 3% gap */
+    }
+
+    .s-6x6-content .s-inner-div .s-padding-1 {
+        padding: 0%;
+    }
+
+    .s-6x6-content .s-inner-div .s-padding-2 {
+        padding: 3%;
+    }
+
+    .s-6x6-content .s-inner-div .s-padding-2 h3 {
+        padding-top: 2%;
+        margin: 0;
+    }
+
+    .s-6x6-content .s-inner-div .s-padding-2 p {
+        padding: 2% 0 0 0;
+        margin: 0;
+    }
+
+
+
+    @media screen and (max-width: 890px) {
+        .s-6x6-content {
+            padding-inline: 8%;
+            margin-bottom: 3%;
+        }
+
+        .s-6x6-content .s-inner-div {
+            width: 100%;
+            /* stacked layout on tablet */
+        }
+
+        .s-6x6-content .s-reverse {
+            flex-direction: column-reverse !important;
+            padding: 3%;
+            text-align: center;
+        }
+
+    }
+
+    @media screen and (max-width: 640px) {
+        .s-6x6-content .s-inner-div .s-padding-2 {
+            padding: 5% 0;
+        }
+
+        .s-6x6-content .s-inner-div .s-padding-2 h3 {
+            padding-top: 5%;
+            padding-bottom: 3%;
+            margin: 0;
+        }
+
+        .s-6x6-content {
+            padding-inline: 5%;
+            margin-bottom: 12%;
+        }
+    }
+
+    /********* Section 8 CSS Code ***********/
+    /* This Secton was duplicated from Section 5. */
+    /********* Section 9 CSS Code ***********/
+    /* This Secton was duplicated from Section 3. */
+    /********* Section 10 CSS Code ***********/
+    /* Custom css */
+
+    .s-main-gallery {
+        padding-left: 0%;
+        padding-right: 0%;
+
+    }
+
+    /* section css */
+    .s-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 0%;
+        gap: 1%;
+        margin-top: -1%;
+    }
+
+    .sns-img-g {
+        width: calc(97%/3);
+        margin-bottom: 0%;
+        margin-bottom: 1%;
+    }
+
+    .sns-gallery-img {
+        overflow: hidden;
+        /* border-radius: 0.52vw; */
+
+    }
+
+    .sns-gallery-img img {
+        width: 100%;
+        transition: 0.3s;
+        vertical-align: bottom;
+    }
+
+    .sns-gallery-img img:hover {
+        transform: scale(1.2);
+    }
+
+    /* media */
+
+    @media screen and (max-width: 890px) {
+        .sns-img-g {
+            width: calc(98%/2);
+            margin-bottom: 2%;
+        }
+
+        .s-gallery {
+            gap: 2%;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .sns-img-g {
+            width: calc(100%/1);
+            margin-bottom: 4%;
+        }
+
+        .s-gallery {
+            margin-bottom: 24%;
+        }
+    }
+
+    /********* Section 11 CSS Code ***********/
+    /* This Secton was duplicated from Section 8. */
+    /********* Section 12 CSS Code ***********/
+    /* This Secton was duplicated from Section 10. */
+    /********* Section 13 CSS Code ***********/
+    /* This Secton was duplicated from Section 11. */
+    /********* Section 14 CSS Code ***********/
+    .s-model-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5%;
+        padding-bottom: 4%;
+        background: #fff;
+
+        border-radius: 10px;
+
+    }
+
+    .s-model-section .s-inner-div {
+        width: calc(85%/3);
+        text-align: center;
+        margin-bottom: 0%;
+        /* background-color: rgba(242, 242, 242, 1); */
+        border-radius: 16px;
+
+        margin-bottom: 3%;
+        padding-bottom: 2%;
+        padding-top: 2%;
+
+    }
+
+    .s-model-section .s-inner-div1 {
+        width: calc(95%/4);
+
+
+    }
+
+    .s-model-section .s-inner-div .s-padding {
+        /* border: 1px solid rgba(0, 0, 0, 1);
+        border-radius: 16px;
+        background: rgba(237, 237, 237, 1); */
+    }
+
+
+    .s-model-section .s-inner-div .s-padding-1 {
+        padding: 10% 3% 0% 3%;
+        /* margin-top: -7%; */
+    }
+
+
+    .s-model-section .s-inner-div .s-padding-1 h3 {
+        /* margin: 0 0 10px; */
+    }
+
+    .s-model-section .s-inner-div .s-padding-1 p {
+        /* margin: 0 0 10px; */
+        padding-top: 2%;
+    }
+
+    .s-model-section .s-inner-div .s-padding-1 h4 {
+        /* margin: 0; */
+        /* font-weight: 600; */
+    }
+
+    /* responsive breakpoints same as before */
+    @media screen and (max-width: 890px) {
+        .s-model-section .s-inner-div {
+            width: calc(97%/2);
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .s-model-section .s-inner-div {
+            width: 100%;
+            margin-bottom: 6%;
+            padding-bottom: 8%;
+            padding-inline: 3%;
+        }
+
+        .s-model-section {
+            padding-inline: 0%;
+            padding-bottom: 8%;
+        }
+
+        .s-model-section .s-inner-div .s-padding-1 p {
+            /* margin: 0 0 10px; */
+            padding-top: 5%;
+        }
+
+        .s-model-section .s-inner-div .s-padding {
+            padding-block: 7% 0;
+        }
+
+        .s-model-section .s-inner-div .s-padding-1 {
+            margin-top: 0%;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .s-model-section .s-inner-div {
+            width: 100%;
+            margin-bottom: 11%;
+            padding-bottom: 8%;
+        }
+
+        .s-model-section {
+
+            padding-bottom: 15%;
+        }
+    }
+
+    /********* Section 16 CSS Code ***********/
+    /* This Secton was duplicated from Section 2. */
+    /********* Section 15 CSS Code ***********/
+    .s-seo {
+        padding-inline: .2%;
+        padding-top: 3%;
+    }
+
+    .s-seo p {
+        padding-bottom: 1%;
+    }
+
+    .s-seo .s-fw {
+        font-weight: 700;
+    }
+
+    .s-disc {
+        padding-inline: .2%;
+        padding-top: 2%;
+        padding-bottom: 3%;
+    }
+
+    .s-disc p {
+        padding-bottom: 1%;
+    }
+
+    @media screen and (max-width: 640px) {
+        .s-seo {
+            padding-inline: 5%;
+            padding-top: 10%;
+        }
+
+        .s-seo p {
+            padding-bottom: 5%;
+        }
+
+        .s-disc {
+            padding-inline: 5%;
+            margin-top: 7%;
+        }
+
+        .s-disc p {
+            padding-bottom: 5%;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .s-seo {
+            padding-inline: 5%;
+            padding-top: 20%;
+        }
+
+        .s-heading {
+            padding-inline: 0%;
+            padding-top: 26%;
+            padding-bottom: 8%;
+            text-align: center;
+        }
+
+        .s-seo p {
+            padding-bottom: 5%;
+        }
+    }
+
+
+    .s-heading .sbordercolor {
+        border-bottom: 0.3vw solid #ca244c;
+        width: 7%;
+        margin-inline: auto;
+    }
+
+    .snspb3 {
+        padding-bottom: 5%;
+    }
+
+    .s-back22 {
+        background-color: #9b9b9b !important;
+        padding-top: 3%;
+        padding-bottom: 1%;
+    }
+
+    .snspadd2 {
+        padding: 3% 9% 3% 6% !important;
+    }
+
+    .snspt0 {
+        padding-top: 0 !important;
+    }
+
+    .s-3x3-card.s-back22 {
+        gap: 3%;
+    }
+
+    .s-3x3-card.s-back22 .s-inner-div {
+        width: calc(88% / 3);
+        margin-bottom: 3%;
+        padding-bottom: 0;
+    }
+
+    .s-3x3-card.s-back22 .s-inner-div .s-padding .s-padding-2 {
+        padding: 2% 13% 3%;
+    }
+
+    .snsptt3 {
+        padding-top: 5%;
+    }
+
+    .s-model-section .s-inner-div .s-f-20-18 {
+        text-transform: inherit !important;
+        font-size: 0.83vw !important;
+        font-weight: 400;
+        padding-block: 3%;
+    }
+
+    .sns-border-line {
+        border-bottom: 1px solid #D7181F;
+        margin: 0 auto !important;
+        width: 338px;
+        padding-top: 1.5% !important;
+        display: none;
+    }
+
+    .sns-mb-5 {
+        margin-bottom: 5%;
+    }
+
+    .sns-pt-0 {
+        padding-top: 0 !important;
+    }
+
+    .sns-pt-2 {
+        padding-top: 2%;
+    }
+
+    .sns-padd-in-18 {
+        padding-inline: 18%;
+    }
+
+    .sns-padd-in-10 {
+        padding-inline: 18vw;
+    }
+
+    .sns-padd-in-6 {
+        padding-inline: 6%;
+    }
+
+    .sns-text-center {
+        text-align: center;
+    }
+
+    .sns-pt-5 {
+        padding-top: 5% !important;
+    }
+
+    .sns-singleimg {
+        margin-bottom: 6.5%;
+    }
+
+    @media screen and (max-width:890px) {
+        .s-heading .sbordercolor {
+            border-bottom: 0.6vw solid #ca244c;
+            width: 15%;
+            margin-inline: auto;
+            padding-top: 2%;
+        }
+
+        .sns-pt-5 {
+            padding-top: 3% !important;
+        }
+
+        .sns-padd-in-6 {
+            padding-inline: 0%;
+        }
+
+        .sns-padd-in-10 {
+            padding-inline: 0%;
+        }
+
+        .sns-padd-in-18 {
+            padding-inline: 0%;
+        }
+
+        .s-3x3-card .s-inner-div .s-padding-2 h4 {
+            font-size: clamp(16px, 1.042vw, 20px) !important;
+            letter-spacing: 0px;
+        }
+
+        .s-3x3-card.s-back22 .s-inner-div {
+            width: calc(88%/2);
+        }
+
+        .s-2x2-card .s-inner-div .s-padding-2 {
+            padding: 3% 0%;
+        }
+
+        .s-2x2-card-wheel .s-inner-div .s-padding-2 {
+            padding: 3% 0%;
+        }
+
+        .s-model-section .s-inner-div .s-f-20-18 {
+            font-size: clamp(14px, 1.042vw, 20px) !important;
+
+        }
+
+        .s-seo {
+            padding-inline: 0%;
+        }
+
+        .s-disc {
+            padding-inline: 0%;
+
+        }
+
+
+
+    }
+
+    @media screen and (max-width:640px) {
+        .s-heading .sbordercolor {
+            border-bottom: 1.5vw solid #ca244c;
+            width: 31%;
+            margin-inline: auto;
+            padding-top: 1%;
+        }
+
+        .s-banner-txt-2 h2 {
+            margin-bottom: 0 !important;
+        }
+
+        .s-back-1 {
+            padding-inline: 5%;
+        }
+
+        .s-3x3-card {
+            padding-inline: 0%;
+            border-radius: 9px;
+
+        }
+
+        .s-3x3-card .s-inner-div {
+            width: calc(100%/1);
+            margin-bottom: 0;
+        }
+
+        .s-3x3-card .s-inner-div .s-padding {
+            padding: 0% 0% 3%;
+        }
+
+        .s-3x3-card .s-inner-div .s-padding-2 {
+            padding: 4% 0% 5% !important;
+            text-align: left;
+        }
+
+        .s-3x3-card .s-inner-div .s-padding-2 h4 {
+            padding-block: 4% 2%;
+        }
+
+        .s-3x3-card.s-back22 .s-inner-div {
+            width: calc(96%/1);
+            margin-bottom: 5%;
+        }
+    }
+
+    @media screen and (max-width:480px) {
+        .sns-mb-5 {
+            margin-bottom: 25%;
+        }
+
+        .sns-singleimg {
+            margin-bottom: 24%;
+        }
+    }
+
+    .s-font sup {
+        font-size: 1.45em;
+        top: 0em;
+    }
+
+    .sns-bold {
+        font-weight: 700;
+    }
+
+    .sns-singleimg img {
+        border-radius: 16px;
+    }
+
+    .sns-harness {
+        display: flex;
+        gap: 2%;
+        padding-top: 1%;
+
+    }
+
+    .sns-harness img {
+        width: 50px;
+        height: 46px;
+
+    }
+
+    @media screen and (max-width:890px) {
+        .sns-harness {
+
+            justify-content: center;
+        }
+
+    }
+
+    .sns-eng-container {
+        width: calc(100% - 10vw);
+        max-width: 1200px;
+        margin: 5vw auto 0;
+    }
+
+    .sns-eng-badge {
+        background: var(--sns-black);
+        color: white;
+        width: 27%;
+        margin: 0 auto 7%;
+        padding: 0.5% 5vw;
+        border-radius: 50px;
+        font-size: 1.3vw;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .sns-eng-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3%;
+        /* Gap between image and text using calc */
+        gap: calc(100% - 94%);
+    }
+
+    .sns-eng-row.sns-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .sns-eng-img {
+        width: calc(50% - 3vw);
+    }
+
+    .sns-eng-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sns-eng-content {
+        width: calc(50% - 3vw);
+    }
+
+    .sns-eng-title {
+        font-size: 3vw;
+        margin-bottom: 1.5vw;
+        color: var(--sns-black);
+    }
+
+    .sns-eng-desc {
+        font-size: 0.78vw;
+        line-height: 1.6;
+        color: var(--sns-black);
+        margin-bottom: 2.5vw;
+    }
+
+    .sns-eng-stats {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2vw;
+    }
+
+    .sns-stat-box {
+        width: calc(50% - 1vw);
+        text-align: center;
+        margin-bottom: 1.5%;
+    }
+
+    .sns-stat-label {
+        font-size: 0.63vw;
+        text-transform: uppercase;
+        color: var(--sns-black);
+        font-weight: 400;
+    }
+
+    .sns-stat-val {
+        font-size: 2.5vw;
+        font-weight: 500;
+        color: var(--sns-black);
+    }
+
+
+    @media (max-width: 890px) {
+
+        .sns-cap-large,
+        .sns-cap-small,
+        .sns-eng-img,
+        .sns-eng-content {
+            width: 100%;
+        }
+
+        .sns-eng-row,
+        .sns-eng-row.sns-reverse {
+            flex-direction: column;
+        }
+
+        .sns-cap-overlay {
+            font-size: 6vw;
+        }
+
+        .sns-cap-title,
+        .sns-eng-title {
+            font-size: 7vw;
+        }
+
+        .sns-cap-desc,
+        .sns-eng-desc {
+            font-size: 15px;
+        }
+
+        .sns-stat-val {
+            font-size: 30px;
+        }
+
+        .sns-stat-label {
+            font-size: 12px;
+        }
+
+        .sns-eng-badge {
+            font-size: 20px;
+        }
+    }
+
+    .snsmt1_5 {
+        margin-top: 1.5%;
+    }
+
+    .s-2x2-card.start3x3 .s-inner-div {
+        width: calc(90% / 3);
+        margin-bottom: 0;
+    }
+
+    .s-2x2-card.start3x3 .s-inner-div .s-padding p {
+        padding-inline: 8vw;
+    }
+
+    .sns_greybg {
+        background: linear-gradient(149.67deg, #E2F6F3 10.09%, #728590 90.21%);
+        padding: 3%;
+        border-radius: 40px;
+    }
+
+    .sns_greybg .s-2x2-card,
+    .sns_greybg .s-3x3-card {
+        background-color: unset;
+        gap: 1.5%;
+    }
+
+    .sns_greybg .s-2x2-card .s-inner-div,
+    .sns_greybg .s-3x3-card .s-inner-div {
+        background-color: rgba(255, 255, 255, 0.46);
+        padding: 1%;
+    }
+
+    .sns_greybg .s-2x2-card .s-inner-div {
+        width: calc(94% / 2);
+        padding-bottom: 2%;
+
+    }
+
+    .sns_greybg .s-3x3-card .s-inner-div {
+        width: calc(90% / 3);
+    }
+
+    .sns_greybg .s-3x3-card .s-inner-div .s-padding h3 {
+        padding-inline: 3vw;
+        padding-top: 1%;
+    }
+
+    .gap_4 {
+        gap: 4%;
+    }
+
+    .gap_4.s-3x3-card .s-inner-div {
+        width: calc(90% / 3);
+        text-align: left;
+    }
+
+    .gap_4.s-3x3-card .s-inner-div .s-padding {
+        padding: 0;
+    }
+
+    .gap_4.s-3x3-card .s-inner-div .s-padding-2 {
+        padding: 2% 0% 3%;
+    }
+
+    .gap_4.s-3x3-card .s-inner-div .s-padding h3 {
+        padding-inline: 0;
+        padding-right: 8vw;
+        padding-top: 1%;
+        padding-bottom: 0;
+    }
+
+    .s-3x3-card.bgcolrblack {
+        gap: 1.5%;
+    }
+
+    .bgcolrblack.s-3x3-card .s-inner-div {
+        background-color: #000;
+        padding: 1%;
+        width: calc(91% / 3);
+    }
+
+    .bgcolrblack.s-3x3-card .s-inner-div .s-padding h3 {
+        color: #fff !important;
+    }
+
+    .bgcolrblack.s-3x3-card .s-inner-div .s-padding p {
+        color: #fff !important;
+    }
+
+    .snsmb1_5 {
+        margin-bottom: 1.5% !important;
+    }
+
+    .snsmt7 {
+        margin-top: 7%;
+    }
+</style>
+
+
+
+<div class="main-div">
+    <!-------------------------------------------------- Sections ---------------------------------------->
+    <!-- Section 1 Code -->
+    <div class="s-banner">
+        <div class="s-banner-img">
+            <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/banner-2026-Jeep-Compass-desktop-1.jpg"
+                alt="banner" class="sns-mob-none">
+            <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/banner-2026-Jeep-Compass-MOBILE.jpg"
+                alt="banner" class="sns-desk-none">
+        </div>
+        <div class="s-banner-txt-1">
+            <!-- <p class="s-f-38-26">2026 Ram 2500 Florence, AL</p> -->
+            <h1 class="s-f-56-30">2026 Jeep<sub>®</sub> Compass, Florence, AL</h1>
+            <h2 class="s-f-30-24">MSRP* starting at $28,995</h2>
+        </div>
+        <!-- <div class="s-banner-txt-2">
+            <p class="s-f-20-14" style="font-weight: 500 !important;">2026 Ram 2500 Florence, AL</p>
+            
+        </div> -->
+
+
+    </div>
+
+
+    <!-- Section 2 Code -->
+    <section class="sns-button snsmt1_5">
+        <div class="sns-BN justify-content-evenly ">
+            <a class="sns-btn sns-butn sns-f-b" href="https://www.singingrivercdjr.com/new-vehicles/compass/">
+                <div>View Inventory</div>
+            </a>
+            <a class="sns-btn sns-butn sns-f-b " href="https://www.singingrivercdjr.com/contact-us/">
+                <div>get a quote</div>
+            </a>
+            <a class="sns-btn sns-butn sns-f-b-r" href="https://www.singingrivercdjr.com/value-your-trade/">
+                <div>value your trade</div>
+            </a>
+            <a class="sns-btn sns-butn "
+                href="https://www.singingrivercdjr.com/get-pre-qualified-with-capital-one-no-impact-to-your-credit-score/">
+                <div>get pre-approved</div>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Section 3 Code -->
+    <div class="s-back-1">
+        <div class="s-heading">
+            <h3 class="s-f-24-18 s-white">Capability </h3>
+            <!-- <div class="sbordercolor"></div> -->
+            <h2 class="s-f-50-30 s-white">2026 Jeep<sub>®</sub> Compass Capability</h2>
+            <p class="s-f-22-18 s-white sns-padd-in-10">Trail Rated<sup>®</sup> performance partners with legendary
+                available 4x4 capability to power the 2026 Jeep<sub>®</sub> Compass Trailhawk<sup>®</sup> SUV.</p>
+        </div>
+
+
+        <div class="s-2x2-card start3x3">
+            <div class="s-inner-div">
+                <div class="s-padding">
+                    <div class="s-padding-2">
+                        <h4 class="s-f-32-24 s-h3">200</h4>
+                        <p class="s-f-20-18 ">Best-in-Class StandardHorsepower*</p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="s-inner-div">
+                <div class="s-padding">
+
+                    <div class="s-padding-2" style="text-align: center;">
+                        <h4 class="s-f-32-24 s-h3">221</h4>
+                        <p class="s-f-20-18 ">Best-in-Class StandardTorque (LB-FT)*</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="s-inner-div ">
+                <div class="s-padding">
+
+                    <div class="s-padding-2">
+                        <h4 class="s-f-32-24 s-h3">2,000</h4>
+                        <p class="s-f-20-18 padd-IN">Unsurpassed-in-Class Standard Maximum Towing Capacity (LB)*</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="s-heading">
+
+            <!-- <div class="sbordercolor"></div> -->
+            <h2 class="s-f-50-30 s-white">Capability for True Adventurers</h2>
+
+        </div>
+
+        <div class="s-content-img-section">
+
+            <div class="s-inner-card">
+                <div class="s-inner-div-1">
+                    <div class="s-padding-1">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/A-Certified-Legend-2026-Jeep-Compass-desktop-2.png"
+                            alt="A Certified Legend" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/A-Certified-Legend-2026-Jeep-Compass-MOBILE.png"
+                            alt="A Certified Legend" class="sns-desk-none">
+                    </div>
+                </div>
+                <div class="s-inner-div-2">
+                    <div class="s-padding-2">
+                        <h3 class="s-f-32-24">A Certified Legend</h3>
+                        <p class="sns-border-line"></p>
+                        <p class="s-f-20-18">The Trail Rated<sup>®</sup> badge isn’t just decorative. It’s a symbol of
+                            legendary capability earned on the toughest terrain.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="s-inner-card">
+                <div class="s-inner-div-1">
+                    <div class="s-padding-1">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Falken-WildPeak-All-Terrain-Tires-2026-Jeep-Compass-desktop-1.png"
+                            alt="Falken<sup>®</sup> WildPeak<sup>®</sup> All-Terrain Tires" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Falken-WildPeak-All-Terrain-Tires-2026-Jeep-Compass-MOBILE.png"
+                            alt="Falken<sup>®</sup> WildPeak<sup>®</sup> All-Terrain Tires" class="sns-desk-none">
+                    </div>
+                </div>
+                <div class="s-inner-div-2">
+                    <div class="s-padding-2 snspadd2">
+                        <h3 class="s-f-32-24">Falken<sup>®</sup> WildPeak<sup>®</sup> All-Terrain Tires</h3>
+                        <p class="sns-border-line"></p>
+                        <p class="s-f-20-18">Standard on Compass Trailhawk<sup>®</sup>, these rugged tires are
+                            engineered for adventure and open-road comfort.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sns_greybg">
+            <div class="s-2x2-card sns-pt-0">
+                <div class="s-inner-div">
+                    <div class="s-padding">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Traction-2026-Jeep-Compass-desktop-1.png"
+                            alt="Traction" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Traction-2026-Jeep-Compass-MOBILE.png"
+                            alt="Traction" class="sns-desk-none">
+                        <div class="s-padding-2">
+                            <h3 class="s-f-32-24">Traction</h3>
+                            <p class="sns-border-line"></p>
+                            <p class="s-f-20-18 ">Hold on tight. With available Jeep<sub>®</sub> Brand 4x4 systems,
+                                traction is delivered to the wheel that needs it most at any given time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-inner-div">
+                    <div class="s-padding">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Water-Fording-2026-Jeep-Compass-desktop-1.png"
+                            alt="Water Fording*" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Water-Fording-2026-Jeep-Compass-MOBILE.png"
+                            alt="Water Fording*" class="sns-desk-none">
+                        <div class="s-padding-2">
+                            <h3 class="s-f-32-24">Water Fording*</h3>
+                            <p class="sns-border-line"></p>
+                            <p class="s-f-20-18 ">Thanks to high air intakes and special water sealing, Compass can
+                                withstand up to 16 inches of water fording on 4x4 models and 19 inches of water fording
+                                on Trailhawk<sup>®</sup> models.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="s-3x3-card">
+                <div class="s-inner-div">
+                    <div class="s-padding">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Maneuverability-2026-Jeep-Compass-desktop-1.png"
+                            alt="Maneuverability" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Maneuverability-2026-Jeep-Compass-MOBILE.png"
+                            alt="Maneuverability" class="sns-desk-none">
+                        <div class="s-padding-2">
+                            <h3 class="s-f-32-24">Maneuverability</h3>
+                            <p class="sns-border-line"></p>
+                            <p class="s-f-20-18 ">Easily maneuver tight, treacherous trails or navigate around rocks or
+                                fallen logs with precision steering systems and optimized wheelbase dynamics.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-inner-div">
+                    <div class="s-padding">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Articulation-2026-Jeep-Compass-desktop-1.png"
+                            alt="Articulation" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Articulation-2026-Jeep-Compass-MOBILE.png"
+                            alt="Articulation" class="sns-desk-none">
+                        <div class="s-padding-2">
+                            <h3 class="s-f-32-24">Articulation</h3>
+                            <p class="sns-border-line"></p>
+                            <p class="s-f-20-18 ">The off-road suspension and axle articulation that come standard on
+                                Compass Trailhawk<sup>®</sup> help keep your wheels on the ground, allowing for maximum
+                                traction while going over obstacles.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="s-inner-div">
+                    <div class="s-padding">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Ground-Clearance-2026-Jeep-Compass-desktop-1.png"
+                            alt="Ground Clearance" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Ground-Clearance-2026-Jeep-Compass-MOBILE.png"
+                            alt="Ground Clearance" class="sns-desk-none">
+                        <div class="s-padding-2">
+                            <h3 class="s-f-32-24">Ground Clearance</h3>
+                            <p class="sns-border-line"></p>
+                            <p class="s-f-20-18 ">Drive over logs, rocks or just about anything else on the trail,
+                                thanks to 8.1 inches of ground clearance on our 4x4 models and 8.6 inches of ground
+                                clearance on Compass Trailhawk<sup>®</sup>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <div class="sns-eng-container">
+        <div>
+            <h2 class="sns-eng-badge">Peak Performer</h2>
+        </div>
+        <div class="sns-eng-row">
+            <div class="sns-eng-img"><img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Peak-Performer-2026-Jeep-Compass-desktop-1.png"
+                            alt="Peak Performer" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Peak-Performer-2026-Jeep-Compass-MOBILE.png"
+                            alt="Peak Performer" class="sns-desk-none">
+            </div>
+            <div class="sns-eng-content">
+
+                <p class="sns-eng-desc">The 2.0L Turbo engine delivers enough power and performance to take you from
+                    foothill to hilltop.</p>
+                <div class="sns-eng-stats">
+                    <div class="sns-stat-box"><span>
+                            <p class="sns-stat-label">BEST-IN-CLASS STANDARD HORSEPOWER*</p>
+                        </span>
+                        <div>
+                            <h3 class="sns-stat-val">200</h3>
+                        </div>
+                    </div>
+                    <div class="sns-stat-box"><span>
+                            <p class="sns-stat-label">BEST-IN-CLASS STANDARD TORQUE*</p>
+                        </span>
+                        <div>
+                            <h3 class="sns-stat-val">221
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="sns-stat-box"><span>
+                            <p class="sns-stat-label">UNSURPASSED-IN-CLASS STANDARD MAXIMUM TOWING CAPACITY*</p>
+                        </span>
+                        <div>
+                            <h3 class="sns-stat-val">2000
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="s-back-1">
+        <div class="s-heading">
+            <h2 class="s-f-50-30 s-white">Forge Ahead</h2>
+            <p class="s-f-22-18 s-white sns-padd-in-10">When the wilderness calls, Compass
+                Trailhawk<sup>®</sup> capability answers. Built to tackle rugged terrains, you’re equipped to face
+                nearly anything.</p>
+        </div>
+
+
+
+        <div class="s-3x3-card gap_4">
+            <div class="s-inner-div">
+                <div class="s-padding">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Selec-Terrain-2026-Jeep-Compass-desktop-1.png"
+                        alt="Selec-Terrain<sup>®</sup> Traction Management System" class="sns-mob-none">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Selec-Terrain-2026-Jeep-Compass-MOBILE.png"
+                        alt="Selec-Terrain<sup>®</sup> Traction Management System" class="sns-desk-none">
+                    <div class="s-padding-2">
+                        <h3 class="s-f-32-24">Selec-Terrain<sup>®</sup> Traction Management System</h3>
+                        <p class="sns-border-line"></p>
+                        <p class="s-f-20-18 ">This feature adjusts shift patterns, engine performance and torque
+                            distribution for optimal traction and control, with the off-road-ready Rock Mode available
+                            exclusively on Trailhawk<sup>®</sup> models.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="s-inner-div">
+                <div class="s-padding">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Jeep-Active-Drive-Low-4x4-System-2026-Jeep-Compass-desktop-1.png"
+                        alt="Jeep<sub>®</sub> Active Drive Low 4x4 System" class="sns-mob-none">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Jeep-Active-Drive-Low-4x4-System-2026-Jeep-Compass-MOBILE.png"
+                        alt="Jeep<sub>®</sub> Active Drive Low 4x4 System" class="sns-desk-none">
+                    <div class="s-padding-2">
+                        <h3 class="s-f-32-24">Jeep<sub>®</sub> Active Drive Low 4x4 System</h3>
+                        <p class="sns-border-line"></p>
+                        <p class="s-f-20-18 ">This available 4x4 system features a 20:1 crawl ratio—a crucial component
+                            of legendary capability.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="s-inner-div">
+                <div class="s-padding">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Hill-Descent-Control-2026-Jeep-Compass-desktop-1.png"
+                        alt="Hill Descent Control" class="sns-mob-none">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Hill-Descent-Control-2026-Jeep-Compass-MOBILE.png"
+                        alt="Hill Descent Control" class="sns-desk-none">
+                    <div class="s-padding-2">
+                        <h3 class="s-f-32-24">Hill Descent Control</h3>
+                        <p class="sns-border-line"></p>
+                        <p class="s-f-20-18 ">Throttle, speed and braking are monitored while the brakes are
+                            automatically applied for a smooth descent.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="s-back-1">
+        <div class="s-heading">
+            <h2 class="s-f-50-30 s-white">Weathering the Storm</h2>
+
+        </div>
+
+
+
+        <div class="s-3x3-card bgcolrblack">
+            <div class="s-inner-div">
+                <div class="s-padding">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Rain-Sensing-Windshield-Wipers-2026-Jeep-Compass-desktop-1.png"
+                        alt="Rain-Sensing Windshield Wipers" class="sns-mob-none">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Rain-Sensing-Windshield-Wipers-2026-Jeep-Compass-MOBILE.png"
+                        alt="Rain-Sensing Windshield Wipers" class="sns-desk-none">
+                    <div class="s-padding-2">
+                        <h3 class="s-f-32-24">Rain-Sensing Windshield Wipers</h3>
+                        <p class="sns-border-line"></p>
+                        <p class="s-f-20-18 ">Standard on all trims but Base Limited, rain-sensing windshield wipers
+                            automatically activate when the system senses windshield moisture.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="s-inner-div">
+                <div class="s-padding">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Windshield-Wiper-De-Icer-2026-Jeep-Compass-desktop-1.png"
+                        alt="Windshield Wiper" class="sns-mob-none">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Windshield-Wiper-De-Icer-2026-Jeep-Compass-MOBILE.png"
+                        alt="Windshield Wiper" class="sns-desk-none">
+                    <div class="s-padding-2">
+                        <h3 class="s-f-32-24">Windshield Wiper
+                            De-Icer</h3>
+                        <p class="sns-border-line"></p>
+                        <p class="s-f-20-18 ">This available feature that comes standard on all trims but Base Limited
+                            heats the bottom of your wipers to help free them of accumulated ice or slush.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="s-inner-div">
+                <div class="s-padding">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Heated-Exterior-Mirrors-2026-Jeep-Compass-desktop-1.png"
+                        alt="Heated Exterior Mirrors" class="sns-mob-none">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Heated-Exterior-Mirrors-2026-Jeep-Compass-MOBILE.png"
+                        alt="Heated Exterior Mirrors" class="sns-desk-none">
+                    <div class="s-padding-2">
+                        <h3 class="s-f-32-24">Heated Exterior Mirrors</h3>
+                        <p class="sns-border-line"></p>
+                        <p class="s-f-20-18 ">Heated exterior side mirrors warm up for a clearer view, while turn signal
+                            indicators help communicate with other drivers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="sns-button sns-button1">
+        <div class="sns-BN justify-content-evenly ">
+            <a class="sns-btn sns-butn sns-f-b-r" href="https://www.singingrivercdjr.com/new-vehicles/compass/">
+                <div>View Inventory</div>
+            </a>
+        </div>
+    </section>
+
+    <div class="snsmt1_5">
+        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/View-Inventory-2026-Jeep-Compass-desktop-1.png"
+            alt="RAIN-SENSING WINDSHIELD WIPERS" class="sns-mob-none">
+        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/View-Inventory-2026-Jeep-Compass-MOBILE.png"
+            alt="RAIN-SENSING WINDSHIELD WIPERS" class="sns-desk-none">
+    </div>
+
+    <div class="s-back-1">
+        <div class="s-heading">
+            <h2 class="s-f-24-18 s-white">Design </h3>
+                <!-- <div class="sbordercolor"></div> -->
+                <h3 class="s-f-50-30 s-white">A Bold Exterior Look</h3>
+        </div>
+    </div>
+
+
+
+    <div class="s-back-1">
+        <div class="sns_greybg">
+            <div class="s-heading sns-pt-0">
+
+
+                <h2 class="s-f-50-30 s-white">What’s Your Flavor?</h2>
+                <p class="s-f-22-18 s-white sns-padd-in-10">Pick your palette and express your personality with a lineup
+                    of exciting available exterior colors, including three new additions.</p>
+            </div>
+            <div class="s-3x3-card">
+                <div class="s-inner-div snsmb1_5">
+                    <div class="s-padding">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Silver-Zynith-2026-Jeep-Compass-desktop-1.png"
+                            alt="RAIN-SENSING WINDSHIELD WIPERS" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Silver-Zynith-2026-Jeep-Compass-mob.png"
+                            alt="RAIN-SENSING WINDSHIELD WIPERS" class="sns-desk-none">
+                        <div class="s-padding-2">
+                            <h3 class="s-f-32-24">Silver Zynith</h3>
+                            <p class="sns-border-line"></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="s-inner-div snsmb1_5">
+                    <div class="s-padding">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Red-Hot-2026-Jeep-Compass-desktop-1.png"
+                            alt="WINDSHIELD WIPER DE-ICER" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Red-Hot-2026-Jeep-Compass-MOBILE.png"
+                            alt="WINDSHIELD WIPER DE-ICER" class="sns-desk-none">
+                        <div class="s-padding-2">
+                            <h3 class="s-f-32-24">Red Hot</h3>
+                            <p class="sns-border-line"></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="s-3x3-card">
+                <div class="s-inner-div snsmb1_5">
+                    <div class="s-padding">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Joose-2026-Jeep-Compass-desktop-1.png"
+                            alt="RAIN-SENSING WINDSHIELD WIPERS" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Joose-2026-Jeep-Compass-MOBILE.png"
+                            alt="RAIN-SENSING WINDSHIELD WIPERS" class="sns-desk-none">
+                        <div class="s-padding-2">
+                            <h3 class="s-f-32-24">Joose</h3>
+                            <p class="sns-border-line"></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="s-inner-div snsmb1_5">
+                    <div class="s-padding">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Bright-White-2026-Jeep-Compass-desktop-1.png"
+                            alt="WINDSHIELD WIPER DE-ICER" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Bright-White-2026-Jeep-Compass-MOBILE.png"
+                            alt="WINDSHIELD WIPER DE-ICER" class="sns-desk-none">
+                        <div class="s-padding-2">
+                            <h3 class="s-f-32-24">Bright White</h3>
+                            <p class="sns-border-line"></p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="s-inner-div snsmb1_5">
+                    <div class="s-padding">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Diamond-Black-2026-Jeep-Compass-desktop-1.png"
+                            alt="HEATED EXTERIOR MIRRORS" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Diamond-Black-2026-Jeep-Compass-MOBILE.png"
+                            alt="HEATED EXTERIOR MIRRORS" class="sns-desk-none">
+                        <div class="s-padding-2">
+                            <h3 class="s-f-32-24">Diamond Black</h3>
+                            <p class="sns-border-line"></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="s-3x3-card">
+                <div class="s-inner-div snsmb1_5">
+                    <div class="s-padding">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Hydro-Blue-2026-Jeep-Compass-desktop-1.png"
+                            alt="RAIN-SENSING WINDSHIELD WIPERS" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Hydro-Blue-2026-Jeep-Compass-MOBILE.png"
+                            alt="RAIN-SENSING WINDSHIELD WIPERS" class="sns-desk-none">
+                        <div class="s-padding-2">
+                            <h3 class="s-f-32-24">Hydro Blue</h3>
+                            <p class="sns-border-line"></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="s-inner-div snsmb1_5">
+                    <div class="s-padding">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Fathom-Blue-2026-Jeep-Compass-desktop-1.png"
+                            alt="WINDSHIELD WIPER DE-ICER" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Fathom-Blue-2026-Jeep-Compass-MOBILE.png"
+                            alt="WINDSHIELD WIPER DE-ICER" class="sns-desk-none">
+                        <div class="s-padding-2">
+                            <h3 class="s-f-32-24">Fathom Blue</h3>
+                            <p class="sns-border-line"></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="s-back-1">
+        <div class="s-heading">
+
+            <h2 class="s-f-50-30">The Wheel Deal</h2>
+
+            <p class="s-f-20-18">Choose from high-performing and eye-catching available wheel options, ranging between
+                17 and 19 inches.</p>
+        </div>
+    </div>
+
+    <div class="s-back-1">
+        <div class="s-2x2-card-wheel">
+            <div class="s-inner-div">
+                <div class="s-padding">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/18-inch-Painted-Gloss-Black-2026-Jeep-Compass-desktop-2.png"
+                        alt="17-Inch Painted Fine Silver" class="sns-mob-none">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/18-inch-Painted-Gloss-Black-2026-Jeep-Compass-MOBILE.png"
+                        alt="17-Inch Painted Fine Silver" class="sns-desk-none">
+                    <div class="s-padding-2">
+                        <h3 class="s-f-32-24">18-inch Painted Gloss Black</h3>
+                        <p class="sns-border-line"></p>
+                        <p class="s-f-20-18 ">Standard on Latitude Altitude</p>
+                    </div>
+                </div>
+            </div>
+            <div class="s-inner-div">
+                <div class="s-padding">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/18-inch-Painted-Gloss-Black-2026-Jeep-Compass-desktop-2.png"
+                        alt="18-Inch Painted Gloss Black" class="sns-mob-none">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/18-inch-Aluminum-2026-Jeep-Compass-mobwith-Gloss-Black-Pockets.png"
+                        alt="18-Inch Painted Gloss Black" class="sns-desk-none">
+                    <div class="s-padding-2">
+                        <h3 class="s-f-32-24">18-inch Aluminum with Gloss Black Pockets</h3>
+                        <p class="sns-border-line"></p>
+                        <p class="s-f-20-18 ">Standard on Limited</p>
+                    </div>
+                </div>
+            </div>
+            <div class="s-inner-div">
+                <div class="s-padding">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/19-inch-Painted-Satin-Granite-Crystal-2026-Jeep-Compass-desktop-2.png"
+                        alt="18-Inch Aluminum with Gloss Black Pockets" class="sns-mob-none">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/19-inch-Painted-Satin-Granite-Crystal-2026-Jeep-Compass-MOBILE.png"
+                        alt="18-Inch Aluminum with Gloss Black Pockets" class="sns-desk-none">
+                    <div class="s-padding-2">
+                        <h3 class="s-f-32-24">19-inch Painted Satin Granite Crystal</h3>
+                        <p class="sns-border-line"></p>
+                        <p class="s-f-20-18 ">Standard on Limited Altitude</p>
+                    </div>
+                </div>
+            </div>
+            <div class="s-inner-div">
+                <div class="s-padding">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/17-inch-Diamond-Cut-with-Satin-Black-Pockets-2026-Jeep-Compass-desktop-2.png"
+                        alt="19-Inch Painted Satin Granite Crystal" class="sns-mob-none">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/17-inch-Diamond-Cut-with-Satin-Black-Pockets-2026-Jeep-Compass-MOBILE.png"
+                        alt="19-Inch Painted Satin Granite Crystal" class="sns-desk-none">
+                    <div class="s-padding-2">
+                        <h3 class="s-f-32-24">17-inch Diamond Cut with Satin Black Pockets</h3>
+                        <p class="sns-border-line"></p>
+                        <p class="s-f-20-18">Standard on Trailhawk<sup>®</sup></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="s-back-1">
+        <div class="s-heading sns-pt-0">
+            <h2 class="s-f-50-30 s-white">Unmistakable</h2>
+            <p class="s-f-20-18">Our contemporary seven-slot grille brings dark accents to an iconic piece of
+                Jeep<sub>®</sub> Brand design.</p>
+        </div>
+
+
+
+        <div class="s-3x3-card bgcolrblack">
+            <div class="s-inner-div">
+                <div class="s-padding">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Lighting-the-Way-Forward-2026-Jeep-Compass-desktop-1.png"
+                        alt="RAIN-SENSING WINDSHIELD WIPERS" class="sns-mob-none">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Lighting-the-Way-Forward-2026-Jeep-Compass-MOBILE.png"
+                        alt="RAIN-SENSING WINDSHIELD WIPERS" class="sns-desk-none">
+                    <div class="s-padding-2">
+                        <h3 class="s-f-32-24">Lighting the Way Forward</h3>
+                        <p class="sns-border-line"></p>
+                        <p class="s-f-20-18 ">Brilliant LED reflector headlamps and available fog lamps help you
+                            navigate nightfall and tough weather.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="s-inner-div">
+                <div class="s-padding">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Simply-Convenient-2026-Jeep-Compass-desktop-1.png"
+                        alt="WINDSHIELD WIPER DE-ICER" class="sns-mob-none">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Simply-Convenient-2026-Jeep-Compass-MOBILE.png"
+                        alt="WINDSHIELD WIPER DE-ICER" class="sns-desk-none">
+                    <div class="s-padding-2">
+                        <h3 class="s-f-32-24">Simply Convenient</h3>
+                        <p class="sns-border-line"></p>
+                        <p class="s-f-20-18 ">Explore convenient ways to access your vehicle, including passive entry,
+                            remote vehicle start* and a foot-activated power liftgate that comes standard on Limited,
+                            Limited Altitude and Trailhawk<sup>®</sup> models.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="s-inner-div">
+                <div class="s-padding">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Open-Up-to-the-World-2026-Jeep-Compass-desktop-1.png"
+                        alt="HEATED EXTERIOR MIRRORS" class="sns-mob-none">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Open-Up-to-the-World-2026-Jeep-Compass-MOBILE.png"
+                        alt="HEATED EXTERIOR MIRRORS" class="sns-desk-none">
+                    <div class="s-padding-2">
+                        <h3 class="s-f-32-24">Open Up to the World</h3>
+                        <p class="sns-border-line"></p>
+                        <p class="s-f-20-18 ">Experience a deeper connection with your environment. From sunshine to
+                            starlight, let the outdoors in with the available Dual-Pane Sunroof.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="s-back-1 snsmt7">
+        <div class="sns_greybg">
+            <div class="s-heading sns-pt-0">
+
+                <h2 class="s-f-50-30">Decked Out with Tech</h2>
+
+                <p class="s-f-20-18">Intuitive displays and connectivity make it easy to love Jeep<sub>®</sub> Compass
+                    technology.</p>
+            </div>
+            <div class="s-2x2-card sns-pt-0">
+                <div class="s-inner-div">
+                    <div class="s-padding">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/10.1-Inch-Touchscreen-2026-Jeep-Compass-desktop-2.png"
+                            alt="TOUCH AND GO" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/10.1-Inch-Touchscreen-2026-Jeep-Compass-MOBILE.png"
+                            alt="TOUCH AND GO" class="sns-desk-none">
+                        <div class="s-padding-2">
+                            <h3 class="s-f-32-24">10.1-Inch Touchscreen</h3>
+                            <p class="sns-border-line"></p>
+                            <p class="s-f-20-18 ">Smoothly integrated into the dash, the available 10.1-inch touchscreen
+                                offers easy access to your Uconnect<sup>®</sup> 5 system.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-inner-div">
+                    <div class="s-padding">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Instrument-Panel-2026-Jeep-Compass-desktop-1.png"
+                            alt="KEEP IT 100" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Instrument-Panel-2026-Jeep-Compass-MOBILE-2026-Jeep-Compass-MOB.png"
+                            alt="KEEP IT 100" class="sns-desk-none">
+                        <div class="s-padding-2">
+                            <h3 class="s-f-32-24">Instrument Panel</h3>
+                            <p class="sns-border-line"></p>
+                            <p class="s-f-20-18 ">Slim air vents, a textured surface and convenient integration complete
+                                a cultivated atmosphere.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-2x2-card sns-pt-0">
+                <div class="s-inner-div">
+                    <div class="s-padding">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Next-Generation-Uconnect-2026-Jeep-Compass-desktop-1.png"
+                            alt="TOUCH AND GO" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Next-Generation-Uconnect-2026-Jeep-Compass-MOB.png"
+                            alt="TOUCH AND GO" class="sns-desk-none">
+                        <div class="s-padding-2">
+                            <h3 class="s-f-32-24">Next-Generation Uconnect<sup>®</sup> NAV</h3>
+                            <p class="sns-border-line"></p>
+                            <p class="s-f-20-18 ">The intuitive Uconnect<sup>®</sup> 5 NAV system offers wireless Apple
+                                CarPlay<sup>®</sup> compatibility* and Android Auto™ support*, so you can easily access
+                                navigation, your favorite apps and available in-vehicle entertainment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-inner-div">
+                    <div class="s-padding">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Available-10.25-Inch-Digital-Cluster-Display-2026-Jeep-Compass-desktop-1.png"
+                            alt="KEEP IT 100" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Available-10.25-Inch-Digital-Cluster-Display-2026-Jeep-Compass-MOB.png"
+                            alt="KEEP IT 100" class="sns-desk-none">
+                        <div class="s-padding-2">
+                            <h3 class="s-f-32-24">Available 10.25-Inch Digital Cluster Display</h3>
+                            <p class="sns-border-line"></p>
+                            <p class="s-f-20-18 ">No other vehicle in its class offers a larger available Digital
+                                Cluster Display*, so you can keep your trip information, data, safety and security
+                                alerts front and center.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+    <div class="s-back-1">
+        <div class="s-heading">
+            <h2 class="s-f-50-30 s-white sns-pt-0">Keep the Cold Away</h2>
+            <p class="s-f-22-18 s-white sns-padd-in-10">Stay cozy with features like remote vehicle start*, a heated
+                steering wheel and heated front-row seats, standard across all 2026 Compass models.</p>
+        </div>
+
+
+
+        <div class="s-3x3-card gap_4">
+            <div class="s-inner-div">
+                <div class="s-padding">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Heated-Steering-Wheel-2026-Jeep-Compass-desktop-1.png"
+                        alt="RAIN-SENSING WINDSHIELD WIPERS" class="sns-mob-none">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Heated-Steering-Wheel-2026-Jeep-Compass-MOB.png"
+                        alt="RAIN-SENSING WINDSHIELD WIPERS" class="sns-desk-none">
+                    <div class="s-padding-2">
+                        <h3 class="s-f-32-24">Heated Steering Wheel</h3>
+                        <p class="sns-border-line"></p>
+                        <p class="s-f-20-18 ">Warm your hands during the icy months with our heated premium wrapped
+                            steering wheel.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="s-inner-div">
+                <div class="s-padding">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Heated-Front-Seats-2026-Jeep-Compass-desktop-1.png"
+                        alt="WINDSHIELD WIPER DE-ICER" class="sns-mob-none">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Heated-Front-Seats-2026-Jeep-Compass-MOB.png"
+                        alt="WINDSHIELD WIPER DE-ICER" class="sns-desk-none">
+                    <div class="s-padding-2">
+                        <h3 class="s-f-32-24">Heated Front Seats</h3>
+                        <p class="sns-border-line"></p>
+                        <p class="s-f-20-18 ">Pick a setting level and let onboard heating in the driver and front
+                            passenger seats melt away any winter chills.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="s-inner-div">
+                <div class="s-padding">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Dial-It-Up-2026-Jeep-Compass-desktop-1.png"
+                        alt="HEATED EXTERIOR MIRRORS" class="sns-mob-none">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Dial-It-Up-2026-Jeep-Compass-MOB.png"
+                        alt="HEATED EXTERIOR MIRRORS" class="sns-desk-none">
+                    <div class="s-padding-2">
+                        <h3 class="s-f-32-24">Dial It Up</h3>
+                        <p class="sns-border-line"></p>
+                        <p class="s-f-20-18 ">A 12-channel, 506-watt amplifier powers nine speakers and an 8-inch
+                            subwoofer with the available Alpine<sup>®</sup> Premium Audio System.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <section class="sns-button sns-button1">
+            <div class="sns-BN justify-content-evenly ">
+                <a class="sns-btn sns-butn sns-f-b-r" href="https://www.singingrivercdjr.com/contact-us/">
+                    <div>Get a Quote</div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <div class="snsmt1_5">
+        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Get-A-Quote-2026-Jeep-Compass-desktop-1.png"
+            alt="RAIN-SENSING WINDSHIELD WIPERS" class="sns-mob-none">
+        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Get-A-Quote-2026-Jeep-Compass-MOB.png"
+            alt="RAIN-SENSING WINDSHIELD WIPERS" class="sns-desk-none">
+    </div>
+
+    <div class="s-back-1">
+        <div class="s-heading">
+            <h2 class="s-f-24-18 s-white">Technology </h2>
+            <!-- <div class="sbordercolor"></div> -->
+            <h3 class="s-f-50-30 s-white">Tech That Moves You</h3>
+
+        </div>
+
+
+
+
+
+        <div class="s-content-img-section">
+
+            <div class="s-inner-card">
+                <div class="s-inner-div-1">
+                    <div class="s-padding-1">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Tap-In-and-Take-Control-2026-Jeep-Compass-desktop-1.png"
+                            alt="FALKEN<sup>®</sup>&nbsp;WILDPEAK<sup>®</sup> ALL-TERRAIN TIRES" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Tap-In-and-Take-Control-2026-Jeep-Compass-MOB.png"
+                            alt="FALKEN<sup>®</sup>&nbsp;WILDPEAK<sup>®</sup> ALL-TERRAIN TIRES" class="sns-desk-none">
+                    </div>
+                </div>
+                <div class="s-inner-div-2">
+                    <div class="s-padding-2">
+                        <h3 class="s-f-32-24">Tap In and Take Control</h3>
+                        <p class="sns-border-line"></p>
+                        <p class="s-f-20-18">The Uconnect<sup>®</sup> 5 system and a stunning available 10.1-inch
+                            touchscreen with wireless Apple CarPlay<sup>®</sup> support* and Android Auto* compatibility
+                            establish an easy connection with your smartphone.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="s-heading">
+            <!-- <div class="sbordercolor"></div> -->
+            <h2 class="s-f-50-30 s-white sns-pt-0">Smart, Safe and Secure</h2>
+
+        </div>
+
+
+        <div class="s-content-img-section">
+            <div class="s-inner-card" style="padding: 0 !important; margin: 0 !important;"></div>
+            <div class="s-inner-card">
+                <div class="s-inner-div-1">
+                    <div class="s-padding-1">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/An-Intuitive-Assistant-2026-Jeep-Compass-desktop-1.png"
+                            alt="EQUIPPED FOR THE INCREDIBLE" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/An-Intuitive-Assistant-2026-Jeep-Compass-MOB.png"
+                            alt="EQUIPPED FOR THE INCREDIBLE" class="sns-desk-none">
+                    </div>
+                </div>
+                <div class="s-inner-div-2">
+                    <div class="s-padding-2 snspadd2">
+                        <h3 class="s-f-32-24">An Intuitive Assistant</h3>
+                        <p class="sns-border-line"></p>
+                        <p class="s-f-20-18">Using sensors and cameras in your vehicle, available Active
+                            Driving Assist* automatically holds your speed and adjusts your position within your lane.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="s-back-1 snsmt7">
+        <div class="sns_greybg">
+            <div class="s-heading sns-pt-0">
+
+                <h2 class="s-f-50-30">Your Safety & Security Toolkit</h2>
+
+
+            </div>
+            <div class="s-3x3-card">
+                <div class="s-inner-div snsmb1_5">
+                    <div class="s-padding">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Forward-Collision-Warning-with-Active-Braking-2026-Jeep-Compass-desktop-1.png"
+                            alt="RAIN-SENSING WINDSHIELD WIPERS" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Forward-Collision-Warning-with-Active-Braking-2026-Jeep-Compass-MOB.png"
+                            alt="RAIN-SENSING WINDSHIELD WIPERS" class="sns-desk-none">
+                        <div class="s-padding-2">
+                            <h3 class="s-f-32-24">Forward Collision Warning with Active Braking*</h3>
+                            <p class="sns-border-line"></p>
+                            <p class="s-f-20-18 ">Radar sensors help detect if you’re approaching another vehicle too
+                                fast, alerting you and applying the brakes if necessary.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-inner-div snsmb1_5">
+                    <div class="s-padding">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Blind-Spot-Monitoring_-with-Rear-Cross-Path-Detection-2026-Jeep-Compass-desktop-1.png"
+                            alt="WINDSHIELD WIPER DE-ICER" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Blind-Spot-Monitoring-2026-Jeep-Compass-MOB.png"
+                            alt="WINDSHIELD WIPER DE-ICER" class="sns-desk-none">
+                        <div class="s-padding-2">
+                            <h3 class="s-f-32-24">Blind Spot Monitoring* with Rear Cross Path Detection*</h3>
+                            <p class="sns-border-line"></p>
+                            <p class="s-f-20-18 ">Receive an alert when other vehicles travel into one of your blind
+                                spot zones or when unseen vehicles or obstacles block your path when you’re backing up.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="s-3x3-card">
+                <div class="s-inner-div snsmb1_5">
+                    <div class="s-padding">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Adaptive-Cruise-Control-with-Stop-And-Go-2026-Jeep-Compass-desktop-1.png"
+                            alt="RAIN-SENSING WINDSHIELD WIPERS" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Adaptive-Cruise-Control-with-Stop-2026-Jeep-Compass-MOB.png"
+                            alt="RAIN-SENSING WINDSHIELD WIPERS" class="sns-desk-none">
+                        <div class="s-padding-2">
+                            <h3 class="s-f-32-24">Adaptive Cruise Control with Stop And Go*</h3>
+                            <p class="sns-border-line"></p>
+                            <p class="s-f-20-18 ">With this feature that comes standard on all trims except Base
+                                Latitude, you can relieve the pressure of lengthy drives and stop-and-go traffic by
+                                automatically adjusting your driving speed to maintain a preselected distance from the
+                                vehicle ahead.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-inner-div snsmb1_5">
+                    <div class="s-padding">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Active-Lane-Management-2026-Jeep-Compass-desktop-1.png"
+                            alt="WINDSHIELD WIPER DE-ICER" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Active-Lane-Management-2026-Jeep-Compass-MOB.png"
+                            alt="WINDSHIELD WIPER DE-ICER" class="sns-desk-none">
+                        <div class="s-padding-2">
+                            <h3 class="s-f-32-24">Active Lane Management*</h3>
+                            <p class="sns-border-line"></p>
+                            <p class="s-f-20-18 ">When detecting an unintentional lane drift, this system can alert you
+                                and correct the vehicle’s position. It also provides steering correction to help avoid
+                                collisions with vehicles in your blind spot zones.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="s-inner-div snsmb1_5">
+                    <div class="s-padding">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Pedestrian-and-Cyclist-Detection-with-Automatic-Braking-2026-Jeep-Compass-desktop-1.png"
+                            alt="HEATED EXTERIOR MIRRORS" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Pedestrian-and-Cyclist-Detection-with-2026-Jeep-Compass-MOB.png"
+                            alt="HEATED EXTERIOR MIRRORS" class="sns-desk-none">
+                        <div class="s-padding-2">
+                            <h3 class="s-f-32-24">Pedestrian and Cyclist Detection with Automatic Braking*</h3>
+                            <p class="sns-border-line"></p>
+                            <p class="s-f-20-18 ">Using sensors at the front of the vehicle, this system can alert you
+                                to potential obstacles outside your viewing range. If you don’t respond, the vehicle can
+                                automatically engage the brakes to help prevent a collision.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="s-back-1 snsmt7">
+        <div class="s-content-img-section">
+
+            <div class="s-inner-card">
+                <div class="s-inner-div-1">
+                    <div class="s-padding-1">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Drowsy-Driver-Detection-2026-Jeep-Compass-desktop-1.png"
+                            alt="FALKEN<sup>®</sup>&nbsp;WILDPEAK<sup>®</sup> ALL-TERRAIN TIRES" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Drowsy-Driver-Detection-2026-Jeep-Compass-MOB.png"
+                            alt="FALKEN<sup>®</sup>&nbsp;WILDPEAK<sup>®</sup> ALL-TERRAIN TIRES" class="sns-desk-none">
+                    </div>
+                </div>
+                <div class="s-inner-div-2">
+                    <div class="s-padding-2">
+                        <h3 class="s-f-32-24">Drowsy Driver Detection*</h3>
+                        <p class="sns-border-line"></p>
+                        <p class="s-f-20-18">This system tracks vehicle movement and driver attentiveness and looks for
+                            patterns that indicate drowsiness. If drowsiness is detected, the system can send
+                            precautionary audible and visual alert signals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="s-inner-card">
+                <div class="s-inner-div-1">
+                    <div class="s-padding-1">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Engineered-to-Help-Protect-1.png"
+                            alt="EQUIPPED FOR THE INCREDIBLE" class="sns-mob-none">
+                        <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Engineered-to-Help-Protect-2026-Jeep-Compass-desktop.png"
+                            alt="EQUIPPED FOR THE INCREDIBLE" class="sns-desk-none">
+                    </div>
+                </div>
+                <div class="s-inner-div-2">
+                    <div class="s-padding-2 snspadd2">
+                        <h3 class="s-f-32-24">Engineered to Help Protect</h3>
+                        <p class="sns-border-line"></p>
+                        <p class="s-f-20-18 snsmb1_5">A high-strength steel body structure helps maximize crash
+                            protection while optimizing dynamics and weight
+                        </p>
+                        <p class="s-f-20-18">Seven advanced airbags*—including side-curtain front and rear airbags—help
+                            keep everyone safe and secure in the event of a collision.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div>
+        <section class="sns-button sns-button1">
+            <div class="sns-BN justify-content-evenly ">
+                <a class="sns-btn sns-butn sns-f-b-r" href="https://www.singingrivercdjr.com/value-your-trade/">
+                    <div>value your trade</div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+
+
+    <div class="s-back-1">
+
+        <div class="s-main-gallery" style="">
+            <div class="s-heading s-heading-digital1">
+
+                <!-- <div class="sbordercolor"></div> -->
+                <h2 class="s-f-50-30 s-white">Gallery</h2>
+
+            </div>
+            <div class="sns-gallery-section " style="">
+                <div class="s-gallery">
+                    <div class=" sns-img-g">
+                        <div class="sns-gallery-img">
+                            <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Gallery-1-2026-Jeep-Compass-desktop-1.png"
+                                class="sns-mob-none" alt="GALLERY-1">
+                            <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/G-1-2026-Jeep-Compass-mob.png"
+                                class="sns-desk-none" alt="GALLERY-1">
+                        </div>
+                    </div>
+                    <div class=" sns-img-g">
+                        <div class="sns-gallery-img">
+                            <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Gallery-2-2026-Jeep-Compass-desktop-1.png"
+                                class="sns-mob-none" alt="GALLERY-2">
+                            <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/G-2-2026-Jeep-Compass-mob.png"
+                                class="sns-desk-none" alt="GALLERY-2">
+                        </div>
+                    </div>
+                    <div class=" sns-img-g">
+                        <div class="sns-gallery-img">
+                            <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Gallery3-2026-Jeep-Compass-desktop-1.png"
+                                class="sns-mob-none" alt="GALLERY-3">
+                            <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/G-3-2026-Jeep-Compass-mob.png"
+                                class="sns-desk-none" alt="GALLERY-3">
+                        </div>
+                    </div>
+                    <div class=" sns-img-g">
+                        <div class="sns-gallery-img">
+                            <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Gallery-4-2026-Jeep-Compass-desktop-1.png"
+                                class="sns-mob-none" alt="GALLERY-4">
+                            <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/G4-2026-Jeep-Compass-mob.png"
+                                class="sns-desk-none" alt="GALLERY-4">
+                        </div>
+                    </div>
+                    <div class=" sns-img-g">
+                        <div class="sns-gallery-img">
+                            <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Gallery-5-2026-Jeep-Compass-desktop-1.png"
+                                class="sns-mob-none" alt="GALLERY-5">
+                            <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/G-5-2026-Jeep-Compass-mob.png"
+                                class="sns-desk-none" alt="GALLERY-5">
+                        </div>
+                    </div>
+                    <div class=" sns-img-g">
+                        <div class="sns-gallery-img">
+                            <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Gallery-6-2026-Jeep-Compass-desktop-1.png"
+                                class="sns-mob-none" alt="GALLERY-6">
+                            <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/G-6-2026-Jeep-Compass-mob.png"
+                                class="sns-desk-none" alt="GALLERY-6">
+                        </div>
+                    </div>
+
+
+                    <div class=" sns-img-g">
+                        <div class="sns-gallery-img">
+                            <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Gallery-7-2026-Jeep-Compass-desktop-1.png"
+                                class="sns-mob-none" alt="GALLERY-6">
+                            <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/G-7-2026-Jeep-Compass-mob.png"
+                                class="sns-desk-none" alt="GALLERY-6">
+                        </div>
+                    </div>
+
+
+                    <div class=" sns-img-g">
+                        <div class="sns-gallery-img">
+                            <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Gallery-8-2026-Jeep-Compass-desktop-1.png"
+                                class="sns-mob-none" alt="GALLERY-6">
+                            <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/G-8-2026-Jeep-Compass-mob.png"
+                                class="sns-desk-none" alt="GALLERY-6">
+                        </div>
+                    </div>
+
+
+
+                    <div class=" sns-img-g">
+                        <div class="sns-gallery-img">
+                            <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/Gallery-9-2026-Jeep-Compass-desktop-1.png"
+                                class="sns-mob-none" alt="GALLERY-6">
+                            <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/G-9-2026-Jeep-Compass-mob.png"
+                                class="sns-desk-none" alt="GALLERY-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <section class="sns-button sns-button1">
+            <div class="sns-BN justify-content-evenly ">
+                <a class="sns-btn sns-butn sns-f-b-r"
+                    href="https://www.singingrivercdjr.com/get-pre-qualified-with-capital-one-no-impact-to-your-credit-score/">
+                    <div>get pre-approved</div>
+                </a>
+            </div>
+        </section>
+    </div>
+    <div class="s-back-1">
+        <!-- Section 14 Code -->
+        <div class="s-heading model">
+            <h2 class="s-f-50-30">2026 Jeep<sub>®</sub> Compass Build & Price</h2>
+            <!-- <p class="s-f-22-18">Available in multiple trims. Select a vehicle to explore.</p> -->
+
+
+        </div>
+        <div class="s-model-section">
+            <div class="s-inner-div">
+                <div class="s-padding">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/COMPASS-LATITUDE-ALTITUDE-4X4-2026-Jeep-Compass-desktop-1.png"
+                        alt="SPORT" class="sns-mob-none">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/COMPASS-LATITUDE-2026-Jeep-Compass-MOB.png"
+                        alt="SPORT" class="sns-desk-none">
+                    <div class="s-padding-1">
+                        <h3 class="s-f-32-24">COMPASS </br>
+                            LATITUDE 4X4</h3>
+                        <p class="s-f-22-18">MSRP* starting at <span class="sns-bold">$28,995</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="s-inner-div">
+                <div class="s-padding">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/COMPASS-LIMITED-ALTITUDE-4X4-2026-Jeep-Compass-desktop-1.png"
+                        alt="LATITUDE" class="sns-mob-none">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/COMPASS-LIMITED-ALTITUDE-2026-Jeep-Compass-MOB.png"
+                        alt="LATITUDE" class="sns-desk-none">
+                    <div class="s-padding-1">
+                        <h3 class="s-f-32-24">COMPASS LIMITED</br> ALTITUDE 4X4</h3>
+                        <p class="s-f-22-18">MSRP* starting at <span class="sns-bold">$35,480</span></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="s-model-section">
+
+            <div class="s-inner-div">
+                <div class="s-padding">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/COMPASS-LIMITED-4X4-2026-Jeep-Compass-desktop-1.png"
+                        alt="TRAILHAWK" class="sns-mob-none">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/COMPASS-LIMITED-2026-Jeep-Compass-MOB.png"
+                        alt="TRAILHAWK" class="sns-desk-none">
+                    <div class="s-padding-1">
+                        <h3 class="s-f-32-24">COMPASS</br>
+                            LIMITED 4X4</h3>
+                        <p class="s-f-22-18">MSRP* starting at <span class="sns-bold">$33,485</span></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="s-inner-div">
+                <div class="s-padding">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/COMPASS-TRAILHAWK-4X4-2026-Jeep-Compass-desktop-1.png"
+                        alt="TRAILHAWK" class="sns-mob-none">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/COMPASS-TRAILHAWK-2026-Jeep-Compass-MOB.png"
+                        alt="TRAILHAWK" class="sns-desk-none">
+                    <div class="s-padding-1">
+                        <h3 class="s-f-32-24">COMPASS</br>
+                            TRAILHAWK<sup>®</sup> 4X4</h3>
+                        <p class="s-f-22-18">MSRP* starting at <span class="sns-bold">$33,395</span></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="s-inner-div">
+                <div class="s-padding">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/COMPASS-LATITUDE-4X4-2026-Jeep-Compass-desktop-1.png"
+                        alt="LIMITED" class="sns-mob-none">
+                    <img src="https://di-uploads-pod40.dealerinspire.com/singingrivercdjr/uploads/2026/02/COMPASS-LATITUDE-ALTITUDE-4X4-2026-Jeep-Compass-MOB.png"
+                        alt="LIMITED" class="sns-desk-none">
+                    <div class="s-padding-1">
+                        <h3 class="s-f-32-24">COMPASS LATITUDE </br>ALTITUDE 4X4</h3>
+                        <p class="s-f-22-18">MSRP* starting at <span class="sns-bold">$30,990</span></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Section 16 Code -->
+    <section class="sns-button">
+        <div class="sns-BN justify-content-evenly ">
+            <a class="sns-btn sns-butn sns-f-b" href="https://www.singingrivercdjr.com/new-vehicles/compass/">
+                <div>View Inventory</div>
+            </a>
+            <a class="sns-btn sns-butn sns-f-b " href="https://www.singingrivercdjr.com/contact-us/">
+                <div>get a quote</div>
+            </a>
+            <a class="sns-btn sns-butn sns-f-b-r" href="https://www.singingrivercdjr.com/value-your-trade/">
+                <div>value your trade</div>
+            </a>
+            <a class="sns-btn sns-butn "
+                href="https://www.singingrivercdjr.com/get-pre-qualified-with-capital-one-no-impact-to-your-credit-score/">
+                <div>get pre-approved</div>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Section 15 Code -->
+    <div class="s-back-1">
+        <div class="s-seo">
+            <p class="s-f-22-16 s-fw">Introducing the 2026 Jeep Compass in Florence, AL
+            </p>
+            <p class="s-f-22-16">You can now experience the excitement of the 2026 Jeep Compass in Florence, AL. This
+                latest SUV brings a fresh look, confident power, and advanced technology suited for everyday drives or
+                weekend escapes. Step into a refined cabin built for comfort and connection, where every detail enhances
+                your time on the road. From sleek lines to impressive capability, the new Compass adds style and
+                confidence to every journey through Florence and beyond.
+            </p>
+            <p class="s-f-22-16 s-fw">Where to Buy a 2026 Jeep Compass for Sale in Florence, AL?
+            </p>
+
+            <p class="s-f-22-16">You can buy a 2026 Jeep Compass for sale in Florence, AL at Singing River CDJR!</p>
+            <p class="s-f-22-16">The 2.0L Turbo engine drives the 2026 Jeep Compass with best-in-class standard 200
+                horsepower and 221 pound-feet of torque. This powertrain supports a maximum towing capacity of 2,000
+                pounds. Trailhawk models include Falken WildPeak All-Terrain Tires to provide traction on difficult
+                surfaces. The Selec-Terrain Traction Management System optimizes engine performance and torque
+                distribution. Trailhawk drivers can utilize an exclusive Rock Mode and the Jeep Active Drive Low 4x4
+                System featuring a 20:1 crawl ratio. Hill Descent Control monitors braking and speed to ensure a smooth
+                transition down steep inclines. You can find the 2026 Jeep Compass in Florence, AL, to experience this
+                capability across rugged landscapes.
+
+            </p>
+            <p class="s-f-22-16">The exterior highlights of the 2026 Jeep Compass in Florence, AL include an iconic
+                seven-slot grille updated with modern dark accents. Drivers can choose from vibrant paint colors
+                including new options like High Tide. Lighting includes LED projector headlamps and available fog lamps
+                to improve visibility in dark conditions. Wheel sizes range from 17 to 19 inches depending on the trim.
+                A foot-activated power liftgate provides hands-free access to the cargo area on models like the Limited
+                and Trailhawk. Inside, the cabin contains a dual-pane panoramic sunroof to connect passengers with the
+                environment. Standard features include a heated steering wheel and front seats. Some trims feature
+                leatherette seats detailed with bright blue stitching.
+
+            </p>
+            <p class="s-f-22-16">Connectivity relies on the Uconnect 5 system paired with a 10.1-inch touchscreen. This
+                interface supports wireless Apple CarPlay and Android Auto to link smartphones without cables. Drivers
+                of the 2026 Jeep Compass in Florence, AL also benefit from a 10.25-inch Digital Cluster Display that is
+                unrivaled within its class. An available Alpine Premium Audio System uses a 506-watt amplifier and nine
+                speakers. Active Driving Assist uses cameras and sensors to maintain lane position and speed. Drowsy
+                Driver Detection monitors attentiveness and provides alerts if it identifies tired driving patterns.
+                High-strength steel and seven advanced airbags provide protection.
+            </p>
+            <p class="s-f-22-16 s-fw">Where to Test Drive a 2026 Jeep Compass in Florence, AL?</p>
+            <p class="s-f-22-16">You can test drive a 2026 Jeep Compass in Florence, AL at Singing River CDJR! You can
+                experience its smart performance, confident handling, and modern design during a test drive at Singing
+                River CDJR. This SUV delivers comfort and capability that inspires every trip. Picture yourself
+                exploring city streets or open roads with ease, surrounded by technology that keeps you connected.
+                Scheduling your test drive is simple, and our team at Singing River CDJR is ready to help you discover
+                what makes the new Compass so impressive.
+
+            </p>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="s-disc">
+
+            <p class="s-f-22-16">*Based on FCA US LLC Compact Utility Vehicle segmentation, excludes PHEV, MHEV, HEV and
+                EV entrants.Based on the latest available competitive information.
+            </p>
+            <p class="s-f-22-16">*Based on FCA US LLC Compact Utility Vehicle segmentation, excludes PHEV, MHEV, HEV and
+                EV entrants.Based on the latest available competitive information. When properly equipped. Additional
+                options, equipment, passengers, and cargo weight may affect payload/towing weights. Contact dealer for
+                details.
+            </p>
+            <p class="s-f-22-16">*Do not attempt water fording unless depth is known and consistent with the vehicle’s
+                water fording rating in the Owner’s Manual. Traversing water can cause damage that may not be covered by
+                the new vehicle warranty.</br>Always off road responsibly in approved areas.
+            </p>
+            <p class="s-f-22-16">*Check state and local laws regarding use of remote start systems.
+            </p>
+            <p class="s-f-22-16">*Requires compatible iPhone<sup>®</sup>. Contact dealer for phone compatibility. Data
+                plan rates apply. Vehicle user interface is a product of Apple<sup>®</sup>. Apple CarPlay is a trademark
+                of Apple Inc. iPhone is a trademark of Apple Inc., registered in the US and other countries. Apple terms
+                of use and privacy statements apply.
+            </p>
+            <p class="s-f-22-16">*To wirelessly use Android Auto on your display, you need a compatible Android
+                smartphone with an active data plan. You can check which smartphones are compatible at
+                g.co/androidauto/requirements. Google, Android, Android Auto and Google Maps are trademarks of Google
+                LLC.
+            </p>
+            <p class="s-f-22-16">*Based on FCA US LLC Compact Utility Vehicle segmentation, excludes PHEV, MHEV, HEV and
+                EV entrants.</br> Based on the latest available competitive information.
+            </p>
+            <p class="s-f-22-16">*This system is a driver's convenience system, not a substitute for active driver
+                involvement. The driver must remain aware of traffic conditions and be prepared to use the brakes to
+                avoid collisions</p>
+
+            <p class="s-f-22-16">*This system is an alert system for the front of the vehicle. It is not a substitute
+                for active driver involvement. The driver must remain aware of traffic conditions and be prepared to use
+                brakes to avoid collisions.
+            </p>
+
+            <p class="s-f-22-16">*Always check visually for vehicles prior to changing lanes.
+            </p>
+            <p class="s-f-22-16">*This system is a driver’s convenience system, not a substitute for active driver
+                involvement. The driver must remain aware of traffic conditions and maintain control of the vehicle.
+            </p>
+
+            <p class="s-f-22-16">*Always sit properly in designated seating positions with seat belts securely fastened
+                at all times.
+            </p>
+
+            <p class="s-f-22-16">*MSRP excludes destination, taxes, title and registration fees. Starting at price
+                refers to the base model, optional equipment not included. A more expensive model may be shown. Pricing
+                and offers may change at any time without notification. To get full pricing details, see your dealer.
+            </p>
+
+
+
+        </div>
+    </div>
+
+
+</div>

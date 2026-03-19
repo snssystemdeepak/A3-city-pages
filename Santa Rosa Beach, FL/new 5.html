@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Safety Section Flex</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+
+    background:#3f5a5f;
+
+}
+
+
+
+/* section */
+
+.safety{
+
+    width:82%;
+    margin:6% auto;
+
+}
+
+
+
+/* heading */
+
+.heading{
+
+    text-align:center;
+    margin-bottom:6%;
+
+}
+
+.heading h2{
+
+    font-size:3.2vw;
+    color:white;
+    margin-bottom:1%;
+
+}
+
+.heading p{
+
+    font-size:1.1vw;
+    color:#dcdcdc;
+
+}
+
+
+
+/* rows */
+
+.row{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:6%;
+    gap: 3%;
+
+}
+
+
+/* reverse row */
+
+.reverse{
+
+    flex-direction:row-reverse;
+
+}
+
+
+
+/* image */
+
+.image-box{
+
+    width:48%;
+
+}
+
+.image-box img{
+
+    width:100%;
+    border-radius:.5vw;
+    display:block;
+
+}
+
+
+
+/* text */
+
+.text-box{
+
+    width:40%;
+    color:white;
+
+}
+
+.text-box h3{
+
+    font-size:1.9vw;
+    margin-bottom:2%;
+
+}
+
+.text-box p{
+
+    font-size:1vw;
+    color:#dcdcdc;
+    line-height:1.6;
+
+}
+
+
+
+/* responsive */
+
+@media(max-width:768px){
+
+    .row{
+
+        flex-direction:column;
+        gap:5%;
+
+    }
+
+    .reverse{
+
+        flex-direction:column;
+
+    }
+
+    .image-box{
+
+        width:100%;
+
+    }
+
+    .text-box{
+
+        width:100%;
+        text-align:center;
+
+    }
+
+    .heading h2{
+
+        font-size:6vw;
+
+    }
+
+    .heading p{
+
+        font-size:3vw;
+
+    }
+
+    .text-box h3{
+
+        font-size:4.5vw;
+
+    }
+
+    .text-box p{
+
+        font-size:3vw;
+
+    }
+
+}
+
+</style>
+<body>
+
+<section class="safety">
+
+    <!-- heading -->
+    <div class="heading">
+        <h2>Safety And Security Stays Top Of Mind</h2>
+
+        <p>
+            The 2026 Jeep® Wrangler is packed with cutting-edge features designed
+            to give you peace of mind.
+        </p>
+    </div>
+
+
+    <!-- row 1 -->
+    <div class="row">
+
+        <div class="image-box">
+            <img src="https://i.ibb.co/0VQLwSWL/Blind-Spot-Monitoring-and-Rear-Cross-Path-Detection-2026-Jeep-Wrangler-deshktop.png">
+        </div>
+
+        <div class="text-box">
+
+            <h3>
+                Full-Speed Forward<br>
+                Collision Warning With<br>
+                Active Braking
+            </h3>
+
+            <p>
+                Available Forward Collision Warning with Active Braking alerts you
+                when it senses a potential frontal impact and can automatically
+                engage the brakes if you don't respond.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- row 2 -->
+    <div class="row reverse">
+
+        <div class="image-box">
+            <img src="https://i.ibb.co/0VQLwSWL/Blind-Spot-Monitoring-and-Rear-Cross-Path-Detection-2026-Jeep-Wrangler-deshktop.png">
+        </div>
+
+        <div class="text-box">
+
+            <h3>
+                Blind Spot Monitoring<br>
+                And Rear Cross Path<br>
+                Detection
+            </h3>
+
+            <p>
+                Available Blind Spot Monitoring and Rear Cross Path Detection use
+                radar-based sensors to detect other vehicles in your blind spot zones
+                or crossing behind you.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- row 3 -->
+    <div class="row">
+
+        <div class="image-box">
+            <img src="https://i.ibb.co/0VQLwSWL/Blind-Spot-Monitoring-and-Rear-Cross-Path-Detection-2026-Jeep-Wrangler-deshktop.png">
+        </div>
+
+        <div class="text-box">
+
+            <h3>
+                Adaptive Cruise Control<br>
+                With Stop And Go
+            </h3>
+
+            <p>
+                Available Adaptive Cruise Control with Stop and Go provides driver
+                assistance and can automatically adjust your driving speed to maintain
+                a preselected distance from the vehicle ahead.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
